@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const NameTitle = styled.h1`
-  font-size: 100px;
+  font-size: 30px;
 `;
 
 export const Navbar = () => (
