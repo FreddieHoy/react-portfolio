@@ -1,13 +1,13 @@
-import React from "react";
-import { Navbar } from "common/Navbar";
+import React from 'react';
+import styled from 'styled-components';
+import './App.css';
 
-import "./App.css";
-import { colors } from "config/colors";
-import styled from "styled-components";
-import { MainBody } from "common/Body";
+import { colors } from 'config/colors';
+import { Hero } from 'components/home/Hero';
 
-const ContainerOne = styled.div`
+const Container = styled.div`
   height: 100vh;
+  padding: 5%;
   background: linear-gradient(
     to right,
     ${colors.backgroundOne} 0%,
@@ -23,10 +23,9 @@ const ContainerOne = styled.div`
 
 function App() {
   return (
-    <ContainerOne>
-      <Navbar />
-      <MainBody />
-    </ContainerOne>
+    <Container>
+      <Hero />
+    </Container>
   );
 }
 
