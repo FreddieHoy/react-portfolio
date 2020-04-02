@@ -10,3 +10,15 @@ export const NameTitle = styled.h1`
   margin: 0;
   color: ${colors.whiteText};
 `;
+
+export const NavWhite = styled.h2`
+  font-family: 'Sen', sans-serif;
+  color: white;
+  font-size: 24px;
+  margin: 0;
+
+  :hover {
+    color: ${colors.redText};
+    cursor: pointer;
+  }
+`;

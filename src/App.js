@@ -4,15 +4,17 @@ import './App.css';
 
 import { colors } from 'config/colors';
 import { Hero } from 'components/home/Hero';
+import { Navbar } from 'components/common/Navbar';
+import { indentSizelaptop } from 'config/spacing';
 
 const Container = styled.div`
   height: 100vh;
-  padding: 5%;
+  padding: ${indentSizelaptop}px;
   background: linear-gradient(
     to right,
     ${colors.backgroundOne} 0%,
-    ${colors.backgroundOne} 65%,
-    ${colors.backgroundTwo} 35%,
+    ${colors.backgroundOne} 60%,
+    ${colors.backgroundTwo} 40%,
     ${colors.backgroundTwo} 100%
   );
   display: flex;
@@ -25,6 +27,7 @@ function App() {
   return (
     <Container>
       <Hero />
+      <Navbar />
     </Container>
   );
 }
