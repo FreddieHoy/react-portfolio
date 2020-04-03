@@ -22,7 +22,7 @@
   "extends": ["airbnb"],
   "plugins": ["prettier"],
   "rules": {
-    "react/jsx-curly-brace-presence": ["<enabled>", "<string>"],
+    "react/jsx-curly-brace-presence": [1, "never"],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "comma-dangle": [
       "error",
@@ -34,7 +34,6 @@
         "functions": "never"
       }
     ],
-    "no-restricted-imports": ["error", "import1", "import2"],
     "import/prefer-default-export": "off",
     "react/prop-types": 0
   }
