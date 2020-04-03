@@ -15,8 +15,8 @@ const Container = styled.div`
   background: linear-gradient(
     to right,
     ${colors.backgroundOne} 0%,
-    ${colors.backgroundOne} 60%,
-    ${colors.backgroundTwo} 40%,
+    ${colors.backgroundOne} 65%,
+    ${colors.backgroundTwo} 35%,
     ${colors.backgroundTwo} 100%
   );
   display: flex;
