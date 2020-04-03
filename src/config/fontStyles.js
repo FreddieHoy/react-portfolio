@@ -1,3 +1,4 @@
+import React from 'react';
 import styled from 'styled-components';
 
 import { colors } from './colors';
@@ -22,3 +23,13 @@ export const NavWhite = styled.h2`
     cursor: pointer;
   }
 `;
+
+export const TitleTagWord = ({ color, text, endSpace }) => {
+  const TagWord = styled.div`
+    color: ${color};
+    font-family: 'Sen', sans-serif;
+    font-size: 44px;
+    padding-right: ${endSpace ? '12px' : '0'};
+  `;
+  return <TagWord>{text}</TagWord>;
+};

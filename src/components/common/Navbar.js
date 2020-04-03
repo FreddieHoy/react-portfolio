@@ -9,20 +9,28 @@ const Container = styled.div`
   position: fixed;
   right: 0;
   top: 0;
-  padding: ${indentSizelaptop}px;
-  background-colour: yellow;
+  height: 100vh;
+`;
+
+const SideBar = styled.div`
   border-left: 1px solid ${colors.borderWhite};
-  text-align: right;
-  height: 100%;
-  width: 25%;
+  position: fixed;
+  right: ${indentSizelaptop}px;
+  top: 0;
+  height: 100vh;
+  padding: ${indentSizelaptop}px 0;
+  padding-left: ${indentSizelaptop}px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  text-align: right;
 `;
 
 export const Navbar = () => (
   <Container>
-    <NavWhite>experience</NavWhite>
-    <NavWhite>about</NavWhite>
+    <SideBar>
+      <NavWhite>experience</NavWhite>
+      <NavWhite>about</NavWhite>
+    </SideBar>
   </Container>
 );

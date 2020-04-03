@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import './App.css';
 
 import { colors } from 'config/colors';
-import { Hero } from 'components/home/Hero';
+import { Home } from 'components/home/Home';
 import { Navbar } from 'components/common/Navbar';
 import { indentSizelaptop } from 'config/spacing';
 
@@ -26,7 +26,7 @@ const Container = styled.div`
 function App() {
   return (
     <Container>
-      <Hero />
+      <Home />
       <Navbar />
     </Container>
   );
