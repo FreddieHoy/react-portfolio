@@ -1,11 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
+import { withRouter } from 'react-router-dom';
 
-import { indentSizelaptop } from 'config/spacing';
-import { NavWhite } from 'config/fontStyles';
 import { colors } from 'config/colors';
+import { NavWhite, StyledLink } from 'config/fontStyles';
+import { indentSizelaptop } from 'config/spacing';
 
-const Container = styled.div`
+const NavContainer = styled.div`
   position: fixed;
   right: 0;
   top: 0;
@@ -26,11 +27,16 @@ const SideBar = styled.div`
   text-align: right;
 `;
 
-export const Navbar = () => (
-  <Container>
+const NavBar = () => (
+  <NavContainer>
     <SideBar>
-      <NavWhite>experience</NavWhite>
-      <NavWhite>about</NavWhite>
+      <StyledLink to="/experience">
+        <NavWhite>experience</NavWhite>
+      </StyledLink>
+      <NavWhite>about me</NavWhite>
+      <NavWhite>a fun game</NavWhite>
     </SideBar>
-  </Container>
+  </NavContainer>
 );
+
+export default withRouter(NavBar);

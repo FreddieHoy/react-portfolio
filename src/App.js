@@ -1,11 +1,13 @@
-import React from 'react';
-import styled from 'styled-components';
 import './App.css';
 
-import { colors } from 'config/colors';
+import { FixedElements } from 'components/common/FixedElements';
+import { Experience } from 'components/experience/experience';
 import { Home } from 'components/home/Home';
-import { Navbar } from 'components/common/Navbar';
+import { colors } from 'config/colors';
 import { indentSizelaptop } from 'config/spacing';
+import React from 'react';
+import { HashRouter, Route, Switch } from 'react-router-dom';
+import styled from 'styled-components';
 
 const Container = styled.div`
   height: 100vh;
@@ -23,13 +25,16 @@ const Container = styled.div`
   align-items: center;
 `;
 
-function App() {
-  return (
-    <Container>
-      <Home />
-      <Navbar />
-    </Container>
-  );
-}
+export const App = () => (
+  <Container>
+    <HashRouter>
+      <FixedElements />
+      <Switch>
+        <Route path="/home" component={Home} />
+        <Route path="/experience" component={Experience} />
+      </Switch>
+    </HashRouter>
+  </Container>
+);
 
 export default App;
