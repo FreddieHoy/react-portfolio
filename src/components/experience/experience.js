@@ -5,7 +5,7 @@ import { Experiences } from './experiences/Experiences';
 import { ExperienceTag } from './ExperienceTag';
 
 const Container = styled.div`
-  height: 85%;
+  height: 75%;
   width: 100%;
   display: flex;
   flex-direction: column;
