@@ -1,7 +1,7 @@
-import { colors } from 'config/colors';
 import React from 'react';
 import styled from 'styled-components';
 
+import { Experiences } from './experiences/Experiences';
 import { ExperienceTag } from './ExperienceTag';
 
 const Container = styled.div`
@@ -10,18 +10,6 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border-radius: 3px;
-  padding: 10px;
-`;
-
-const Experiences = styled.div`
-  height: 72%;
-  width: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: ${colors.borderWhite};
-  box-shadow: 0px 0px 5px 5px black;
   border-radius: 3px;
   padding: 10px;
 `;
