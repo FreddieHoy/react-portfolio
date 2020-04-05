@@ -25,6 +25,7 @@ export const ExperienceTag = () => (
         color={word.color}
         endSpace={word.endSpace}
         text={word.text}
+        key={word.text}
       />
     ))}
   </Container>
