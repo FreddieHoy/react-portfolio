@@ -1,13 +1,12 @@
+import { colors } from 'config/colors';
+import { TitleTagWord } from 'config/fontStyles';
 import React from 'react';
 import styled from 'styled-components';
-
-import { TitleTagWord } from 'config/fontStyles';
-import { colors } from 'config/colors';
 
 const constWords = [
   { text: 'I', color: colors.whiteText, endSpace: false },
   { text: "'", color: colors.blueText, endSpace: false },
-  { text: 'm', color: colors.whiteText, endSpace: true },
+  { text: 'm', color: colors.redText, endSpace: true },
   { text: 'a', color: colors.whiteText, endSpace: true },
   { text: 'software', color: colors.redText, endSpace: true },
   { text: 'engineer', color: colors.whiteText, endSpace: false },
@@ -16,6 +15,7 @@ const constWords = [
 
 const Container = styled.div`
   display: flex;
+  flex-wrap: wrap;
 `;
 
 export const TitleTag = () => (

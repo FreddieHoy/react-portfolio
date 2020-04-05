@@ -1,2 +1,2 @@
-export const indentSizelaptop = '60';
+export const indentSizeLaptop = '60';
 export const indentSizeMobile = '20';

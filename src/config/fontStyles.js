@@ -6,7 +6,7 @@ import { colors } from './colors';
 
 export const NameTitle = styled.h1`
   font-family: 'Courier New', Courier, monospace;
-  font-size: 24px;
+  font-size: 18px;
   font-weight: 100;
   letter-spacing: 10px;
   margin: 0;
@@ -15,17 +15,27 @@ export const NameTitle = styled.h1`
     color: ${colors.redText};
     cursor: pointer;
   }
+
+  @media (min-width: 641px) {
+    font-size: 24px;
+  }
 `;
 
 export const NavWhite = styled.h2`
   font-family: 'Sen', sans-serif;
   color: white;
-  font-size: 22px;
+  font-size: 16px;
   margin: 0;
   text-decoration: none;
+  padding-bottom: 4px;
   :hover {
     color: ${colors.redText};
     cursor: pointer;
+  }
+
+  @media (min-width: 641px) {
+    font-size: 22px;
+    padding-bottom: none;
   }
 `;
 
@@ -33,8 +43,12 @@ export const TitleTagWord = ({ color, text, endSpace }) => {
   const TagWord = styled.div`
     color: ${color};
     font-family: 'Sen', sans-serif;
-    font-size: 44px;
+    font-size: 40px;
     padding-right: ${endSpace ? '12px' : '0'};
+
+    @media (min-width: 641px) {
+      font-size: 44px;
+    }
   `;
   return <TagWord>{text}</TagWord>;
 };

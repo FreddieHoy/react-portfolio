@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { TitleTag } from '../common/TitleTag';
+import { TitleTag } from './TitleTag';
 
 const Container = styled.div`
-  width: 100%;
   height: 100%;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 `;
 
 export const Home = () => (

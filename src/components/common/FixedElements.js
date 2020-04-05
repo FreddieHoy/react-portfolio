@@ -1,5 +1,5 @@
 import { NameTitle, StyledLink } from 'config/fontStyles';
-import { indentSizelaptop } from 'config/spacing';
+import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -7,14 +7,19 @@ import NavBar from './NavBar';
 
 const TitleContainer = styled.div`
   position: fixed;
-  left: ${indentSizelaptop}px;
-  padding: ${indentSizelaptop}px 0;
+  left: ${indentSizeMobile}px;
+  padding: ${indentSizeMobile}px 0;
   top: 0;
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   text-align: left;
+
+  @media (min-width: 641px) {
+    left: ${indentSizeLaptop}px;
+    padding: ${indentSizeLaptop}px 0;
+  }
 `;
 
 export const FixedElements = () => (

@@ -1,17 +1,21 @@
 import './App.css';
 
 import { FixedElements } from 'components/common/FixedElements';
-import { Experience } from 'components/experience/experience';
+import { Experience } from 'components/experience/Experience';
 import { Home } from 'components/home/Home';
 import { colors } from 'config/colors';
-import { indentSizelaptop } from 'config/spacing';
+import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
 import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
   height: 100vh;
-  padding: ${indentSizelaptop}px;
+  padding: ${indentSizeMobile}px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background: linear-gradient(
     to right,
     ${colors.backgroundOne} 0%,
@@ -19,10 +23,17 @@ const Container = styled.div`
     ${colors.backgroundTwo} 35%,
     ${colors.backgroundTwo} 100%
   );
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
+  @media (min-width: 641px) {
+    padding: ${indentSizeLaptop}px;
+    background: linear-gradient(
+      to right,
+      ${colors.backgroundOne} 0%,
+      ${colors.backgroundOne} 65%,
+      ${colors.backgroundTwo} 35%,
+      ${colors.backgroundTwo} 100%
+    );
+  }
 `;
 
 export const App = () => (

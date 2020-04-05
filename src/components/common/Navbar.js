@@ -1,30 +1,42 @@
-import React from 'react';
-import styled from 'styled-components';
-import { withRouter } from 'react-router-dom';
-
 import { colors } from 'config/colors';
 import { NavWhite, StyledLink } from 'config/fontStyles';
-import { indentSizelaptop } from 'config/spacing';
+import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
+import React from 'react';
+import { withRouter } from 'react-router-dom';
+import styled from 'styled-components';
 
 const NavContainer = styled.div`
   position: fixed;
   right: 0;
   top: 0;
-  height: 100vh;
+  height: none;
+
+  @media (min-width: 641px) {
+    height: 100vh;
+  }
 `;
 
 const SideBar = styled.div`
-  border-left: 1px solid ${colors.borderWhite};
+  border-left: none;
   position: fixed;
-  right: ${indentSizelaptop}px;
   top: 0;
-  height: 100vh;
-  padding: ${indentSizelaptop}px 0;
-  padding-left: ${indentSizelaptop}px;
+  height: none;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
   text-align: right;
+  right: ${indentSizeMobile}px;
+  padding: ${indentSizeMobile}px 0;
+  padding-left: ${indentSizeMobile}px;
+
+  @media (min-width: 641px) {
+    right: ${indentSizeLaptop}px;
+    padding: ${indentSizeLaptop}px 0;
+    padding-left: ${indentSizeLaptop}px;
+    border-left: 1px solid ${colors.borderWhite};
+    justify-content: space-between;
+    height: 100vh;
+  }
 `;
 
 const NavBar = () => (
@@ -33,8 +45,8 @@ const NavBar = () => (
       <StyledLink to="/experience">
         <NavWhite>experience</NavWhite>
       </StyledLink>
-      <NavWhite>about me</NavWhite>
-      <NavWhite>a fun game</NavWhite>
+      <NavWhite>about</NavWhite>
+      <NavWhite>fun game</NavWhite>
     </SideBar>
   </NavContainer>
 );
