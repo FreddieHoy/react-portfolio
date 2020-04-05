@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const constWords = [
   { text: 'this', color: colors.whiteText, endSpace: true },
-  { text: 'is', color: colors.blueText, endSpace: true },
+  { text: 'is', color: colors.whiteText, endSpace: true },
   { text: 'my', color: colors.whiteText, endSpace: true },
   { text: 'experience', color: colors.redText, endSpace: false },
   { text: '.', color: colors.blueText, endSpace: false }

@@ -12,6 +12,9 @@ const Container = styled.div`
   align-items: center;
   border-radius: 3px;
   padding: 10px;
+  @media (min-width: 641px) {
+    width: 60%;
+  }
 `;
 
 export const Experience = () => (
