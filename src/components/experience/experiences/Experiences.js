@@ -21,6 +21,7 @@ export const Experiences = () => (
       height={70}
       width={70}
       backgroundColor="white"
+      url="lyvly"
     />
     <ExperienceItem
       src={GeneralAssemblyLogo}
@@ -28,6 +29,7 @@ export const Experiences = () => (
       height={28.75}
       width={260}
       backgroundColor="black"
+      url="generalassembly"
     />
   </Container>
 );

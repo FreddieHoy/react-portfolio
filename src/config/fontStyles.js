@@ -1,5 +1,4 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { colors } from './colors';
@@ -54,10 +53,6 @@ export const TitleTagWord = ({ color, text, endSpace }) => {
   `;
   return <TagWord>{text}</TagWord>;
 };
-
-export const StyledLink = styled(Link)`
-  text-decoration: none;
-`;
 
 export const StyledAnchor = styled.a`
   text-decoration: none;

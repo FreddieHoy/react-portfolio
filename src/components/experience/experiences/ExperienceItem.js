@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 export const ExperienceItem = ({
@@ -6,9 +7,11 @@ export const ExperienceItem = ({
   alt,
   width,
   height,
-  backgroundColor
+  backgroundColor,
+  url
 }) => {
-  const Container = styled.div`
+  const ContainerLink = styled(Link)`
+    text-decoration: none;
     background-color: ${backgroundColor};
     width: 100%;
     height: 50%;
@@ -28,8 +31,8 @@ export const ExperienceItem = ({
   `;
 
   return (
-    <Container>
+    <ContainerLink to={`experience/${url}`}>
       <img src={src} alt={alt} width={width} height={height} />
-    </Container>
+    </ContainerLink>
   );
 };

@@ -1,6 +1,7 @@
-import { NameTitle, StyledLink } from 'config/fontStyles';
+import { NameTitle } from 'config/fontStyles';
 import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { ContactLinks } from './ContactLinks';
@@ -21,6 +22,10 @@ const TitleContainer = styled.div`
     left: ${indentSizeLaptop}px;
     padding: ${indentSizeLaptop}px 0;
   }
+`;
+
+const StyledLink = styled(Link)`
+  text-decoration: none;
 `;
 
 export const FixedElements = () => (
