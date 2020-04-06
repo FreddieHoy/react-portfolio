@@ -3,6 +3,7 @@ import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
+import { ContactLinks } from './ContactLinks';
 import NavBar from './NavBar';
 
 const TitleContainer = styled.div`
@@ -26,11 +27,14 @@ export const FixedElements = () => (
   <div>
     <TitleContainer>
       <StyledLink to="/home">
-        <NameTitle>FREDDIE</NameTitle>
-        <NameTitle>HOY</NameTitle>
+        <NameTitle>
+          FREDDIE
+          <br />
+          HOY
+        </NameTitle>
       </StyledLink>
       <div>
-        <a href="www.google.com">EMAIL ME</a>
+        <ContactLinks />
       </div>
     </TitleContainer>
     <NavBar />

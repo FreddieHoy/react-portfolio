@@ -11,11 +11,11 @@ export const ExperienceItem = ({
   const Container = styled.div`
     background-color: ${backgroundColor};
     width: 100%;
-    height: 200px;
+    height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 2px;
+    border-radius: 1px;
     box-shadow: 0 0 4px 1px black;
     margin: 5px;
     :hover {
@@ -23,7 +23,7 @@ export const ExperienceItem = ({
       cursor: pointer;
     }
     @media (min-width: 641px) {
-      width: 80%;
+      max-height: 200px;
     }
   `;
 
