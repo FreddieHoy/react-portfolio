@@ -1,5 +1,5 @@
 import { colors } from 'config/colors';
-import { NavWhite, StyledLink } from 'config/fontStyles';
+import { NavWhite, StyledAnchor, StyledLink } from 'config/fontStyles';
 import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
 import React from 'react';
 import { withRouter } from 'react-router-dom';
@@ -46,7 +46,13 @@ const NavBar = () => (
         <NavWhite>experience</NavWhite>
       </StyledLink>
       <NavWhite>about</NavWhite>
-      <NavWhite>fun game</NavWhite>
+      <StyledAnchor
+        href="https://freddiehoy.github.io/Unbeatable-TicTacToe/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <NavWhite>fun game</NavWhite>
+      </StyledAnchor>
     </SideBar>
   </NavContainer>
 );

@@ -8,7 +8,7 @@ import styled from 'styled-components';
 const ContactButton = styled.img`
   transition: background-color 0.5s ease;
   :hover {
-    background-color: ${colors.redText};
+    background-color: ${colors.blueText};
     cursor: pointer;
   }
 `;

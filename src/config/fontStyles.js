@@ -11,6 +11,7 @@ export const NameTitle = styled.h1`
   letter-spacing: 10px;
   margin: 0;
   color: ${colors.whiteText};
+  transition: color 0.2s ease;
   :hover {
     color: ${colors.redText};
     cursor: pointer;
@@ -28,6 +29,7 @@ export const NavWhite = styled.h2`
   margin: 0;
   text-decoration: none;
   padding-bottom: 4px;
+  transition: color 0.2s ease;
   :hover {
     color: ${colors.redText};
     cursor: pointer;
@@ -54,5 +56,9 @@ export const TitleTagWord = ({ color, text, endSpace }) => {
 };
 
 export const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
+export const StyledAnchor = styled.a`
   text-decoration: none;
 `;

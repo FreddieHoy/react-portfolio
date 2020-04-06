@@ -16,7 +16,7 @@ export const ExperienceItem = ({
     justify-content: center;
     align-items: center;
     border-radius: 1px;
-    box-shadow: 0 0 4px 1px black;
+    box-shadow: 0 0 1px 1px black;
     margin: 5px;
     :hover {
       color: red;

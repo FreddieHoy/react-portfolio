@@ -26,13 +26,6 @@ const Container = styled.div`
 
   @media (min-width: 641px) {
     padding: ${indentSizeLaptop}px;
-    background: linear-gradient(
-      to right,
-      ${colors.backgroundOne} 0%,
-      ${colors.backgroundOne} 65%,
-      ${colors.backgroundTwo} 35%,
-      ${colors.backgroundTwo} 100%
-    );
   }
 `;
 
