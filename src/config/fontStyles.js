@@ -57,3 +57,22 @@ export const TitleTagWord = ({ color, text, endSpace }) => {
 export const StyledAnchor = styled.a`
   text-decoration: none;
 `;
+
+export const HeadingOne = styled.h3`
+  color: ${colors.whiteText};
+  font-family: 'Sen', sans-serif;
+  font-size: 24px;
+`;
+
+export const RedText = styled.span`
+  color: ${colors.redText};
+`;
+
+export const BlueText = styled.span`
+  color: ${colors.blueText};
+`;
+
+export const Paragraph = styled.p`
+  color: ${colors.whiteText};
+  font-family: 'Sen', sans-serif;
+`;
