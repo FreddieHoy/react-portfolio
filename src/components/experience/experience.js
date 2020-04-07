@@ -9,11 +9,10 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  border-radius: 3px;
   padding: 10px;
+
   @media (min-width: 641px) {
-    width: 60%;
+    width: 48%;
   }
 `;
 

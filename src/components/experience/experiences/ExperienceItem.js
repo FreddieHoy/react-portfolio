@@ -13,14 +13,14 @@ export const ExperienceItem = ({
   const ContainerLink = styled(Link)`
     text-decoration: none;
     background-color: ${backgroundColor};
+    box-shadow: 0 0 1px 1px black;
     width: 100%;
     height: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 1px;
-    box-shadow: 0 0 1px 1px black;
-    margin: 5px;
+    margin: 10px;
     :hover {
       color: red;
       cursor: pointer;

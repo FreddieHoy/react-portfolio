@@ -27,7 +27,15 @@ const Container = styled.div`
   );
 
   @media (min-width: 641px) {
+    align-items: flex-start;
     padding: ${indentSizeLaptop}px;
+    background: linear-gradient(
+      to right,
+      ${colors.backgroundOne} 0%,
+      ${colors.backgroundOne} 50%,
+      ${colors.backgroundTwo} 50%,
+      ${colors.backgroundTwo} 100%
+    );
   }
 `;
 
