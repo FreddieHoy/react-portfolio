@@ -10,7 +10,7 @@ export const NameTitle = styled.h1`
   letter-spacing: 10px;
   margin: 0;
   color: ${colors.whiteText};
-  transition: color 0.2s ease;
+  transition: color 0.3s ease;
   :hover {
     color: ${colors.redText};
     cursor: pointer;
@@ -61,7 +61,8 @@ export const StyledAnchor = styled.a`
 export const HeadingOne = styled.h3`
   color: ${colors.whiteText};
   font-family: 'Sen', sans-serif;
-  font-size: 24px;
+  font-size: 34px;
+  margin: 10px 0;
 `;
 
 export const RedText = styled.span`
@@ -75,4 +76,5 @@ export const BlueText = styled.span`
 export const Paragraph = styled.p`
   color: ${colors.whiteText};
   font-family: 'Sen', sans-serif;
+  font-weight: 400;
 `;
