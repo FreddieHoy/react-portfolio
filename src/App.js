@@ -1,5 +1,6 @@
 import './App.css';
 
+import { About } from 'components/about/About';
 import { ContactLinks } from 'components/common/ContactLinks';
 import { Heading } from 'components/common/Heading';
 import NavBar from 'components/common/NavBar';
@@ -49,6 +50,7 @@ export const App = () => (
         <Route path="/experience/lyvly" component={LyvlyExp} />
         <Route path="/experience/generalassembly" component={GAExp} />
         <Route path="/experience" component={Experience} />
+        <Route path="/about" component={About} />
         <Route path="/home" component={Home} />
       </Switch>
     </HashRouter>

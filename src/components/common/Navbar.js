@@ -34,7 +34,9 @@ const NavBar = () => (
     <StyledLink to="/experience">
       <NavWhite>experience</NavWhite>
     </StyledLink>
-    <NavWhite>about</NavWhite>
+    <StyledLink to="/about">
+      <NavWhite>about</NavWhite>
+    </StyledLink>
     <StyledAnchor
       href="https://freddiehoy.github.io/Unbeatable-TicTacToe/"
       target="_blank"
