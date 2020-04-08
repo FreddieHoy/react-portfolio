@@ -6,6 +6,7 @@ import LyvlyLogo from 'static/LyvlyLogo.svg';
 import styled from 'styled-components';
 
 import { ExperienceContent } from './LyvlyExpContent';
+import { LyvlyTechSheet } from './LyvlyTechSheet';
 
 const Container = styled.div`
   height: 100%;
@@ -42,6 +43,15 @@ const LogoBackground = styled.a`
   }
 `;
 
+const ScrollContainer = styled.div`
+  overflow: scroll;
+  height: 75%;
+  padding: 5px;
+  @media (min-width: 641px) {
+    width: 60%;
+  }
+`;
+
 export const LyvlyExp = () => (
   <Container>
     <HeadingConatiner>
@@ -56,6 +66,9 @@ export const LyvlyExp = () => (
         <img src={LyvlyLogo} alt="Lyvly logo" width={70} height={70} />
       </LogoBackground>
     </HeadingConatiner>
-    <ExperienceContent />
+    <ScrollContainer>
+      <ExperienceContent />
+      <LyvlyTechSheet />
+    </ScrollContainer>
   </Container>
 );

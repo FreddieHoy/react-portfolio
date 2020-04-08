@@ -5,31 +5,20 @@ import {
   StyledAnchor
 } from 'config/fontStyles';
 import React from 'react';
-// import LyvlyHomePage from 'static/LyvlyHomePage.png';
 import styled from 'styled-components';
 
 import { lyvlyText } from './LyvlyText';
 
-const Container = styled.div`
-  overflow: scroll;
-  height: 75%;
-
-  @media (min-width: 641px) {
-    width: 60%;
-  }
+const ParagraphMarginless = styled(Paragraph)`
+  margin: 0;
 `;
 
-// const WebsiteImage = styled.img`
-//   width: 100%;
-//   height: auto;
-// `;
-
 export const ExperienceContent = () => (
-  <Container>
-    <Paragraph>
+  <div>
+    <ParagraphMarginless>
       <RedText>{lyvlyText.info.role}</RedText>
       {lyvlyText.info.title}
-    </Paragraph>
+    </ParagraphMarginless>
     <Paragraph>
       <RedText>{lyvlyText.info.dates}</RedText>
       {lyvlyText.info.december}
@@ -60,7 +49,5 @@ export const ExperienceContent = () => (
       <RedText>{lyvlyText.role.methodology.title}</RedText>
       {lyvlyText.role.methodology.learn}
     </Paragraph>
-  </Container>
+  </div>
 );
-
-// <WebsiteImage src={LyvlyHomePage} alt="Lyvly home page" />
