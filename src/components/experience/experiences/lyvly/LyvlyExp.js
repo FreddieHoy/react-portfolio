@@ -20,7 +20,7 @@ const Container = styled.div`
 const HeadingConatiner = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-bottom: 10px;
+  padding-top: 40px;
 `;
 
 const TitleContainer = styled.div`
@@ -41,7 +41,7 @@ const LogoBackground = styled.a`
   }
 `;
 
-const ScrollContainer = styled.div`
+const ContentContainer = styled.div`
   @media (min-width: 641px) {
     width: 60%;
   }
@@ -61,9 +61,9 @@ export const LyvlyExp = () => (
         <img src={LyvlyLogo} alt="Lyvly logo" width={70} height={70} />
       </LogoBackground>
     </HeadingConatiner>
-    <ScrollContainer>
+    <ContentContainer>
       <ExperienceContent />
       <LyvlyTechSheet />
-    </ScrollContainer>
+    </ContentContainer>
   </Container>
 );
