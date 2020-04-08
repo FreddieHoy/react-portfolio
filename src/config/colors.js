@@ -4,5 +4,6 @@ export const colors = {
   whiteText: '#e7e8ea',
   redText: '#ff3e55',
   blueText: '#003a84',
+  lightBlueText: '#0098FF',
   borderWhite: '#21395b'
 };

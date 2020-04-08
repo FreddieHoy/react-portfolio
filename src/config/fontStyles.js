@@ -45,6 +45,7 @@ export const TitleTagWord = ({ color, text, endSpace }) => {
     color: ${color};
     font-family: 'Sen', sans-serif;
     font-size: 40px;
+    font-weight: 700;
     padding-right: ${endSpace ? '12px' : '0'};
 
     @media (min-width: 641px) {
@@ -56,6 +57,11 @@ export const TitleTagWord = ({ color, text, endSpace }) => {
 
 export const StyledAnchor = styled.a`
   text-decoration: none;
+  color: ${colors.lightBlueText};
+  :hover {
+    color: ${colors.blueText};
+    cursor: pointer;
+  }
 `;
 
 export const HeadingOne = styled.h3`
@@ -65,12 +71,23 @@ export const HeadingOne = styled.h3`
   margin: 10px 0;
 `;
 
+export const HeadingTwo = styled.h3`
+  color: ${colors.whiteText};
+  font-family: 'Sen', sans-serif;
+  font-size: 22px;
+  margin: 10px 0;
+`;
+
 export const RedText = styled.span`
   color: ${colors.redText};
 `;
 
 export const BlueText = styled.span`
   color: ${colors.blueText};
+`;
+
+export const LightBlueText = styled.span`
+  color: ${colors.lightBlueText};
 `;
 
 export const Paragraph = styled.p`
