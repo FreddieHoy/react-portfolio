@@ -3,7 +3,7 @@ import './App.css';
 import { FixedElements } from 'components/common/FixedElements';
 import { Experience } from 'components/experience/Experience';
 import { GAExp } from 'components/experience/experiences/GAExp';
-import { LyvlyExp } from 'components/experience/experiences/LyvlyExp';
+import { LyvlyExp } from 'components/experience/experiences/lyvly/LyvlyExp';
 import { Home } from 'components/home/Home';
 import { colors } from 'config/colors';
 import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
