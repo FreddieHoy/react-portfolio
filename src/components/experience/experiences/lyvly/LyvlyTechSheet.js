@@ -3,7 +3,7 @@ import { HeadingTwo, Paragraph, RedText } from 'config/fontStyles';
 import React from 'react';
 import styled from 'styled-components';
 
-const TechItem = styled.p`
+const TechItem = styled(Paragraph)`
   margin: 0;
   color: ${colors.whiteText};
   font-size: 18px;
@@ -14,7 +14,7 @@ export const LyvlyTechSheet = () => (
     <HeadingTwo>
       <RedText>Tech sheet</RedText>
     </HeadingTwo>
-    <Paragraph>
+    <div>
       <TechItem>TypeScript / JavaScript</TechItem>
       <TechItem>React</TechItem>
       <TechItem>Jest</TechItem>
@@ -29,6 +29,6 @@ export const LyvlyTechSheet = () => (
       <TechItem>SQL databases</TechItem>
       <TechItem>Agile methodology</TechItem>
       <TechItem>npm / yarn</TechItem>
-    </Paragraph>
+    </div>
   </div>
 );

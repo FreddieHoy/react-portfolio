@@ -1,20 +1,31 @@
 import { colors } from 'config/colors';
+import { indentSizeMobile } from 'config/spacing';
 import React from 'react';
 import EmailIcon from 'static/EmailIcon.svg';
 import GitHubIconlIcon from 'static/GitHubIcon.svg';
 import LinkedInIcon from 'static/LinkedinIcon.svg';
 import styled from 'styled-components';
 
+const Container = styled.div`
+  position: fixed;
+  left: ${indentSizeMobile}px;
+  bottom: ${indentSizeMobile}px;
+  background-color: ${colors.blueText};
+  padding: 5px 5px 0 5px;
+  border-radius: 4px;
+`;
+
 const ContactButton = styled.img`
   transition: background-color 0.5s ease;
+  padding: 4px;
   :hover {
-    background-color: ${colors.blueText};
+    background-color: ${colors.lightBlueText};
     cursor: pointer;
   }
 `;
 
 export const ContactLinks = () => (
-  <div>
+  <Container>
     <a
       href="mailto: freddiehoy0@gmail.com"
       target="_blank"
@@ -47,5 +58,5 @@ export const ContactLinks = () => (
         width={40}
       />
     </a>
-  </div>
+  </Container>
 );

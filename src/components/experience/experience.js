@@ -1,3 +1,4 @@
+import { indentSizeMobile, mobileSpaceForHeading } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -5,11 +6,12 @@ import { Experiences } from './experiences/Experiences';
 import { ExperienceTag } from './ExperienceTag';
 
 const Container = styled.div`
-  height: 75%;
+  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 10px;
+  padding: 10% ${indentSizeMobile}px ${mobileSpaceForHeading}px
+    ${indentSizeMobile}px;
 
   @media (min-width: 641px) {
     width: 48%;

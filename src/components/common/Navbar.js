@@ -6,32 +6,14 @@ import { Link, withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 
 const NavContainer = styled.div`
-  position: fixed;
-  right: 0;
-  top: 0;
-  height: none;
-
-  @media (min-width: 641px) {
-    height: 100vh;
-  }
-`;
-
-const StyledLink = styled(Link)`
-  text-decoration: none;
-`;
-
-const SideBar = styled.div`
   border-left: none;
-  position: fixed;
-  top: 0;
   height: none;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   text-align: right;
-  right: ${indentSizeMobile}px;
-  padding: ${indentSizeMobile}px 0;
-  padding-left: ${indentSizeMobile}px;
+  padding: ${indentSizeMobile}px;
+  width: 50%;
 
   @media (min-width: 641px) {
     right: ${indentSizeLaptop}px;
@@ -43,21 +25,23 @@ const SideBar = styled.div`
   }
 `;
 
+const StyledLink = styled(Link)`
+  text-decoration: none;
+`;
+
 const NavBar = () => (
   <NavContainer>
-    <SideBar>
-      <StyledLink to="/experience">
-        <NavWhite>experience</NavWhite>
-      </StyledLink>
-      <NavWhite>about</NavWhite>
-      <StyledAnchor
-        href="https://freddiehoy.github.io/Unbeatable-TicTacToe/"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        <NavWhite>fun game</NavWhite>
-      </StyledAnchor>
-    </SideBar>
+    <StyledLink to="/experience">
+      <NavWhite>experience</NavWhite>
+    </StyledLink>
+    <NavWhite>about</NavWhite>
+    <StyledAnchor
+      href="https://freddiehoy.github.io/Unbeatable-TicTacToe/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <NavWhite>fun game</NavWhite>
+    </StyledAnchor>
   </NavContainer>
 );
 

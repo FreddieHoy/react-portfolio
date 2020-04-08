@@ -1,6 +1,6 @@
 import { colors } from 'config/colors';
 import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
-import { mobileSpaceForHeading } from 'config/spacing';
+import { indentSizeMobile } from 'config/spacing';
 import React from 'react';
 import LyvlyLogo from 'static/LyvlyLogo.svg';
 import styled from 'styled-components';
@@ -9,10 +9,8 @@ import { ExperienceContent } from './LyvlyExpContent';
 import { LyvlyTechSheet } from './LyvlyTechSheet';
 
 const Container = styled.div`
-  height: 100%;
-  width: 100%;
-  overflow: scroll;
-  margin-top: ${mobileSpaceForHeading}px;
+  padding: ${indentSizeMobile}px;
+  padding-bottom: 100px;
 
   @media (min-width: 641px) {
     width: 80%;
@@ -44,9 +42,6 @@ const LogoBackground = styled.a`
 `;
 
 const ScrollContainer = styled.div`
-  overflow: scroll;
-  height: 75%;
-  padding: 5px;
   @media (min-width: 641px) {
     width: 60%;
   }

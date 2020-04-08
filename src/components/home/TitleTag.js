@@ -16,6 +16,7 @@ const constWords = [
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 20%;
 `;
 
 export const TitleTag = () => (

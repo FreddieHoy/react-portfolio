@@ -1,23 +1,18 @@
 import './App.css';
 
-import { FixedElements } from 'components/common/FixedElements';
+import { ContactLinks } from 'components/common/ContactLinks';
+import { Heading } from 'components/common/Heading';
+import NavBar from 'components/common/NavBar';
 import { Experience } from 'components/experience/Experience';
 import { GAExp } from 'components/experience/experiences/GAExp';
 import { LyvlyExp } from 'components/experience/experiences/lyvly/LyvlyExp';
 import { Home } from 'components/home/Home';
 import { colors } from 'config/colors';
-import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
 import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
 
 const Container = styled.div`
-  height: 100vh;
-  padding: ${indentSizeMobile}px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
   background: linear-gradient(
     to right,
     ${colors.backgroundOne} 0%,
@@ -28,7 +23,6 @@ const Container = styled.div`
 
   @media (min-width: 641px) {
     align-items: flex-start;
-    padding: ${indentSizeLaptop}px;
     background: linear-gradient(
       to right,
       ${colors.backgroundOne} 0%,
@@ -39,10 +33,18 @@ const Container = styled.div`
   }
 `;
 
+const HeadingContianer = styled.div`
+  display: flex;
+  height: 10vh;
+`;
+
 export const App = () => (
   <Container>
     <HashRouter>
-      <FixedElements />
+      <HeadingContianer>
+        <Heading />
+        <NavBar />
+      </HeadingContianer>
       <Switch>
         <Route path="/experience/lyvly" component={LyvlyExp} />
         <Route path="/experience/generalassembly" component={GAExp} />
@@ -50,6 +52,7 @@ export const App = () => (
         <Route path="/home" component={Home} />
       </Switch>
     </HashRouter>
+    <ContactLinks />
   </Container>
 );
 
