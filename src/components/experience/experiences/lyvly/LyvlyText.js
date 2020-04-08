@@ -16,7 +16,7 @@ export const lyvlyText = {
     front: {
       frontEnd: 'Front-End ',
       sig: '- I spent a significant time working on',
-      website: ' lyvly website ',
+      website: ' Lyvly website ',
       coverage: 'remaking many of the pages and adding complete test coverage.'
     },
     back: {
