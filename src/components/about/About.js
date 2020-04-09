@@ -1,6 +1,6 @@
 import { indentSizeMobile } from 'config/spacing';
 import React from 'react';
-import Freddie from 'static/Freddie.jpg';
+import HeadShot from 'static/HeadShot.jpg';
 import styled from 'styled-components';
 
 import { AboutContentInterests, AboutContentMain } from './AboutContent';
@@ -20,7 +20,7 @@ export const About = () => (
   <Container>
     <AboutTag />
     <AboutContentMain />
-    <Image src={Freddie} alt="Freddie Hoy" />
+    <Image src={HeadShot} alt="Head Shot of Freddie Hoy" />
     <AboutContentInterests />
   </Container>
 );
