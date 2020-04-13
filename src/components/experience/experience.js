@@ -16,13 +16,13 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 10% ${indentSizeMobile}px ${mobileSpaceForHeading}px
+  padding: 0 ${indentSizeMobile}px ${mobileSpaceForHeading}px
     ${indentSizeMobile}px;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    padding: 5% ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
+    padding: 10px ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
     flex-wrap: wrap;
-    height: 90vh;
+    height: 85vh;
   }
 `;
 

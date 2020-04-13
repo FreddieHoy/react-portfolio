@@ -16,14 +16,14 @@ import {
 import { AboutTag } from './AboutTag';
 
 const Container = styled.div`
-  padding: 30px ${indentSizeMobile}px 60px ${indentSizeMobile}px;
+  padding: 0 ${indentSizeMobile}px 100px ${indentSizeMobile}px;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    padding: 30px ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
+    padding: 10px ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 90vh;
+    height: 85vh;
     align-content: space-between;
   }
 `;

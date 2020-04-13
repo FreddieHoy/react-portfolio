@@ -38,7 +38,7 @@ const Container = styled.div`
 const HeadingContianer = styled.div`
   display: flex;
   justify-content: space-between;
-  height: 10vh;
+  height: 15vh;
 `;
 
 export const App = () => (

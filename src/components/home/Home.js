@@ -10,7 +10,7 @@ import { TitleTag } from './TitleTag';
 
 const Container = styled.div`
   padding: ${indentSizeMobile}px;
-  height: 90vh;
+  height: 85vh;
   width: 100%;
   display: flex;
   align-items: center;
