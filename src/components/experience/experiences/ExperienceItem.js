@@ -21,13 +21,16 @@ export const ExperienceItem = ({
     justify-content: center;
     align-items: center;
     border-radius: 1px;
-    margin: 10px;
+    margin: 10px 0;
     :hover {
-      color: red;
       cursor: pointer;
     }
     @media (min-width: ${mobileBreakPoint}px) {
-      max-height: 200px;
+      width: 60%;
+      transition: width 0.4s ease;
+      :hover {
+        width: 100%;
+      }
     }
   `;
 
