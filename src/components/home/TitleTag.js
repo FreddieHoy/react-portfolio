@@ -17,6 +17,9 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 20%;
+  @media (min-width: 641px) {
+    padding-bottom: 10%;
+  }
 `;
 
 export const TitleTag = () => (

@@ -13,15 +13,14 @@ const NavContainer = styled.div`
   justify-content: flex-start;
   text-align: right;
   padding: ${indentSizeMobile}px;
-  width: 50%;
 
   @media (min-width: 641px) {
-    right: ${indentSizeLaptop}px;
-    padding: ${indentSizeLaptop}px 0;
-    padding-left: ${indentSizeLaptop}px;
-    border-left: 1px solid ${colors.borderWhite};
-    justify-content: space-between;
+    positon: fixed;
+    padding: ${indentSizeLaptop}px;
+    padding-left: 40px;
     height: 100vh;
+    justify-content: space-between;
+    border-left: 1px solid ${colors.borderWhite};
   }
 `;
 

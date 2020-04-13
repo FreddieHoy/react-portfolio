@@ -1,5 +1,5 @@
 import { NameTitle } from 'config/fontStyles';
-import { indentSizeMobile } from 'config/spacing';
+import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -9,6 +9,10 @@ const TitleContainer = styled.div`
   width: 50%;
   display: flex;
   justify-content: space-between;
+
+  @media (min-width: 641px) {
+    padding: ${indentSizeLaptop}px;
+  }
 `;
 
 const StyledLink = styled(Link)`

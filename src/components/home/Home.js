@@ -1,4 +1,4 @@
-import { indentSizeMobile } from 'config/spacing';
+import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -11,6 +11,10 @@ const Container = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-start;
+
+  @media (min-width: 641px) {
+    padding: ${indentSizeLaptop}px;
+  }
 `;
 
 export const Home = () => (

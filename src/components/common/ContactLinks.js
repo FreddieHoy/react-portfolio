@@ -1,5 +1,5 @@
 import { colors } from 'config/colors';
-import { indentSizeMobile } from 'config/spacing';
+import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
 import React from 'react';
 import EmailIcon from 'static/EmailIcon.svg';
 import GitHubIconlIcon from 'static/GitHubIcon.svg';
@@ -14,6 +14,10 @@ const Container = styled.div`
   padding: 5px 5px 0 5px;
   border: 1px solid black;
   border-radius: 4px;
+  @media (min-width: 641px) {
+    left: ${indentSizeLaptop}px;
+    bottom: ${indentSizeLaptop}px;
+  }
 `;
 
 const ContactButton = styled.img`

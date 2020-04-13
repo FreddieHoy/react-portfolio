@@ -27,8 +27,8 @@ const Container = styled.div`
     background: linear-gradient(
       to right,
       ${colors.backgroundOne} 0%,
-      ${colors.backgroundOne} 50%,
-      ${colors.backgroundTwo} 50%,
+      ${colors.backgroundOne} 55%,
+      ${colors.backgroundTwo} 45%,
       ${colors.backgroundTwo} 100%
     );
   }
@@ -36,6 +36,7 @@ const Container = styled.div`
 
 const HeadingContianer = styled.div`
   display: flex;
+  justify-content: space-between;
   height: 10vh;
 `;
 
