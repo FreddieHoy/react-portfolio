@@ -9,6 +9,7 @@ import { GAExp } from 'components/experience/experiences/generalAssembly/GAExp';
 import { LyvlyExp } from 'components/experience/experiences/lyvly/LyvlyExp';
 import { Home } from 'components/home/Home';
 import { colors } from 'config/colors';
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import styled from 'styled-components';
@@ -22,7 +23,7 @@ const Container = styled.div`
     ${colors.backgroundTwo} 100%
   );
 
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     align-items: flex-start;
     background: linear-gradient(
       to right,

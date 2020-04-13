@@ -1,3 +1,4 @@
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -16,7 +17,7 @@ export const NameTitle = styled.h1`
     cursor: pointer;
   }
 
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     font-size: 24px;
   }
 `;
@@ -34,7 +35,7 @@ export const NavWhite = styled.h2`
     cursor: pointer;
   }
 
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     font-size: 22px;
     padding-bottom: none;
   }
@@ -48,7 +49,7 @@ export const TitleTagWord = ({ color, text, endSpace }) => {
     font-weight: 700;
     padding-right: ${endSpace ? '12px' : '0'};
 
-    @media (min-width: 641px) {
+    @media (min-width: ${mobileBreakPoint}px) {
       font-size: 44px;
     }
   `;

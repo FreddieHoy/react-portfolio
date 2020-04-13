@@ -1,5 +1,6 @@
 import { colors } from 'config/colors';
 import { TitleTagWord } from 'config/fontStyles';
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -15,7 +16,7 @@ const Container = styled.div`
   margin: 20px 0;
   justify-content: flex-start;
 
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     width: 50%;
     margin: 30px 0;
   }

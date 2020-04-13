@@ -1,5 +1,6 @@
 import { colors } from 'config/colors';
 import { TitleTagWord } from 'config/fontStyles';
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -17,7 +18,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   padding-bottom: 20%;
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     padding-bottom: 10%;
   }
 `;

@@ -1,3 +1,4 @@
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -25,7 +26,7 @@ export const ExperienceItem = ({
       color: red;
       cursor: pointer;
     }
-    @media (min-width: 641px) {
+    @media (min-width: ${mobileBreakPoint}px) {
       max-height: 200px;
     }
   `;

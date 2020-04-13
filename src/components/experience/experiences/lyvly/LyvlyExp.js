@@ -12,7 +12,7 @@ const Container = styled.div`
   padding: 0 ${indentSizeMobile}px;
   padding-bottom: 100px;
 
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     width: 80%;
   }
 `;
@@ -38,7 +38,7 @@ const LogoBackground = styled.a`
 `;
 
 const ContentContainer = styled.div`
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     width: 60%;
   }
 `;

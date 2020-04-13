@@ -1,6 +1,6 @@
 import { colors } from 'config/colors';
 import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
-import { indentSizeMobile } from 'config/spacing';
+import { indentSizeMobile, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import GeneralAssemblyLogoNoWords from 'static/GeneralAssemblyLogoNoWords.png';
 import styled from 'styled-components';
@@ -12,7 +12,7 @@ const Container = styled.div`
   padding: 20px ${indentSizeMobile}px;
   padding-bottom: 100px;
 
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     width: 80%;
   }
 `;

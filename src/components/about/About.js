@@ -1,7 +1,8 @@
 import {
   indentSizeLaptop,
   indentSizeMobile,
-  laptopSpaceForNavbar
+  laptopSpaceForNavbar,
+  mobileBreakPoint
 } from 'config/spacing';
 import React from 'react';
 import HeadShot from 'static/HeadShot.jpg';
@@ -17,7 +18,7 @@ import { AboutTag } from './AboutTag';
 const Container = styled.div`
   padding: 30px ${indentSizeMobile}px 60px ${indentSizeMobile}px;
 
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     padding: 30px ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
     display: flex;
     flex-wrap: wrap;
@@ -31,7 +32,7 @@ const Image = styled.img`
   width: 100%;
   height: auto;
   padding: 26px 0;
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     width: 250px;
     order: 3;
   }

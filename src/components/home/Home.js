@@ -1,4 +1,8 @@
-import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
+import {
+  indentSizeLaptop,
+  indentSizeMobile,
+  mobileBreakPoint
+} from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -12,7 +16,7 @@ const Container = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     padding: ${indentSizeLaptop}px;
   }
 `;

@@ -1,6 +1,10 @@
 import { colors } from 'config/colors';
 import { NavWhite, StyledAnchor } from 'config/fontStyles';
-import { indentSizeLaptop, indentSizeMobile } from 'config/spacing';
+import {
+  indentSizeLaptop,
+  indentSizeMobile,
+  mobileBreakPoint
+} from 'config/spacing';
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import styled from 'styled-components';
@@ -14,7 +18,7 @@ const NavContainer = styled.div`
   text-align: right;
   padding: ${indentSizeMobile}px;
 
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     position: fixed;
     right: 0;
     padding: ${indentSizeLaptop}px;

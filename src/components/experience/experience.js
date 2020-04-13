@@ -1,4 +1,8 @@
-import { indentSizeMobile, mobileSpaceForHeading } from 'config/spacing';
+import {
+  indentSizeMobile,
+  mobileBreakPoint,
+  mobileSpaceForHeading
+} from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -13,7 +17,7 @@ const Container = styled.div`
   padding: 10% ${indentSizeMobile}px ${mobileSpaceForHeading}px
     ${indentSizeMobile}px;
 
-  @media (min-width: 641px) {
+  @media (min-width: ${mobileBreakPoint}px) {
     width: 48%;
   }
 `;
