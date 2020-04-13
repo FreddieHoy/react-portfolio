@@ -47,8 +47,7 @@
     "file-loader": "^6.0.0",
     "import-sort-style-module": "^6.0.0",
     "prettier": "^2.0.2",
-    "prettier-plugin-import-sort": "0.0.4",
-    "webpack": "^4.42.1"
+    "prettier-plugin-import-sort": "0.0.4"
   },
   "importSort": {
     ".js, .jsx, .ts, .tsx": {
