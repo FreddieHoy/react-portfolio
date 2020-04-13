@@ -15,7 +15,8 @@ const NavContainer = styled.div`
   padding: ${indentSizeMobile}px;
 
   @media (min-width: 641px) {
-    positon: fixed;
+    position: fixed;
+    right: 0;
     padding: ${indentSizeLaptop}px;
     padding-left: 40px;
     height: 100vh;

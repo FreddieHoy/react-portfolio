@@ -13,12 +13,37 @@ import {
   AboutTextMain
 } from './AboutText';
 
-const Container = styled.div`
+const MainContainer = styled.div`
   padding: 10px 0;
+  @media (min-width: 641px) {
+    width: 60%;
+    padding: 0;
+  }
+`;
+
+const ContactContainer = styled.div`
+  padding: 10px 0;
+  @media (min-width: 641px) {
+    width: 30%;
+    order: 4;
+    padding: 0;
+  }
+`;
+
+const InterestsContainer = styled.div`
+  padding: 10px 0;
+  @media (min-width: 641px) {
+    width: 60%;
+    padding: 0;
+  }
+`;
+
+const ListItems = styled(Paragraph)`
+  margin: 0;
 `;
 
 export const AboutContentMain = () => (
-  <Container>
+  <MainContainer>
     <HeadingTwo>
       {AboutTextMain.bigText.hello}
       <RedText>{AboutTextMain.bigText.fred}</RedText>
@@ -33,35 +58,35 @@ export const AboutContentMain = () => (
       <RedText>{AboutTextMain.studied.bootcamp}</RedText>
       {AboutTextMain.studied.ga}
     </Paragraph>
-  </Container>
+  </MainContainer>
 );
 
 export const AboutContentContact = () => (
-  <Container>
+  <ContactContainer>
     <HeadingTwo>{AboutTextContact.title}</HeadingTwo>
-    <Paragraph>
+    <ListItems>
       {AboutTextContact.email.email}
       <StyledAnchor href="mailto: freddiehoy0@gmail.com">
         {AboutTextContact.email.address}
       </StyledAnchor>
-    </Paragraph>
-    <Paragraph>
+    </ListItems>
+    <ListItems>
       {AboutTextContact.github.github}
       <StyledAnchor href="https://github.com/FreddieHoy">
         {AboutTextContact.github.path}
       </StyledAnchor>
-    </Paragraph>
-    <Paragraph>
+    </ListItems>
+    <ListItems>
       {AboutTextContact.linkedIn.linkedIn}
       <StyledAnchor href="https://www.linkedin.com/in/freddie-hoy/">
         {AboutTextContact.linkedIn.path}
       </StyledAnchor>
-    </Paragraph>
-  </Container>
+    </ListItems>
+  </ContactContainer>
 );
 
 export const AboutContentInterests = () => (
-  <Container>
+  <InterestsContainer>
     <HeadingTwo>{AboutTextInterests.title}</HeadingTwo>
     <Paragraph>{AboutTextInterests.cycling.leMed}</Paragraph>
     <Paragraph>
@@ -70,10 +95,10 @@ export const AboutContentInterests = () => (
         {AboutTextInterests.cycling.path}
       </StyledAnchor>
     </Paragraph>
-    <Paragraph>{AboutTextInterests.hockey}</Paragraph>
-    <Paragraph>{AboutTextInterests.football}</Paragraph>
-    <Paragraph>{AboutTextInterests.ski}</Paragraph>
-    <Paragraph>{AboutTextInterests.diving}</Paragraph>
-    <Paragraph>{AboutTextInterests.guitar}</Paragraph>
-  </Container>
+    <ListItems>{AboutTextInterests.hockey}</ListItems>
+    <ListItems>{AboutTextInterests.football}</ListItems>
+    <ListItems>{AboutTextInterests.ski}</ListItems>
+    <ListItems>{AboutTextInterests.diving}</ListItems>
+    <ListItems>{AboutTextInterests.guitar}</ListItems>
+  </InterestsContainer>
 );

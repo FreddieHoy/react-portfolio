@@ -1,4 +1,8 @@
-import { indentSizeMobile } from 'config/spacing';
+import {
+  indentSizeLaptop,
+  indentSizeMobile,
+  laptopSpaceForNavbar
+} from 'config/spacing';
 import React from 'react';
 import HeadShot from 'static/HeadShot.jpg';
 import styled from 'styled-components';
@@ -12,12 +16,25 @@ import { AboutTag } from './AboutTag';
 
 const Container = styled.div`
   padding: 30px ${indentSizeMobile}px 60px ${indentSizeMobile}px;
+
+  @media (min-width: 641px) {
+    padding: 30px ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    height: 90vh;
+    align-content: space-between;
+  }
 `;
 
 const Image = styled.img`
   width: 100%;
   height: auto;
   padding: 26px 0;
+  @media (min-width: 641px) {
+    width: 250px;
+    order: 3;
+  }
 `;
 
 export const About = () => (

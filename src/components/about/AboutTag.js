@@ -12,8 +12,13 @@ const constWords = [
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  margin: 20px;
+  margin: 20px 0;
+  justify-content: flex-start;
+
+  @media (min-width: 641px) {
+    width: 50%;
+    margin: 30px 0;
+  }
 `;
 
 export const AboutTag = () => (
