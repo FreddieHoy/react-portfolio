@@ -9,7 +9,7 @@ import { ExperienceContent } from './LyvlyExpContent';
 import { LyvlyTechSheet } from './LyvlyTechSheet';
 
 const Container = styled.div`
-  padding: ${indentSizeMobile}px;
+  padding: 0 ${indentSizeMobile}px;
   padding-bottom: 100px;
 
   @media (min-width: 641px) {
@@ -21,10 +21,6 @@ const HeadingConatiner = styled.div`
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
-`;
-
-const TitleContainer = styled.div`
-  width: 80%;
 `;
 
 const LogoBackground = styled.a`
@@ -50,13 +46,11 @@ const ContentContainer = styled.div`
 export const LyvlyExp = () => (
   <Container>
     <HeadingConatiner>
-      <TitleContainer>
-        <HeadingOne>
-          Working at
-          <RedText> Lyvly</RedText>
-          <BlueText>.</BlueText>
-        </HeadingOne>
-      </TitleContainer>
+      <HeadingOne>
+        Working at
+        <RedText> Lyvly</RedText>
+        <BlueText>.</BlueText>
+      </HeadingOne>
       <LogoBackground href="https://www.lyvly.uk/">
         <img src={LyvlyLogo} alt="Lyvly logo" width={70} height={70} />
       </LogoBackground>
