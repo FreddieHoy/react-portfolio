@@ -58,15 +58,14 @@ const ContentContainer = styled.div`
 export const LyvlyExp = () => (
   <Container>
     <HeadingConatiner>
-      <HeadingOne>
-        {lyvlyText.title.working}
-        <RedText>{lyvlyText.title.lyvly}</RedText>
-        <BlueText>{lyvlyText.punctuation.fullStop}</BlueText>
-      </HeadingOne>
-      <LogoBackground href="https://www.lyvly.uk/">
-        <img src={LyvlyLogo} alt="Lyvly logo" width={70} height={70} />
-      </LogoBackground>
+      {lyvlyText.title.working}
+      <RedText>{lyvlyText.title.lyvly}</RedText>
+      <BlueText>{lyvlyText.punctuation.fullStop}</BlueText>
     </HeadingConatiner>
+
+    <LogoBackground href="https://www.lyvly.uk/">
+      <img src={LyvlyLogo} alt="Lyvly logo" width={70} height={70} />
+    </LogoBackground>
     <ContentContainer>
       <ExperienceContent />
       <LyvlyTechSheet />

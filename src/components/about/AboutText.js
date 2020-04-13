@@ -6,12 +6,8 @@ export const AboutTextMain = {
     engineer: 'Software Engineer ',
     living: 'living in London.'
   },
-  studied: {
-    nottingham:
-      'I studied Mechanical Engineering at the University of Nottingham. I then went on to complete the Software Engineer Immersive ',
-    bootcamp: 'bootcamp ',
-    ga: 'at General Assembly London.'
-  }
+  studied:
+    'I studied Mechanical Engineering at the University of Nottingham. I then went on to complete the Software Engineer Immersive bootcamp at General Assembly London.'
 };
 
 export const AboutTextContact = {
@@ -40,7 +36,7 @@ export const AboutTextInterests = {
   },
   hockey: 'I played hockey for the University of Nottingham.',
   football:
-    'I am part of a Sunday leauge football team that won the 2018-19 South London cup final.',
+    'I am part of a Sunday league football team that won the 2018-19 South London cup final.',
   ski: 'In 2013 I became a qualified ski instructor.',
   diving: 'I have completed over 24 scuba dives.',
   guitar: 'Ive been teaching myself guitar for a year now!'

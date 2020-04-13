@@ -54,11 +54,7 @@ export const AboutContentMain = () => (
       <RedText>{AboutTextMain.bigText.engineer}</RedText>
       {AboutTextMain.bigText.living}
     </HeadingTwo>
-    <Paragraph>
-      {AboutTextMain.studied.nottingham}
-      <RedText>{AboutTextMain.studied.bootcamp}</RedText>
-      {AboutTextMain.studied.ga}
-    </Paragraph>
+    <Paragraph>{AboutTextMain.studied}</Paragraph>
   </MainContainer>
 );
 

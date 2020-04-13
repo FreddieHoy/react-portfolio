@@ -5,6 +5,8 @@ import React from 'react';
 import styled from 'styled-components';
 
 const constWords = [
+  { text: 'this is', color: colors.whiteText, endSpace: true },
+  { text: 'more', color: colors.whiteText, endSpace: true },
   { text: 'about', color: colors.redText, endSpace: true },
   { text: 'me', color: colors.whiteText, endSpace: false },
   { text: '.', color: colors.blueText, endSpace: false }
@@ -13,12 +15,12 @@ const constWords = [
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin: 20px 0;
-  justify-content: flex-start;
+  margin-bottom: 20px;
+  justify-content: center;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 50%;
-    margin: 30px 0;
+    justify-content: flex-start;
+    width: 60%;
   }
 `;
 
