@@ -10,14 +10,15 @@ const Container = styled.div`
   position: fixed;
   left: ${indentSizeMobile}px;
   bottom: ${indentSizeMobile}px;
-  background-color: ${colors.blueText};
+  background-color: ${colors.backgroundTwo};
   padding: 5px 5px 0 5px;
+  border: 1px solid black;
   border-radius: 4px;
 `;
 
 const ContactButton = styled.img`
   transition: background-color 0.5s ease;
-  padding: 4px;
+  padding: 2px;
   :hover {
     background-color: ${colors.lightBlueText};
     cursor: pointer;
