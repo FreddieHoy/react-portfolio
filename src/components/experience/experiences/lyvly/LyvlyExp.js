@@ -7,6 +7,7 @@ import styled from 'styled-components';
 
 import { ExperienceContent } from './LyvlyExpContent';
 import { LyvlyTechSheet } from './LyvlyTechSheet';
+import { lyvlyText } from './LyvlyText';
 
 const Container = styled.div`
   padding: 0 ${indentSizeMobile}px;
@@ -47,9 +48,9 @@ export const LyvlyExp = () => (
   <Container>
     <HeadingConatiner>
       <HeadingOne>
-        Working at
-        <RedText> Lyvly</RedText>
-        <BlueText>.</BlueText>
+        {lyvlyText.title.working}
+        <RedText>{lyvlyText.title.lyvly}</RedText>
+        <BlueText>{lyvlyText.punctuation.fullStop}</BlueText>
       </HeadingOne>
       <LogoBackground href="https://www.lyvly.uk/">
         <img src={LyvlyLogo} alt="Lyvly logo" width={70} height={70} />

@@ -1,4 +1,11 @@
 export const lyvlyText = {
+  punctuation: {
+    fullStop: '.'
+  },
+  title: {
+    working: 'Working at ',
+    lyvly: 'Lyvly'
+  },
   info: {
     role: 'Role: ',
     title: 'Full Stack Software Engineer.',
