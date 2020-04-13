@@ -1,3 +1,4 @@
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import GeneralAssemblyLogo from 'static/GeneralAssemblyLogo.svg';
 import LyvlyLogo from 'static/LyvlyLogo.svg';
@@ -7,10 +8,16 @@ import { ExperienceItem } from './ExperienceItem';
 
 const Container = styled.div`
   width: 100%;
-  height: 100%;
+  height: 420px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 10px 0;
+
+  @media (min-width: ${mobileBreakPoint}px) {
+    width: 60%;
+    align-items: start;
+  }
 `;
 
 export const Experiences = () => (

@@ -1,5 +1,7 @@
 import {
+  indentSizeLaptop,
   indentSizeMobile,
+  laptopSpaceForNavbar,
   mobileBreakPoint,
   mobileSpaceForHeading
 } from 'config/spacing';
@@ -8,9 +10,9 @@ import styled from 'styled-components';
 
 import { Experiences } from './experiences/Experiences';
 import { ExperienceTag } from './ExperienceTag';
+import { SkillSheet } from './SkillSheet';
 
 const Container = styled.div`
-  height: 90vh;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -18,7 +20,9 @@ const Container = styled.div`
     ${indentSizeMobile}px;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 48%;
+    padding: 5% ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
+    flex-wrap: wrap;
+    height: 90vh;
   }
 `;
 
@@ -26,5 +30,6 @@ export const Experience = () => (
   <Container>
     <ExperienceTag />
     <Experiences />
+    <SkillSheet />
   </Container>
 );

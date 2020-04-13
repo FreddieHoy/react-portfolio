@@ -1,5 +1,6 @@
 import { colors } from 'config/colors';
 import { TitleTagWord } from 'config/fontStyles';
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -16,6 +17,12 @@ const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
+
+  @media (min-width: ${mobileBreakPoint}px) {
+    justify-content: flex-start;
+    margin: 20px 0;
+    width: 70%;
+  }
 `;
 
 export const ExperienceTag = () => (

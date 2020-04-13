@@ -1,6 +1,6 @@
 import { colors } from 'config/colors';
 import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
-import { indentSizeMobile } from 'config/spacing';
+import { indentSizeMobile, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import LyvlyLogo from 'static/LyvlyLogo.svg';
 import styled from 'styled-components';
