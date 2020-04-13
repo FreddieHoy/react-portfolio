@@ -6,9 +6,10 @@ import GeneralAssemblyLogoNoWords from 'static/GeneralAssemblyLogoNoWords.png';
 import styled from 'styled-components';
 
 import { GAContentMain, GAContentProject } from './GAExpContent';
+import { GAMainText, GAProjectText } from './GAText';
 
 const Container = styled.div`
-  padding: 0 ${indentSizeMobile}px;
+  padding: 20px ${indentSizeMobile}px;
   padding-bottom: 100px;
 
   @media (min-width: 641px) {
@@ -19,7 +20,7 @@ const Container = styled.div`
 const HeadingConatiner = styled.div`
   display: flex;
   justify-content: space-between;
-  padding-top: 40px;
+  padding-top: 20px;
 `;
 
 const LogoBackground = styled.a`
@@ -40,11 +41,11 @@ export const GAExp = () => (
   <Container>
     <HeadingConatiner>
       <HeadingOne>
-        Studying at
-        <RedText> GA London</RedText>
-        <BlueText>.</BlueText>
+        {GAMainText.title.study}
+        <RedText>{GAMainText.title.london}</RedText>
+        <BlueText>{GAMainText.punctuation.fullStop}</BlueText>
       </HeadingOne>
-      <LogoBackground href="https://www.lyvly.uk/">
+      <LogoBackground href="https://generalassemb.ly/">
         <img
           src={GeneralAssemblyLogoNoWords}
           alt="Lyvly logo"
@@ -54,6 +55,8 @@ export const GAExp = () => (
       </LogoBackground>
     </HeadingConatiner>
     <GAContentMain />
-    <GAContentProject />
+    {GAProjectText.map((project) => (
+      <GAContentProject project={project} key={project.title} />
+    ))}
   </Container>
 );

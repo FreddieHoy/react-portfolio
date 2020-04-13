@@ -5,61 +5,53 @@ import {
   RedText
 } from 'config/fontStyles';
 import React from 'react';
-// import BoredGames from 'static/GAProjects/BoredGames.png';
-// import LostThePlot from 'static/GAProjects/LostThePlot.png';
-// import PacMan from 'static/GAProjects/PacMan.png';
-import YesChef from 'static/GAProjects/YesChef.png';
 import styled from 'styled-components';
 
-const StyledImage = styled.img`
+import { GAMainText } from './GAText';
+
+const Container = styled.div`
   padding: 10px 0;
 `;
 
-const Container = styled.div`
-  padding: 20px 0;
-`;
-
 export const GAContentMain = () => (
-  <div>
+  <Container>
     <Paragraph>
-      <RedText>Role: </RedText>
-      Software Enginnering Student.
+      <RedText>{GAMainText.main.role.role}</RedText>
+      {GAMainText.main.role.student}
     </Paragraph>
     <Paragraph>
-      <RedText>Dates: </RedText>
-      June 2019 - September 2019. 4 months.
+      <RedText>{GAMainText.main.date.dates}</RedText>
+      {GAMainText.main.date.june}
     </Paragraph>
     <Paragraph>
-      Spent a fantastic summer learning the
-      <LightBlueText> fundamentals </LightBlueText>
-      of being a software enginer, with a fantastic group of 20 Students.
+      {GAMainText.main.body.summer}
+      <LightBlueText>{GAMainText.main.body.fundamentals}</LightBlueText>
+      {GAMainText.main.body.group}
     </Paragraph>
     <Paragraph>
-      We learned the basics of HTML, CSS and
-      <LightBlueText> JavaScript </LightBlueText>
-      along with some fantatic and higly used framework such as
-      <LightBlueText> React and Express. </LightBlueText>
+      {GAMainText.main.body.basics}
+      <LightBlueText>{GAMainText.main.body.javaScript}</LightBlueText>
+      {GAMainText.main.body.frameworks}
+      <LightBlueText>{GAMainText.main.body.react}</LightBlueText>
+      {GAMainText.punctuation.fullStop}
     </Paragraph>
-  </div>
+    <Paragraph>{GAMainText.main.body.four}</Paragraph>
+  </Container>
 );
 
-export const GAContentProject = () => (
+export const GAContentProject = ({ project }) => (
   <Container>
     <HeadingTwo>
-      <RedText> YesChef</RedText>
+      <RedText>{project.title}</RedText>
     </HeadingTwo>
-    <StyledImage src={YesChef} alt="YesChef" width={360} />
+    <img src={project.image} alt={project.title} width={360} />
     <Paragraph>
       <LightBlueText>About</LightBlueText>
     </Paragraph>
-    <Paragraph>
-      The idea for this App was to allow users to share their home-cooked meals
-      with one another by posting an image with a description and allowing other
-      users to comment. The user can see their profile page and a news feed.
-    </Paragraph>
+    <Paragraph>{project.about}</Paragraph>
     <Paragraph>
       <LightBlueText>Technologies</LightBlueText>
     </Paragraph>
-    <Paragraph>JavaScript, Python, React, Django, MongoDB</Paragraph>
+    <Paragraph>{project.technologies}</Paragraph>
   </Container>
 );
