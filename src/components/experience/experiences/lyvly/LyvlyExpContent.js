@@ -4,6 +4,7 @@ import {
   RedText,
   StyledAnchor
 } from 'config/fontStyles';
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -11,10 +12,20 @@ import { lyvlyText } from './LyvlyText';
 
 const Role = styled.div`
   padding: 30px 0;
+  @media (min-width: ${mobileBreakPoint}px) {
+    padding: 0;
+  }
+`;
+
+const Container = styled.div`
+  @media (min-width: ${mobileBreakPoint}px) {
+    width: 60%;
+    order: 2;
+  }
 `;
 
 export const ExperienceContent = () => (
-  <div>
+  <Container>
     <Paragraph>
       <RedText>{lyvlyText.info.role}</RedText>
       {lyvlyText.info.title}
@@ -51,5 +62,5 @@ export const ExperienceContent = () => (
         {lyvlyText.role.methodology.learn}
       </Paragraph>
     </Role>
-  </div>
+  </Container>
 );

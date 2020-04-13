@@ -19,10 +19,16 @@ const Container = styled.div`
   padding-bottom: 100px;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    padding: 5% ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
-    height: 90vh;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    flex-direction: column;
+    padding: 0 ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
+    height: 85vh;
   }
 `;
 
@@ -30,6 +36,7 @@ const HeadingConatiner = styled(HeadingOne)`
   width: 60%;
   @media (min-width: ${mobileBreakPoint}px) {
     padding-top: 0;
+    order: 1;
   }
 `;
 
@@ -47,11 +54,11 @@ const LogoBackground = styled.a`
   :hover {
     background-color: ${colors.blueText};
   }
-`;
 
-const ContentContainer = styled.div`
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 60%;
+    height: 140px;
+    width: 32%;
+    order: 3;
   }
 `;
 
@@ -62,13 +69,10 @@ export const LyvlyExp = () => (
       <RedText>{lyvlyText.title.lyvly}</RedText>
       <BlueText>{lyvlyText.punctuation.fullStop}</BlueText>
     </HeadingConatiner>
-
     <LogoBackground href="https://www.lyvly.uk/">
       <img src={LyvlyLogo} alt="Lyvly logo" width={70} height={70} />
     </LogoBackground>
-    <ContentContainer>
-      <ExperienceContent />
-      <LyvlyTechSheet />
-    </ContentContainer>
+    <ExperienceContent />
+    <LyvlyTechSheet />
   </Container>
 );
