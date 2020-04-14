@@ -1,6 +1,11 @@
 import { colors } from 'config/colors';
 import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
-import { indentSizeMobile, mobileBreakPoint } from 'config/spacing';
+import {
+  indentSizeLaptop,
+  indentSizeMobile,
+  laptopSpaceForNavbar,
+  mobileBreakPoint
+} from 'config/spacing';
 import React from 'react';
 import GeneralAssemblyLogoNoWords from 'static/GeneralAssemblyLogoNoWords.png';
 import styled from 'styled-components';
@@ -13,14 +18,15 @@ const Container = styled.div`
   padding-bottom: 100px;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 80%;
+    padding: 20px ${laptopSpaceForNavbar}px 20px ${indentSizeLaptop}px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 `;
 
-const HeadingConatiner = styled.div`
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
+const HeadingContainer = styled(HeadingOne)`
+  width: 60%;
 `;
 
 const LogoBackground = styled.a`
@@ -35,25 +41,26 @@ const LogoBackground = styled.a`
   :hover {
     background-color: ${colors.blueText};
   }
+  @media (min-width: ${mobileBreakPoint}px) {
+    width: 35%;
+  }
 `;
 
 export const GAExp = () => (
   <Container>
-    <HeadingConatiner>
-      <HeadingOne>
-        {GAMainText.title.study}
-        <RedText>{GAMainText.title.london}</RedText>
-        <BlueText>{GAMainText.punctuation.fullStop}</BlueText>
-      </HeadingOne>
-      <LogoBackground href="https://generalassemb.ly/">
-        <img
-          src={GeneralAssemblyLogoNoWords}
-          alt="Lyvly logo"
-          width={70}
-          height={70}
-        />
-      </LogoBackground>
-    </HeadingConatiner>
+    <HeadingContainer>
+      {GAMainText.title.study}
+      <RedText>{GAMainText.title.london}</RedText>
+      <BlueText>{GAMainText.punctuation.fullStop}</BlueText>
+    </HeadingContainer>
+    <LogoBackground href="https://generalassemb.ly/">
+      <img
+        src={GeneralAssemblyLogoNoWords}
+        alt="Lyvly logo"
+        width={70}
+        height={70}
+      />
+    </LogoBackground>
     <GAContentMain />
     {GAProjectText.map((project) => (
       <GAContentProject project={project} key={project.title} />
