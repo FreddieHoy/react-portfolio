@@ -21,6 +21,11 @@ const Container = styled.div`
   @media (min-width: ${mobileBreakPoint}px) {
     justify-content: flex-start;
     margin: 20px 0;
+    width: 90%;
+  }
+  @media (min-width: ${desktopBreakPoint}px) {
+    justify-content: flex-start;
+    margin: 20px 0;
     width: 70%;
   }
 `;

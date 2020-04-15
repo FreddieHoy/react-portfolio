@@ -1,5 +1,9 @@
 import { HeadingTwo, LightBlueText, Paragraph } from 'config/fontStyles';
-import { mobileBreakPoint } from 'config/spacing';
+import {
+  desktopBreakPoint,
+  ipadProHeightBreakPoint,
+  mobileBreakPoint
+} from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -8,9 +12,17 @@ const Container = styled.div`
   text-align: left;
   padding: 10px 0;
   @media (min-width: ${mobileBreakPoint}px) {
+    width: 70%;
+    text-align: right;
+    padding: 0 10px;
+  }
+  @media (min-width: ${desktopBreakPoint}px) {
     width: 30%;
     text-align: right;
     padding: 0 10px;
+  }
+  @media (min-height: ${ipadProHeightBreakPoint}px) {
+    width: 60%;
   }
 `;
 
@@ -41,12 +53,12 @@ export const SkillSheet = () => (
     <Skill>Express</Skill>
     <Skill>RESTful APIs</Skill>
     <Skill>GraphQL</Skill>
-    <Skill>MonogDB</Skill>
-    <Skill>HTML and CSS</Skill>
+    <Skill>Agile Methodology</Skill>
     <Skill>TypeScript</Skill>
     <Skill>Python</Skill>
     <Skill>npm and yarn</Skill>
-    <Skill>Agile Methodology</Skill>
+    <Skill>HTML and CSS</Skill>
     <Skill>SQL</Skill>
+    <Skill>MonogDB</Skill>
   </Container>
 );

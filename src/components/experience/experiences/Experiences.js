@@ -1,4 +1,4 @@
-import { mobileBreakPoint } from 'config/spacing';
+import { desktopBreakPoint, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import GeneralAssemblyLogo from 'static/GeneralAssemblyLogo.svg';
 import LyvlyLogo from 'static/LyvlyLogo.svg';
@@ -15,8 +15,11 @@ const Container = styled.div`
   padding: 10px 0;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 60%;
+    width: 70%;
     align-items: start;
+  }
+  @media (min-width: ${desktopBreakPoint}px) {
+    width: 60%;
   }
 `;
 
