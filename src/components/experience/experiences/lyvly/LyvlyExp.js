@@ -7,7 +7,8 @@ import {
   ipadProHeightBreakPoint,
   laptopBreakPoint,
   laptopSpaceForNavbar,
-  mobileBreakPoint
+  mobileBreakPoint,
+  tabletSpaceForNavbar
 } from 'config/spacing';
 import React from 'react';
 import LyvlyLogo from 'static/LyvlyLogo.svg';
@@ -30,7 +31,7 @@ const Container = styled.div`
     flex-wrap: wrap;
     align-content: space-between;
     flex-direction: column;
-    padding: 0 ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
+    padding: 0 ${tabletSpaceForNavbar}px 30px ${indentSizeLaptop}px;
     height: 85vh;
     align-items: flex-end;
   }

@@ -21,7 +21,7 @@ const Container = styled.div`
   @media (min-width: ${mobileBreakPoint}px) {
     justify-content: flex-start;
     margin: 20px 0;
-    width: 90%;
+    width: 60%;
   }
   @media (min-width: ${laptopBreakPoint}px) {
     justify-content: flex-start;

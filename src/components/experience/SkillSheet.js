@@ -12,7 +12,7 @@ const Container = styled.div`
   text-align: left;
   padding: 10px 0;
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 70%;
+    width: 30%;
     text-align: right;
     padding: 0 10px;
   }
@@ -31,6 +31,9 @@ const Skill = styled(Paragraph)`
   font-size: 20px;
 
   @media (min-width: ${mobileBreakPoint}px) {
+    font-size: 20px;
+  }
+  @media (min-width: ${laptopBreakPoint}px) {
     font-size: 24px;
     transition: font-size 0.4s ease;
     :hover {

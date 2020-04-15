@@ -15,7 +15,7 @@ const Container = styled.div`
   padding: 10px 0;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 70%;
+    width: 60%;
     align-items: start;
   }
   @media (min-width: ${laptopBreakPoint}px) {
