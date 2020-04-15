@@ -45,7 +45,7 @@ export const TitleTagWord = ({ color, text, endSpace }) => {
   const TagWord = styled.div`
     color: ${color};
     font-family: 'Sen', sans-serif;
-    font-size: 40px;
+    font-size: 36px;
     font-weight: 700;
     padding-right: ${endSpace ? '12px' : '0'};
     @media (min-width: ${mobileBreakPoint}px) {
