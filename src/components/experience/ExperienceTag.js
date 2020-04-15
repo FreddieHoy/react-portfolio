@@ -1,14 +1,14 @@
 import { colors } from 'config/colors';
 import { TitleTagWord } from 'config/fontStyles';
-import { mobileBreakPoint } from 'config/spacing';
+import { desktopBreakPoint, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
 const constWords = [
-  { text: 'this', color: colors.whiteText, endSpace: true },
-  { text: 'is', color: colors.whiteText, endSpace: true },
+  { text: 'These', color: colors.whiteText, endSpace: true },
+  { text: 'are', color: colors.whiteText, endSpace: true },
   { text: 'my', color: colors.whiteText, endSpace: true },
-  { text: 'experience', color: colors.redText, endSpace: false },
+  { text: 'experiences', color: colors.redText, endSpace: false },
   { text: '.', color: colors.blueText, endSpace: false }
 ];
 

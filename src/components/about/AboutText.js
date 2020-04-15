@@ -13,7 +13,7 @@ export const AboutTextMain = {
 export const AboutTextContact = {
   title: 'Contact Details',
   email: {
-    email: 'email: ',
+    email: 'Email: ',
     address: 'freddiehoy0@gmail.com'
   },
   github: {
@@ -21,7 +21,7 @@ export const AboutTextContact = {
     path: '/FreddieHoy'
   },
   linkedIn: {
-    linkedIn: 'linkedIn: ',
+    linkedIn: 'LinkedIn: ',
     path: '/freddie-hoy'
   }
 };
@@ -39,5 +39,5 @@ export const AboutTextInterests = {
     'I am part of a Sunday league football team that won the 2018-19 South London cup final.',
   ski: 'In 2013 I became a qualified ski instructor.',
   diving: 'I have completed over 24 scuba dives.',
-  guitar: 'Ive been teaching myself guitar for a year now!'
+  guitar: "I've been teaching myself guitar for a year now!"
 };

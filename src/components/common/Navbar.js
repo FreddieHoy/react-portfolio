@@ -36,17 +36,17 @@ const StyledLink = styled(Link)`
 const NavBar = () => (
   <NavContainer>
     <StyledLink to="/experience">
-      <NavWhite>experience</NavWhite>
+      <NavWhite>Experience</NavWhite>
     </StyledLink>
     <StyledLink to="/about">
-      <NavWhite>about</NavWhite>
+      <NavWhite>About</NavWhite>
     </StyledLink>
     <StyledAnchor
       href="https://freddiehoy.github.io/Unbeatable-TicTacToe/"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <NavWhite>fun game</NavWhite>
+      <NavWhite>Game</NavWhite>
     </StyledAnchor>
   </NavContainer>
 );
