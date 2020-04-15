@@ -24,7 +24,7 @@ export const ExperienceItem = ({
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 1px;
+    border-radius: 2px;
     margin: 10px 0;
     :hover {
       cursor: pointer;
@@ -34,9 +34,10 @@ export const ExperienceItem = ({
     }
     @media (min-width: ${laptopBreakPoint}px) {
       width: 60%;
-      transition: width 0.4s ease;
+      transition: all 0.4s ease;
       :hover {
-        width: 100%;
+        width: 95%;
+        height: 70%;
       }
     }
     @media (min-height: ${ipadProHeightBreakPoint}px) {
