@@ -6,3 +6,6 @@ export const laptopSpaceForNavbar = '230';
 export const mobileBreakPoint = '576';
 export const tabletBreakPoint = '768';
 export const desktopBreakPoint = '992';
+export const monitorBreakPoint = '1200';
+
+export const ipadProHeightBreakPoint = '1225';
