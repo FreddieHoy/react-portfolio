@@ -14,6 +14,7 @@ const ContainerMain = styled.div`
   padding: 10px 0;
   @media (min-width: ${mobileBreakPoint}px) {
     width: 60%;
+    order: 2;
   }
 `;
 
@@ -23,8 +24,9 @@ const ContainerProject = styled.div`
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    height: 300px;
+    height: 40vh;
     align-content: space-between;
+    order: 4;
   }
 `;
 
@@ -39,7 +41,7 @@ const FlexedImage = styled.img`
   @media (min-width: ${mobileBreakPoint}px) {
     order: 4;
     margin: 40px 0;
-    width: 400px;
+    width: 34%;
   }
 `;
 

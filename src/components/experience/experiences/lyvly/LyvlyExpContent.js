@@ -10,7 +10,7 @@ import styled from 'styled-components';
 
 import { lyvlyText } from './LyvlyText';
 
-const Role = styled.div`
+const RoleContainer = styled.div`
   padding: 30px 0;
   @media (min-width: ${mobileBreakPoint}px) {
     padding: 0;
@@ -37,7 +37,7 @@ export const ExperienceContent = () => (
     <Paragraph>{lyvlyText.lyvly}</Paragraph>
     <Paragraph>{lyvlyText.first}</Paragraph>
     <Paragraph>{lyvlyText.team}</Paragraph>
-    <Role>
+    <RoleContainer>
       <HeadingTwo>
         <RedText>{lyvlyText.role.title}</RedText>
       </HeadingTwo>
@@ -61,6 +61,6 @@ export const ExperienceContent = () => (
         <RedText>{lyvlyText.role.methodology.title}</RedText>
         {lyvlyText.role.methodology.learn}
       </Paragraph>
-    </Role>
+    </RoleContainer>
   </Container>
 );
