@@ -95,7 +95,6 @@ export const AboutContentInterests = () => (
     <ListItems>{AboutTextInterests.hockey}</ListItems>
     <ListItems>{AboutTextInterests.football}</ListItems>
     <ListItems>{AboutTextInterests.ski}</ListItems>
-    <ListItems>{AboutTextInterests.diving}</ListItems>
     <ListItems>{AboutTextInterests.guitar}</ListItems>
   </InterestsContainer>
 );

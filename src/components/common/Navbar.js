@@ -36,7 +36,7 @@ const StyledLink = styled(Link)`
 const NavBar = () => (
   <NavContainer>
     <StyledLink to="/experience">
-      <NavWhite>Experience</NavWhite>
+      <NavWhite>Exp</NavWhite>
     </StyledLink>
     <StyledLink to="/about">
       <NavWhite>About</NavWhite>
