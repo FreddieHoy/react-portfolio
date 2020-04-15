@@ -15,7 +15,7 @@ const NavContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  text-align: right;
+  text-align: left;
   padding: ${indentSizeMobile}px;
 
   @media (min-width: ${mobileBreakPoint}px) {
