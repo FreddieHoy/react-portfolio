@@ -1,10 +1,5 @@
-import {
-  HeadingTwo,
-  LightBlueText,
-  Paragraph,
-  RedText
-} from 'config/fontStyles';
-import { mobileBreakPoint } from 'config/spacing';
+import { LightBlueText, Paragraph, RedText } from 'config/fontStyles';
+import { desktopBreakPoint, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -16,46 +11,8 @@ const ContainerMain = styled.div`
     width: 60%;
     order: 2;
   }
-`;
-
-const ContainerProject = styled.div`
-  padding: 10px 0;
-  @media (min-width: ${mobileBreakPoint}px) {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 40vh;
-    align-content: space-between;
-    order: 4;
-  }
-`;
-
-const FlexedHeading = styled(HeadingTwo)`
-  @media (min-width: ${mobileBreakPoint}px) {
-    order: 1;
-    width: 60%;
-  }
-`;
-
-const FlexedImage = styled.img`
-  @media (min-width: ${mobileBreakPoint}px) {
-    order: 4;
-    margin: 40px 0;
-    width: 34%;
-  }
-`;
-
-const AboutContianer = styled.div`
-  @media (min-width: ${mobileBreakPoint}px) {
-    order: 2;
-    width: 60%;
-  }
-`;
-
-const TechContianer = styled.div`
-  @media (min-width: ${mobileBreakPoint}px) {
-    order: 3;
-    width: 60%;
+  @media (min-width: ${desktopBreakPoint}px) {
+    width: 55%;
   }
 `;
 
@@ -83,25 +40,4 @@ export const GAContentMain = () => (
     </Paragraph>
     <Paragraph>{GAMainText.main.body.four}</Paragraph>
   </ContainerMain>
-);
-
-export const GAContentProject = ({ project }) => (
-  <ContainerProject>
-    <FlexedHeading>
-      <RedText>{project.title}</RedText>
-    </FlexedHeading>
-    <FlexedImage src={project.image} alt={project.title} width={360} />
-    <AboutContianer>
-      <Paragraph>
-        <LightBlueText>About</LightBlueText>
-      </Paragraph>
-      <Paragraph>{project.about}</Paragraph>
-    </AboutContianer>
-    <TechContianer>
-      <Paragraph>
-        <LightBlueText>Technologies</LightBlueText>
-      </Paragraph>
-      <Paragraph>{project.technologies}</Paragraph>
-    </TechContianer>
-  </ContainerProject>
 );

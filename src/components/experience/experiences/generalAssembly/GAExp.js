@@ -1,8 +1,10 @@
 import { colors } from 'config/colors';
 import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
 import {
+  desktopBreakPoint,
   indentSizeLaptop,
   indentSizeMobile,
+  laptopBreakPoint,
   laptopSpaceForNavbar,
   mobileBreakPoint
 } from 'config/spacing';
@@ -10,7 +12,8 @@ import React from 'react';
 import GeneralAssemblyLogoNoWords from 'static/GeneralAssemblyLogoNoWords.png';
 import styled from 'styled-components';
 
-import { GAContentMain, GAContentProject } from './GAExpContent';
+import { GAContentMain } from './GAExpContent';
+import { GAContentProject } from './GAExpProject';
 import { GAMainText, GAProjectText } from './GAText';
 
 const Container = styled.div`
@@ -26,8 +29,15 @@ const Container = styled.div`
 `;
 
 const HeadingContainer = styled(HeadingOne)`
-  width: 60%;
+  width: 100%;
   order: 1;
+  @media (min-width: ${mobileBreakPoint}px) {
+    font-size: 30px;
+    width: 60%;
+  }
+  @media (min-width: ${laptopBreakPoint}px) {
+    font-size: 34px;
+  }
 `;
 
 const LogoBackground = styled.a`
@@ -43,8 +53,12 @@ const LogoBackground = styled.a`
     background-color: ${colors.blueText};
   }
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 34%;
+    width: 24%;
     order: 3;
+    height: 120px;
+  }
+  @media (min-width: ${laptopBreakPoint}px) {
+    width: 36%;
   }
 `;
 
