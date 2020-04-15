@@ -1,6 +1,6 @@
 import {
-  desktopBreakPoint,
   ipadProHeightBreakPoint,
+  laptopBreakPoint,
   mobileBreakPoint
 } from 'config/spacing';
 import React from 'react';
@@ -32,7 +32,7 @@ export const ExperienceItem = ({
     @media (min-width: ${mobileBreakPoint}px) {
       width: 100%;
     }
-    @media (min-width: ${desktopBreakPoint}px) {
+    @media (min-width: ${laptopBreakPoint}px) {
       width: 60%;
       transition: width 0.4s ease;
       :hover {

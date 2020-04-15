@@ -1,7 +1,7 @@
 import { HeadingTwo, LightBlueText, Paragraph } from 'config/fontStyles';
 import {
-  desktopBreakPoint,
   ipadProHeightBreakPoint,
+  laptopBreakPoint,
   mobileBreakPoint
 } from 'config/spacing';
 import React from 'react';
@@ -16,7 +16,7 @@ const Container = styled.div`
     text-align: right;
     padding: 0 10px;
   }
-  @media (min-width: ${desktopBreakPoint}px) {
+  @media (min-width: ${laptopBreakPoint}px) {
     width: 30%;
     text-align: right;
     padding: 0 10px;

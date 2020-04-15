@@ -18,7 +18,7 @@ const Container = styled.div`
   padding-bottom: 100px;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    padding: 20px ${laptopSpaceForNavbar}px 20px ${indentSizeLaptop}px;
+    padding: 20px ${laptopSpaceForNavbar}px 100px ${indentSizeLaptop}px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -27,6 +27,7 @@ const Container = styled.div`
 
 const HeadingContainer = styled(HeadingOne)`
   width: 60%;
+  order: 1;
 `;
 
 const LogoBackground = styled.a`
@@ -36,13 +37,14 @@ const LogoBackground = styled.a`
   align-items: center;
   justify-content: center;
   padding: 12px 14px;
-  height: 100px;
+  height: 200px;
   border-radius: 2px;
   :hover {
     background-color: ${colors.blueText};
   }
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 35%;
+    width: 34%;
+    order: 3;
   }
 `;
 

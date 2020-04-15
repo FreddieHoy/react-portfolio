@@ -2,10 +2,10 @@ import {
   desktopBreakPoint,
   indentSizeLaptop,
   indentSizeMobile,
+  laptopBreakPoint,
   laptopSpaceForNavbar,
   mobileBreakPoint,
-  mobileSpaceForHeading,
-  monitorBreakPoint
+  mobileSpaceForHeading
 } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
@@ -23,11 +23,12 @@ const Container = styled.div`
   @media (min-width: ${mobileBreakPoint}px) {
     padding: 10px ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
   }
-  @media (min-width: ${desktopBreakPoint}px) {
+  @media (min-width: ${laptopBreakPoint}px) {
+    padding: 10px ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
     flex-wrap: wrap;
     height: 85vh;
   }
-  @media (min-width: ${monitorBreakPoint}px) {
+  @media (min-width: ${desktopBreakPoint}px) {
     padding: 50px ${laptopSpaceForNavbar}px 0 ${indentSizeLaptop}px;
   }
 `;

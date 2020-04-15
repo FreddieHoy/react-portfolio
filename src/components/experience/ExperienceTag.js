@@ -1,6 +1,6 @@
 import { colors } from 'config/colors';
 import { TitleTagWord } from 'config/fontStyles';
-import { desktopBreakPoint, mobileBreakPoint } from 'config/spacing';
+import { laptopBreakPoint, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -23,7 +23,7 @@ const Container = styled.div`
     margin: 20px 0;
     width: 90%;
   }
-  @media (min-width: ${desktopBreakPoint}px) {
+  @media (min-width: ${laptopBreakPoint}px) {
     justify-content: flex-start;
     margin: 20px 0;
     width: 70%;
