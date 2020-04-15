@@ -43,11 +43,12 @@ const Image = styled.img`
   height: auto;
   padding: 26px 0;
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 160px;
+    width: 130px;
     height: auto;
     order: 3;
   }
   @media (min-width: ${laptopBreakPoint}px) {
+    padding-bottom: 26px;
     width: 250px;
     order: 3;
   }
