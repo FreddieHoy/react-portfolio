@@ -1,8 +1,11 @@
 import { colors } from 'config/colors';
 import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
 import {
+  desktopBreakPoint,
   indentSizeLaptop,
   indentSizeMobile,
+  ipadProHeightBreakPoint,
+  laptopBreakPoint,
   laptopSpaceForNavbar,
   mobileBreakPoint
 } from 'config/spacing';
@@ -29,36 +32,54 @@ const Container = styled.div`
     flex-direction: column;
     padding: 0 ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
     height: 85vh;
+    align-items: flex-end;
+  }
+
+  @media (min-width: ${laptopBreakPoint}px) {
+    padding: 20px ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
+  }
+
+  @media (min-width: ${desktopBreakPoint}px) {
+    padding: 50px ${laptopSpaceForNavbar}px 100px ${indentSizeLaptop}px;
+  }
+
+  @media (min-height: ${ipadProHeightBreakPoint}px) {
+    padding: 50px ${laptopSpaceForNavbar}px 300px ${indentSizeLaptop}px;
   }
 `;
 
 const HeadingConatiner = styled(HeadingOne)`
   width: 60%;
+
   @media (min-width: ${mobileBreakPoint}px) {
+    padding-bottom: 0;
+    margin: 0;
+  }
+  @media (min-width: ${laptopBreakPoint}px) {
     padding-top: 0;
     order: 1;
   }
 `;
 
 const LogoBackground = styled.a`
-  width: 30%;
+  padding: 8px;
   background-color: white;
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 12px;
-  height: 100px;
+  margin: 20px 0;
   border-radius: 2px;
 
-  transition: background-color 0.5s ease;
-  :hover {
-    background-color: ${colors.blueText};
-  }
-
   @media (min-width: ${mobileBreakPoint}px) {
-    height: 140px;
-    width: 32%;
+    margin: 0;
     order: 3;
+    padding: 20px;
+  }
+  @media (min-width: ${laptopBreakPoint}px) {
+    padding: 20px;
+    order: 3;
+    transition: background-color 0.5s ease;
+    :hover {
+      background-color: ${colors.blueText};
+    }
   }
 `;
 

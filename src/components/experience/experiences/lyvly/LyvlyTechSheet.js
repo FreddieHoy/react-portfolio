@@ -1,20 +1,29 @@
 import { colors } from 'config/colors';
 import { HeadingTwo, Paragraph, RedText } from 'config/fontStyles';
-import { mobileBreakPoint } from 'config/spacing';
+import { laptopBreakPoint, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
   order: 4;
-  text-align: right;
-  margin-top: 20px;
+  text-align: left;
+
+  @media (min-width: ${mobileBreakPoint}px) {
+    text-align: right;
+    padding: 20px 0;
+  }
+  @media (min-width: ${laptopBreakPoint}px) {
+    padding: 2% 0;
+  }
 `;
 
 const TechItem = styled(Paragraph)`
   margin: 0;
   color: ${colors.whiteText};
-  font-size: 18px;
-  @media (min-width: ${mobileBreakPoint}px) {
+  font-size: 15px;
+
+  @media (min-width: ${laptopBreakPoint}px) {
+    font-size: 20px;
     align-content: right;
     transition: font-size 0.4s ease;
     :hover {
@@ -29,7 +38,8 @@ export const LyvlyTechSheet = () => (
       <RedText>Tech sheet</RedText>
     </HeadingTwo>
     <div>
-      <TechItem>TypeScript / JavaScript</TechItem>
+      <TechItem>JavaScript</TechItem>
+      <TechItem>TypeScript</TechItem>
       <TechItem>React</TechItem>
       <TechItem>Jest</TechItem>
       <TechItem>Enzyme</TechItem>

@@ -4,23 +4,33 @@ import {
   RedText,
   StyledAnchor
 } from 'config/fontStyles';
-import { mobileBreakPoint } from 'config/spacing';
+import {
+  desktopBreakPoint,
+  ipadProHeightBreakPoint,
+  mobileBreakPoint
+} from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
 import { lyvlyText } from './LyvlyText';
 
-const RoleContainer = styled.div`
-  padding: 30px 0;
-  @media (min-width: ${mobileBreakPoint}px) {
-    padding: 0;
-  }
-`;
-
 const Container = styled.div`
   @media (min-width: ${mobileBreakPoint}px) {
     width: 60%;
     order: 2;
+  }
+  @media (min-width: ${desktopBreakPoint}px) {
+    padding: 20px 0 100px 0;
+  }
+  @media (min-height: ${ipadProHeightBreakPoint}px) {
+    padding: 30px 0 100px 0;
+  }
+`;
+
+const RoleContainer = styled.div`
+  padding: 10px 0;
+  @media (min-width: ${mobileBreakPoint}px) {
+    padding: 0;
   }
 `;
 
