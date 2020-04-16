@@ -4,77 +4,26 @@ import {
   Paragraph,
   RedText
 } from 'config/fontStyles';
-import {
-  desktopBreakPoint,
-  laptopBreakPoint,
-  mobileBreakPoint
-} from 'config/spacing';
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
 import { GAProjectText } from './GAText';
 
-const ContainerProject = styled.div`
-  padding: 10px 0;
-  @media (min-width: ${mobileBreakPoint}px) {
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    order: 4;
-  }
+const ContainerProject = styled.div``;
 
-  @media (min-width: ${laptopBreakPoint}px) {
-    height: 460px;
-    flex-wrap: wrap;
-  }
-  @media (min-width: ${desktopBreakPoint}px) {
-    height: 580px;
-    flex-wrap: wrap;
-  }
-`;
-
-const FlexedHeading = styled(HeadingTwo)`
-  @media (min-width: ${mobileBreakPoint}px) {
-    order: 1;
-    width: 60%;
-  }
-`;
+const FlexedHeading = styled(HeadingTwo)``;
 
 const FlexedImage = styled.img`
   width: 100%;
   @media (min-width: ${mobileBreakPoint}px) {
-    order: 2;
-    margin: 5px 0;
-    width: 60%;
-  }
-  @media (min-width: ${laptopBreakPoint}px) {
-    width: 58%;
-  }
-  @media (min-width: ${desktopBreakPoint}px) {
-    width: 55%;
+    width: 500px;
   }
 `;
 
-const AboutContianer = styled.div`
-  @media (min-width: ${mobileBreakPoint}px) {
-    order: 3;
-    width: 60%;
-  }
-  @media (min-width: ${laptopBreakPoint}px) {
-    width: 36%;
-    padding-top: 40px;
-  }
-`;
+const AboutContianer = styled.div``;
 
-const TechContianer = styled.div`
-  @media (min-width: ${mobileBreakPoint}px) {
-    order: 4;
-    width: 60%;
-  }
-  @media (min-width: ${laptopBreakPoint}px) {
-    width: 36%;
-  }
-`;
+const TechContianer = styled.div``;
 
 export const GAContentProject = ({ project }) => (
   <ContainerProject>

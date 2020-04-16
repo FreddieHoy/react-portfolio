@@ -5,11 +5,11 @@ import {
   indentSizeLaptop,
   indentSizeMobile,
   laptopBreakPoint,
-  laptopSpaceForNavbar,
-  mobileBreakPoint
+  mobileBreakPoint,
+  tabletBreakPoint
 } from 'config/spacing';
 import React from 'react';
-import GeneralAssemblyLogoNoWords from 'static/GeneralAssemblyLogoNoWords.png';
+import GALogoNoWords from 'static/GALogoNoWords.png';
 import styled from 'styled-components';
 
 import { GAContentMain } from './GAExpContent';
@@ -22,68 +22,52 @@ const Container = styled.div`
   padding-bottom: 100px;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    padding: 20px ${laptopSpaceForNavbar}px 100px ${indentSizeLaptop}px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    padding: 0 0 140px 0;
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  @media (min-width: ${tabletBreakPoint}px) {
+    padding: ${indentSizeLaptop}px 0 100px 0;
+    width: 660px;
+  }
+
+  @media (min-width: ${laptopBreakPoint}px) {
   }
 `;
 
 const HeadingContainer = styled(HeadingOne)`
-  width: 100%;
-  order: 1;
-  @media (min-width: ${mobileBreakPoint}px) {
-    font-size: 30px;
-    width: 60%;
-  }
-  @media (min-width: ${laptopBreakPoint}px) {
-    font-size: 34px;
-  }
+  with: 100%;
+  text-align: center;
+  margin: 0 auto 20px auto;
 `;
 
 const LogoBackground = styled.a`
+  margin: 10px auto 30px auto;
+  padding: 20px;
+  width: 60%;
   background-color: black;
-  transition: background-color 0.5s ease;
   display: flex;
-  align-items: center;
   justify-content: center;
-  padding: 12px 14px;
-  height: 200px;
   border-radius: 2px;
-  :hover {
-    background-color: ${colors.blueText};
-  }
-  @media (min-width: ${mobileBreakPoint}px) {
-    width: 24%;
-    order: 3;
-    height: 120px;
-  }
-  @media (min-width: ${laptopBreakPoint}px) {
-    padding: 20px;
-    order: 3;
-    transition: background-color 0.5s ease;
-    width: 35%;
+  @media (min-width: ${tabletBreakPoint}px) {
+    transition: background-color 0.4s ease;
     :hover {
-      background-color: ${colors.blueText};
+      background-color: ${colors.lightBlueText};
     }
   }
 `;
 
 export const GAExp = () => (
   <Container>
+    <LogoBackground href="https://generalassemb.ly/">
+      <img src={GALogoNoWords} alt="GA logo" width={70} height={70} />
+    </LogoBackground>
     <HeadingContainer>
       {GAMainText.title.study}
       <RedText>{GAMainText.title.london}</RedText>
       <BlueText>{GAMainText.punctuation.fullStop}</BlueText>
     </HeadingContainer>
-    <LogoBackground href="https://generalassemb.ly/">
-      <img
-        src={GeneralAssemblyLogoNoWords}
-        alt="Lyvly logo"
-        width={70}
-        height={70}
-      />
-    </LogoBackground>
     <GAContentMain />
     {GAProjectText.projectInfoArray.map((project) => (
       <GAContentProject project={project} key={project.title} />

@@ -8,13 +8,13 @@ export const GAMainText = {
     fullStop: '.'
   },
   title: {
-    study: 'Studing at ',
+    study: 'Studying at ',
     london: 'GA London'
   },
   main: {
     role: {
       role: 'Role: ',
-      student: 'Software Enginerring Student.'
+      student: 'Software Engineering Student.'
     },
     date: {
       dates: 'Dates: ',
