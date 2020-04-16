@@ -1,6 +1,6 @@
 import { colors } from 'config/colors';
 import { TitleTagWord } from 'config/fontStyles';
-import { mobileBreakPoint } from 'config/spacing';
+import { laptopBreakPoint, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -15,11 +15,14 @@ const constWords = [
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 20px;
   justify-content: center;
+  margin-bottom: 20px;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    justify-content: flex-start;
+    width: 70%;
+    margin: 0 auto 20px auto;
+  }
+  @media (min-width: ${laptopBreakPoint}px) {
     width: 60%;
   }
 `;

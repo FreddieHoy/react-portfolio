@@ -4,7 +4,7 @@ import {
   RedText,
   StyledAnchor
 } from 'config/fontStyles';
-import { laptopBreakPoint, mobileBreakPoint } from 'config/spacing';
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -16,6 +16,7 @@ import {
 
 const MainContainer = styled.div`
   padding: 10px 0;
+
   @media (min-width: ${mobileBreakPoint}px) {
     width: 60%;
     padding: 0;
@@ -24,23 +25,13 @@ const MainContainer = styled.div`
 
 const ContactContainer = styled.div`
   padding: 10px 0;
-  @media (min-width: ${mobileBreakPoint}px) {
-    width: 24%;
-    order: 4;
-    padding: 0;
-  }
-  @media (min-width: ${laptopBreakPoint}px) {
-    width: 30%;
-    order: 4;
-    padding: 0;
-  }
 `;
 
 const InterestsContainer = styled.div`
   padding: 10px 0;
+
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 60%;
-    padding: 0;
+    padding: 30px 0;
   }
 `;
 

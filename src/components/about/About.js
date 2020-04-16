@@ -1,10 +1,9 @@
 import { fadeIn } from 'config/keyframes';
 import {
-  indentSizeLaptop,
   indentSizeMobile,
   laptopBreakPoint,
-  laptopSpaceForNavbar,
-  mobileBreakPoint
+  mobileBreakPoint,
+  tabletBreakPoint
 } from 'config/spacing';
 import React from 'react';
 import HeadShot from 'static/HeadShot.jpg';
@@ -18,25 +17,25 @@ import {
 import { AboutTag } from './AboutTag';
 
 const Container = styled.div`
-  padding: 20px ${indentSizeMobile}px 100px ${indentSizeMobile}px;
   animation: ${fadeIn} 1s ease;
+  padding: 20px ${indentSizeMobile}px 100px ${indentSizeMobile}px;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    padding: 0 ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
     display: flex;
     flex-wrap: wrap;
-    flex-direction: column;
-    height: 85vh;
-    align-content: space-between;
+    justify-content: space-between;
+    padding: 0 0 140px 0;
+    margin: 0 auto;
+    width: 500px;
+  }
+
+  @media (min-width: ${tabletBreakPoint}px) {
+    padding: 100px 0 100px 0;
+    width: 660px;
   }
 
   @media (min-width: ${laptopBreakPoint}px) {
-    padding: 40px ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    height: 85vh;
-    align-content: space-between;
+    padding: 100px 0 100px 0;
   }
 `;
 
@@ -44,15 +43,12 @@ const Image = styled.img`
   width: 100%;
   height: auto;
   padding: 26px 0;
+
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 130px;
-    height: auto;
-    order: 3;
+    width: 160px;
+    padding: 0;
   }
   @media (min-width: ${laptopBreakPoint}px) {
-    padding-bottom: 26px;
-    width: 250px;
-    order: 3;
   }
 `;
 
@@ -61,7 +57,7 @@ export const About = () => (
     <AboutTag />
     <AboutContentMain />
     <Image src={HeadShot} alt="Head Shot of Freddie Hoy" />
-    <AboutContentContact />
     <AboutContentInterests />
+    <AboutContentContact />
   </Container>
 );

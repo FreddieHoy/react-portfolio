@@ -1,3 +1,4 @@
+import { colors } from 'config/colors';
 import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
 import { fadeIn } from 'config/keyframes';
 import {
@@ -45,13 +46,19 @@ const HeadingConatiner = styled(HeadingOne)`
 `;
 
 const LogoBackground = styled.a`
-  margin: 30px auto;
+  margin: 10px auto 30px auto;
   padding: 10px;
   width: 60%;
   background-color: white;
   display: flex;
   justify-content: center;
   border-radius: 2px;
+  @media (min-width: ${tabletBreakPoint}px) {
+    transition: background-color 0.4s ease;
+    :hover {
+      background-color: ${colors.lightBlueText};
+    }
+  }
 `;
 
 export const LyvlyExp = () => (
