@@ -1,13 +1,7 @@
+import { Container } from 'components/common/Container';
 import { colors } from 'config/colors';
 import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
-import { fadeIn } from 'config/keyframes';
-import {
-  indentSizeLaptop,
-  indentSizeMobile,
-  laptopBreakPoint,
-  mobileBreakPoint,
-  tabletBreakPoint
-} from 'config/spacing';
+import { tabletBreakPoint } from 'config/spacing';
 import React from 'react';
 import GALogoNoWords from 'static/GALogoNoWords.png';
 import styled from 'styled-components';
@@ -15,26 +9,6 @@ import styled from 'styled-components';
 import { GAContentMain } from './GAContent';
 import { GAProject } from './GAProject';
 import { GAMainText, GAProjectText } from './GAText';
-
-const Container = styled.div`
-  animation: ${fadeIn} 2s ease;
-  padding: 20px ${indentSizeMobile}px;
-  padding-bottom: 100px;
-
-  @media (min-width: ${mobileBreakPoint}px) {
-    padding: 0 0 140px 0;
-    margin: 0 auto;
-    width: 500px;
-  }
-
-  @media (min-width: ${tabletBreakPoint}px) {
-    padding: ${indentSizeLaptop}px 0 100px 0;
-    width: 660px;
-  }
-
-  @media (min-width: ${laptopBreakPoint}px) {
-  }
-`;
 
 const HeadingContainer = styled(HeadingOne)`
   with: 100%;

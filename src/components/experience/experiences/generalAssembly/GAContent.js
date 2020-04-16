@@ -1,5 +1,4 @@
 import { LightBlueText, Paragraph, RedText } from 'config/fontStyles';
-import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -7,9 +6,6 @@ import { GAMainText } from './GAText';
 
 const ContainerMain = styled.div`
   padding: 10px 0;
-  @media (min-width: ${mobileBreakPoint}px) {
-    order: 2;
-  }
 `;
 
 export const GAContentMain = () => (

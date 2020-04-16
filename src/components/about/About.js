@@ -1,10 +1,5 @@
-import { fadeIn } from 'config/keyframes';
-import {
-  indentSizeMobile,
-  laptopBreakPoint,
-  mobileBreakPoint,
-  tabletBreakPoint
-} from 'config/spacing';
+import { Container } from 'components/common/Container';
+import { laptopBreakPoint, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import HeadShot from 'static/HeadShot.jpg';
 import styled from 'styled-components';
@@ -15,29 +10,6 @@ import {
   AboutContentMain
 } from './AboutContent';
 import { AboutTag } from './AboutTag';
-
-const Container = styled.div`
-  animation: ${fadeIn} 2s ease;
-  padding: 20px ${indentSizeMobile}px 100px ${indentSizeMobile}px;
-
-  @media (min-width: ${mobileBreakPoint}px) {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    padding: 0 0 140px 0;
-    margin: 0 auto;
-    width: 500px;
-  }
-
-  @media (min-width: ${tabletBreakPoint}px) {
-    padding: 100px 0 100px 0;
-    width: 660px;
-  }
-
-  @media (min-width: ${laptopBreakPoint}px) {
-    padding: 100px 0 100px 0;
-  }
-`;
 
 const Image = styled.img`
   width: 100%;

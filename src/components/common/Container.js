@@ -2,7 +2,7 @@ import { fadeIn } from 'config/keyframes';
 import {
   indentSizeLaptop,
   indentSizeMobile,
-  laptopBreakPoint,
+  ipadProHeightBreakPoint,
   mobileBreakPoint,
   tabletBreakPoint
 } from 'config/spacing';
@@ -12,13 +12,14 @@ export const Container = styled.div`
   animation: ${fadeIn} 1s ease;
   width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
   padding: 30px ${indentSizeMobile}px 100px ${indentSizeMobile}px;
 
   @media (min-width: ${mobileBreakPoint}px) {
     padding: 0 0 140px 0;
     margin: 0 auto;
     width: 500px;
+    justify-content: space-between;
   }
 
   @media (min-width: ${tabletBreakPoint}px) {
@@ -26,6 +27,7 @@ export const Container = styled.div`
     width: 660px;
   }
 
-  @media (min-width: ${laptopBreakPoint}px) {
+  @media (min-height: ${ipadProHeightBreakPoint}px) {
+    padding: 250px 0 100px 0;
   }
 `;
