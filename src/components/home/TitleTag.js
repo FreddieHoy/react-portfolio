@@ -1,6 +1,6 @@
 import { colors } from 'config/colors';
 import { TitleTagWord } from 'config/fontStyles';
-import { laptopBreakPoint, mobileBreakPoint } from 'config/spacing';
+import { laptopBreakPoint, tabletBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -20,19 +20,16 @@ const Container = styled.div`
   padding-bottom: 20%;
   width: 100%;
 
-  @media (min-width: ${mobileBreakPoint}px) {
-    width: 70%;
-    padding-bottom: 20%;
+  @media (min-width: ${tabletBreakPoint}px) {
+    padding-bottom: 0;
   }
   @media (min-width: ${laptopBreakPoint}px) {
-    width: 70%;
-    padding-bottom: 10%;
     div {
       transition: font-size 0.5s ease;
     }
     :hover > div {
       transition: font-size 1s ease;
-      font-size: 60px;
+      font-size: 70px;
     }
   }
 `;

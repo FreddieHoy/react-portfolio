@@ -2,7 +2,7 @@ import { fadeIn } from 'config/keyframes';
 import {
   indentSizeLaptop,
   indentSizeMobile,
-  mobileBreakPoint
+  tabletBreakPoint
 } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
@@ -18,7 +18,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: flex-start;
 
-  @media (min-width: ${mobileBreakPoint}px) {
+  @media (min-width: ${tabletBreakPoint}px) {
+    height: 100vh;
     padding: ${indentSizeLaptop}px;
   }
 `;

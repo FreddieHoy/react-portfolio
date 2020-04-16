@@ -49,7 +49,7 @@ export const TitleTagWord = ({ color, text, endSpace }) => {
     font-weight: 700;
     padding-right: ${endSpace ? '12px' : '0'};
     @media (min-width: ${mobileBreakPoint}px) {
-      font-size: 44px;
+      font-size: 50px;
     }
   `;
   return <TagWord>{text}</TagWord>;
