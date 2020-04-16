@@ -4,6 +4,8 @@ import { laptopBreakPoint, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
+import { TechSheetText } from './LyvlyText';
+
 const Container = styled.div`
   order: 4;
   text-align: left;
@@ -35,24 +37,23 @@ const TechItem = styled(Paragraph)`
 export const LyvlyTechSheet = () => (
   <Container>
     <HeadingTwo>
-      <RedText>Tech sheet</RedText>
+      <RedText>{TechSheetText.title}</RedText>
     </HeadingTwo>
     <div>
-      <TechItem>JavaScript</TechItem>
-      <TechItem>TypeScript</TechItem>
-      <TechItem>React</TechItem>
-      <TechItem>Jest</TechItem>
-      <TechItem>Enzyme</TechItem>
-      <TechItem>GraphQL</TechItem>
-      <TechItem>Git / GitHub</TechItem>
-      <TechItem>Node.js</TechItem>
-      <TechItem>Express </TechItem>
-      <TechItem>RESTful APIs</TechItem>
-      <TechItem>GraphQL</TechItem>
-      <TechItem>MongoDB</TechItem>
-      <TechItem>SQL databases</TechItem>
-      <TechItem>Agile methodology</TechItem>
-      <TechItem>npm / yarn</TechItem>
+      <TechItem>{TechSheetText.javaScript}</TechItem>
+      <TechItem>{TechSheetText.typeScript}</TechItem>
+      <TechItem>{TechSheetText.react}</TechItem>
+      <TechItem>{TechSheetText.jest}</TechItem>
+      <TechItem>{TechSheetText.enzyme}</TechItem>
+      <TechItem>{TechSheetText.git}</TechItem>
+      <TechItem>{TechSheetText.node}</TechItem>
+      <TechItem>{TechSheetText.express}</TechItem>
+      <TechItem>{TechSheetText.restful}</TechItem>
+      <TechItem>{TechSheetText.graphQL}</TechItem>
+      <TechItem>{TechSheetText.mongoDB}</TechItem>
+      <TechItem>{TechSheetText.sql}</TechItem>
+      <TechItem>{TechSheetText.agile}</TechItem>
+      <TechItem>{TechSheetText.npm}</TechItem>
     </div>
   </Container>
 );

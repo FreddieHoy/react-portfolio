@@ -77,9 +77,12 @@ const LogoBackground = styled.a`
     padding: 20px;
   }
   @media (min-width: ${laptopBreakPoint}px) {
+    align-items: center;
+    justify-content: center;
     padding: 20px;
     order: 3;
     transition: background-color 0.5s ease;
+    width: 35%;
     :hover {
       background-color: ${colors.blueText};
     }

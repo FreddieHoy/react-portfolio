@@ -40,3 +40,21 @@ export const lyvlyText = {
     }
   }
 };
+
+export const TechSheetText = {
+  title: 'Tech Sheet',
+  javaScript: 'JavaScript',
+  typeScript: 'TypeScript',
+  react: 'React',
+  jest: 'Jest',
+  enzyme: 'Enzyme',
+  git: 'Git / GitHub',
+  node: 'Node.js',
+  express: 'Express ',
+  restful: 'RESTful APIs',
+  graphQL: 'GraphQL',
+  mongoDB: 'MongoDB',
+  sql: 'SQL databases',
+  agile: 'Agile methodology',
+  npm: 'npm / yarn'
+};

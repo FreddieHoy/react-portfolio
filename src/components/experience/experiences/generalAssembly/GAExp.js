@@ -59,7 +59,13 @@ const LogoBackground = styled.a`
     height: 120px;
   }
   @media (min-width: ${laptopBreakPoint}px) {
-    width: 36%;
+    padding: 20px;
+    order: 3;
+    transition: background-color 0.5s ease;
+    width: 35%;
+    :hover {
+      background-color: ${colors.blueText};
+    }
   }
 `;
 
