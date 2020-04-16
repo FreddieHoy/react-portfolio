@@ -79,7 +79,7 @@ export const GAExp = () => (
       />
     </LogoBackground>
     <GAContentMain />
-    {GAProjectText.map((project) => (
+    {GAProjectText.projectInfoArray.map((project) => (
       <GAContentProject project={project} key={project.title} />
     ))}
   </Container>

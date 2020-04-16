@@ -35,34 +35,41 @@ export const GAMainText = {
   }
 };
 
-export const GAProjectText = [
-  {
-    title: 'Lost The Plot',
-    about:
-      'The idea for this app was for users to share space in their garden for other users to grow food in, joining the sustainable food movement growing in London right now. This was my first group project extensively using Git to collaborate on the project. Most of my work was on the backend, searching using React-mapbox, styling and the homepage',
-    technologies:
-      'JavaScript, React, Express, MongoDB, Git, react-mapbox, Mocha, Chai & SuperTest.',
-    image: LostThePlot
+export const GAProjectText = {
+  titles: {
+    about: 'About',
+    tech: 'Technologies'
   },
-  {
-    title: 'YesChef',
-    about:
-      'The idea for this App was to allow users to share their home-cooked meals with one another by posting an image with a description and allowing other users to comment. The user can see their profile page and a news feed.',
-    technologies: 'JavaScript, Python, React, Django, SQL, Yarn, Heroku, Node.',
-    image: YesChef
-  },
-  {
-    title: 'PacMan',
-    about:
-      'This was my first significant coding project. HTML, CSS & JS were used to create the game. The game was built starting with a basic grid and developed using extensive game logic and interaction with DOM elements.',
-    technologies: 'JavaScript, HTML & CSS',
-    image: PacMan
-  },
-  {
-    title: 'Bored Games',
-    about:
-      'The project was focused on consuming an API and using RESTful routes. We consumed a board game API with very useful data allowing us to display a search page for board games which by the number of players, genre, length of time, game mechanics (ie. dice), price and more.',
-    technologies: 'JavaScript, React, API, RESTful Routes, Insomnia, CRUD',
-    image: BoredGames
-  }
-];
+  projectInfoArray: [
+    {
+      title: 'Lost The Plot',
+      about:
+        'The idea for this app was for users to share space in their garden for other users to grow food in, joining the sustainable food movement growing in London right now. This was my first group project extensively using Git to collaborate on the project. Most of my work was on the backend, searching using React-mapbox, styling and the homepage',
+      technologies:
+        'JavaScript, React, Express, MongoDB, Git, react-mapbox, Mocha, Chai & SuperTest.',
+      image: LostThePlot
+    },
+    {
+      title: 'YesChef',
+      about:
+        'The idea for this App was to allow users to share their home-cooked meals with one another by posting an image with a description and allowing other users to comment. The user can see their profile page and a news feed.',
+      technologies:
+        'JavaScript, Python, React, Django, SQL, Yarn, Heroku, Node.',
+      image: YesChef
+    },
+    {
+      title: 'PacMan',
+      about:
+        'This was my first significant coding project. HTML, CSS & JS were used to create the game. The game was built starting with a basic grid and developed using extensive game logic and interaction with DOM elements.',
+      technologies: 'JavaScript, HTML & CSS',
+      image: PacMan
+    },
+    {
+      title: 'Bored Games',
+      about:
+        'The project was focused on consuming an API and using RESTful routes. We consumed a board game API with very useful data allowing us to display a search page for board games which by the number of players, genre, length of time, game mechanics (ie. dice), price and more.',
+      technologies: 'JavaScript, React, API, RESTful Routes, Insomnia, CRUD',
+      image: BoredGames
+    }
+  ]
+};

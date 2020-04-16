@@ -12,6 +12,8 @@ import {
 import React from 'react';
 import styled from 'styled-components';
 
+import { GAProjectText } from './GAText';
+
 const ContainerProject = styled.div`
   padding: 10px 0;
   @media (min-width: ${mobileBreakPoint}px) {
@@ -82,13 +84,13 @@ export const GAContentProject = ({ project }) => (
     <FlexedImage src={project.image} alt={project.title} width={360} />
     <AboutContianer>
       <Paragraph>
-        <LightBlueText>About</LightBlueText>
+        <LightBlueText>{GAProjectText.titles.about}</LightBlueText>
       </Paragraph>
       <Paragraph>{project.about}</Paragraph>
     </AboutContianer>
     <TechContianer>
       <Paragraph>
-        <LightBlueText>Technologies</LightBlueText>
+        <LightBlueText>{GAProjectText.titles.tech}</LightBlueText>
       </Paragraph>
       <Paragraph>{project.technologies}</Paragraph>
     </TechContianer>
