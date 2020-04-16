@@ -17,11 +17,10 @@ const Container = styled.div`
   padding: 10px 0;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 60%;
+    width: 100%;
     align-items: start;
   }
   @media (min-width: ${laptopBreakPoint}px) {
-    width: 60%;
   }
 `;
 
@@ -38,7 +37,7 @@ export const Experiences = () => (
     <ExperienceItem
       src={GeneralAssemblyLogo}
       alt="General Assembly logo"
-      height={28.75}
+      height={30}
       width={260}
       backgroundColor="black"
       url="generalassembly"

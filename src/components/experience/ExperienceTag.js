@@ -19,13 +19,9 @@ const Container = styled.div`
   margin-bottom: 20px;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    justify-content: flex-start;
-    margin: 20px 0;
-    width: 60%;
+    margin: 20px auto;
   }
   @media (min-width: ${laptopBreakPoint}px) {
-    justify-content: flex-start;
-    margin: 20px 0;
     width: 70%;
   }
 `;

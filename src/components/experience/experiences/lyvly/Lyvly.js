@@ -30,12 +30,11 @@ const Container = styled.div`
   }
 
   @media (min-width: ${tabletBreakPoint}px) {
-    padding: 50px ${indentSizeMobile}px 100px ${indentSizeMobile}px;
-    width: 700px;
+    padding: 50px 0 100px 0;
+    width: 660px;
   }
 
   @media (min-width: ${laptopBreakPoint}px) {
-    width: 700px;
   }
 `;
 

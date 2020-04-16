@@ -1,3 +1,4 @@
+import { colors } from 'config/colors';
 import { HeadingTwo, LightBlueText, Paragraph } from 'config/fontStyles';
 import {
   ipadProHeightBreakPoint,
@@ -13,18 +14,14 @@ const Container = styled.div`
   width: 100%;
   text-align: left;
   padding: 10px 0;
+
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 30%;
-    text-align: right;
-    padding: 0 10px;
+    display: flex;
+    flex-wrap: wrap;
   }
   @media (min-width: ${laptopBreakPoint}px) {
-    width: 30%;
-    text-align: right;
-    padding: 0 10px;
   }
   @media (min-height: ${ipadProHeightBreakPoint}px) {
-    width: 60%;
   }
 `;
 
@@ -33,22 +30,27 @@ const Skill = styled(Paragraph)`
   font-size: 20px;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    font-size: 20px;
+    width: 50%;
   }
   @media (min-width: ${laptopBreakPoint}px) {
+    width: 33%;
     font-size: 24px;
-    transition: font-size 0.4s ease;
+    transition: color 0.4s ease;
     :hover {
-      font-size: 30px;
+      color: ${colors.redText};
     }
   }
 `;
 
+const SkillsHeading = styled(HeadingTwo)`
+  width: 100%;
+`;
+
 export const SkillSheet = () => (
   <Container>
-    <HeadingTwo>
+    <SkillsHeading>
       <LightBlueText>Skills Sheet</LightBlueText>
-    </HeadingTwo>
+    </SkillsHeading>
     <Skill>{SkillsSheet.javaScript}</Skill>
     <Skill>{SkillsSheet.react}</Skill>
     <Skill>{SkillsSheet.jest}</Skill>
