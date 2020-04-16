@@ -1,13 +1,11 @@
 import { Paragraph, RedText } from 'config/fontStyles';
-import { mobileBreakPoint, tabletBreakPoint } from 'config/spacing';
+import { tabletBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
 import { lyvlyText } from './LyvlyText';
 
 const Container = styled.div`
-  @media (min-width: ${mobileBreakPoint}px) {
-  }
   @media (min-width: ${tabletBreakPoint}px) {
     margin: 20px 0;
   }

@@ -1,10 +1,6 @@
 import { colors } from 'config/colors';
 import { HeadingTwo, LightBlueText, Paragraph } from 'config/fontStyles';
-import {
-  ipadProHeightBreakPoint,
-  laptopBreakPoint,
-  mobileBreakPoint
-} from 'config/spacing';
+import { laptopBreakPoint, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -18,10 +14,6 @@ const Container = styled.div`
   @media (min-width: ${mobileBreakPoint}px) {
     display: flex;
     flex-wrap: wrap;
-  }
-  @media (min-width: ${laptopBreakPoint}px) {
-  }
-  @media (min-height: ${ipadProHeightBreakPoint}px) {
   }
 `;
 

@@ -1,8 +1,4 @@
-import {
-  ipadProHeightBreakPoint,
-  laptopBreakPoint,
-  mobileBreakPoint
-} from 'config/spacing';
+import { laptopBreakPoint, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
@@ -37,8 +33,6 @@ export const ExperienceItem = ({
       :hover {
         height: 70%;
       }
-    }
-    @media (min-height: ${ipadProHeightBreakPoint}px) {
     }
   `;
 

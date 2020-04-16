@@ -1,5 +1,5 @@
 import { Container } from 'components/common/Container';
-import { laptopBreakPoint, mobileBreakPoint } from 'config/spacing';
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import HeadShot from 'static/HeadShot.jpg';
 import styled from 'styled-components';
@@ -19,8 +19,6 @@ const Image = styled.img`
   @media (min-width: ${mobileBreakPoint}px) {
     width: 160px;
     padding: 0;
-  }
-  @media (min-width: ${laptopBreakPoint}px) {
   }
 `;
 
