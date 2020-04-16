@@ -7,6 +7,8 @@ import {
 import React from 'react';
 import styled from 'styled-components';
 
+import { SkillsSheet } from './ExperienceText';
+
 const Container = styled.div`
   width: 100%;
   text-align: left;
@@ -47,21 +49,21 @@ export const SkillSheet = () => (
     <HeadingTwo>
       <LightBlueText>Skills Sheet</LightBlueText>
     </HeadingTwo>
-    <Skill>JavaScript ES6</Skill>
-    <Skill>React.js</Skill>
-    <Skill>Jest</Skill>
-    <Skill>Enzyme</Skill>
-    <Skill>Node.js</Skill>
-    <Skill>Express</Skill>
-    <Skill>RESTful APIs</Skill>
-    <Skill>GraphQL</Skill>
-    <Skill>SQL</Skill>
-    <Skill>MonogDB</Skill>
-    <Skill>Git and GitHub</Skill>
-    <Skill>Agile Methodology</Skill>
-    <Skill>npm and yarn</Skill>
-    <Skill>HTML and CSS</Skill>
-    <Skill>TypeScript</Skill>
-    <Skill>Python</Skill>
+    <Skill>{SkillsSheet.javaScript}</Skill>
+    <Skill>{SkillsSheet.react}</Skill>
+    <Skill>{SkillsSheet.jest}</Skill>
+    <Skill>{SkillsSheet.exzyme}</Skill>
+    <Skill>{SkillsSheet.node}</Skill>
+    <Skill>{SkillsSheet.express}</Skill>
+    <Skill>{SkillsSheet.restful}</Skill>
+    <Skill>{SkillsSheet.graphql}</Skill>
+    <Skill>{SkillsSheet.sql}</Skill>
+    <Skill>{SkillsSheet.mongoDB}</Skill>
+    <Skill>{SkillsSheet.git}</Skill>
+    <Skill>{SkillsSheet.aglie}</Skill>
+    <Skill>{SkillsSheet.npm}</Skill>
+    <Skill>{SkillsSheet.html}</Skill>
+    <Skill>{SkillsSheet.typeScript}</Skill>
+    <Skill>{SkillsSheet.python}</Skill>
   </Container>
 );
