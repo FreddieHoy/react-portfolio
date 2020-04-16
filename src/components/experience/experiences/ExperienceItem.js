@@ -39,7 +39,6 @@ export const ExperienceItem = ({
       }
     }
     @media (min-height: ${ipadProHeightBreakPoint}px) {
-      width: 100%;
     }
   `;
 

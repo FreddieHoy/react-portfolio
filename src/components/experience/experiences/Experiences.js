@@ -10,7 +10,7 @@ import { ExperienceItem } from './ExperienceItem';
 const Container = styled.div`
   animation: ${fadeIn} 1s ease;
   width: 100%;
-  height: 420px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
