@@ -15,9 +15,7 @@ export const lyvlyText = {
   lyvly:
     'Lyvly provides community-based housing for people to rent great flats in London. But also allows members to find an instant community to socailise and be immersed in London life.',
   first:
-    'This was my first time working as a software engineer. I was thrown straight into the deep end, pairing with some fantastic engineering minds.',
-  team:
-    'The team was developing a cutting-edge event-driven microservice infrastructure, based around an AWS Kinesis event stream.',
+    'This was my first time working as a software engineer. I was thrown straight into the deep end, pairing with some fantastic engineering minds. The team was developing a cutting-edge event-driven microservice infrastructure, based around an AWS Kinesis event stream.',
   role: {
     title: 'My Role',
     front: {

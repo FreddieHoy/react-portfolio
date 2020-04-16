@@ -3,7 +3,8 @@ import { NavWhite, StyledAnchor } from 'config/fontStyles';
 import {
   indentSizeLaptop,
   indentSizeMobile,
-  mobileBreakPoint
+  mobileBreakPoint,
+  tabletBreakPoint
 } from 'config/spacing';
 import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
@@ -13,17 +14,23 @@ import { navBarText } from './CommonText';
 
 const NavContainer = styled.div`
   border-left: none;
-  height: none;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  text-align: left;
+  text-align: right;
   padding: ${indentSizeMobile}px;
 
   @media (min-width: ${mobileBreakPoint}px) {
+    padding: ${indentSizeLaptop}px;
+  }
+
+  @media (min-width: ${tabletBreakPoint}px) {
+    width: 150px;
+    background: ${colors.backgroundTwo};
+    text-align: left;
     position: fixed;
     right: 0;
-    padding: ${indentSizeLaptop}px;
     padding-left: 40px;
     height: 100vh;
     justify-content: space-between;

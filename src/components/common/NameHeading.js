@@ -2,6 +2,7 @@ import { NameTitle } from 'config/fontStyles';
 import {
   indentSizeLaptop,
   indentSizeMobile,
+  laptopBreakPoint,
   mobileBreakPoint
 } from 'config/spacing';
 import React from 'react';
@@ -17,6 +18,13 @@ const TitleContainer = styled.div`
   justify-content: space-between;
 
   @media (min-width: ${mobileBreakPoint}px) {
+    padding: ${indentSizeLaptop}px;
+  }
+
+  @media (min-width: ${laptopBreakPoint}px) {
+    position: fixed;
+    top: 0;
+    left: 0;
     padding: ${indentSizeLaptop}px;
   }
 `;
