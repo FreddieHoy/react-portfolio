@@ -25,10 +25,10 @@ const Container = styled.div`
   }
   @media (min-width: ${laptopBreakPoint}px) {
     div {
-      transition: font-size 0.5s ease;
+      transition: font-size 2s ease;
     }
     :hover > div {
-      transition: font-size 1s ease;
+      transition: font-size 0.5s ease;
       font-size: 70px;
     }
   }

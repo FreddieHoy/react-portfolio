@@ -1,3 +1,4 @@
+import { fadeIn } from 'config/keyframes';
 import {
   indentSizeLaptop,
   indentSizeMobile,
@@ -8,6 +9,7 @@ import {
 import styled from 'styled-components';
 
 export const Container = styled.div`
+  animation: ${fadeIn} 1s ease;
   width: 100%;
   display: flex;
   flex-direction: column;

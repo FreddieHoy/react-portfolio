@@ -25,7 +25,7 @@ const AboutContianer = styled.div``;
 
 const TechContianer = styled.div``;
 
-export const GAContentProject = ({ project }) => (
+export const GAProject = ({ project }) => (
   <ContainerProject>
     <FlexedHeading>
       <RedText>{project.title}</RedText>

@@ -17,7 +17,7 @@ import {
 import { AboutTag } from './AboutTag';
 
 const Container = styled.div`
-  animation: ${fadeIn} 1s ease;
+  animation: ${fadeIn} 2s ease;
   padding: 20px ${indentSizeMobile}px 100px ${indentSizeMobile}px;
 
   @media (min-width: ${mobileBreakPoint}px) {

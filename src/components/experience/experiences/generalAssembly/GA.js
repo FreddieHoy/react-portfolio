@@ -12,12 +12,12 @@ import React from 'react';
 import GALogoNoWords from 'static/GALogoNoWords.png';
 import styled from 'styled-components';
 
-import { GAContentMain } from './GAExpContent';
-import { GAContentProject } from './GAExpProject';
+import { GAContentMain } from './GAContent';
+import { GAProject } from './GAProject';
 import { GAMainText, GAProjectText } from './GAText';
 
 const Container = styled.div`
-  animation: ${fadeIn} 1s ease;
+  animation: ${fadeIn} 2s ease;
   padding: 20px ${indentSizeMobile}px;
   padding-bottom: 100px;
 
@@ -44,12 +44,12 @@ const HeadingContainer = styled(HeadingOne)`
 
 const LogoBackground = styled.a`
   margin: 10px auto 30px auto;
-  padding: 20px;
-  width: 60%;
+  padding: 10px;
+  width: 70%;
   background-color: black;
   display: flex;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 4px;
   @media (min-width: ${tabletBreakPoint}px) {
     transition: background-color 0.4s ease;
     :hover {
@@ -70,7 +70,7 @@ export const GAExp = () => (
     </HeadingContainer>
     <GAContentMain />
     {GAProjectText.projectInfoArray.map((project) => (
-      <GAContentProject project={project} key={project.title} />
+      <GAProject project={project} key={project.title} />
     ))}
   </Container>
 );

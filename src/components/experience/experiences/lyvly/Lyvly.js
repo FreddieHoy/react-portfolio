@@ -17,7 +17,7 @@ import { LyvlyTechSheet } from './LyvlyTechSheet';
 import { lyvlyText } from './LyvlyText';
 
 const Container = styled.div`
-  animation: ${fadeIn} 1s ease;
+  animation: ${fadeIn} 2s ease;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -48,11 +48,11 @@ const HeadingConatiner = styled(HeadingOne)`
 const LogoBackground = styled.a`
   margin: 10px auto 30px auto;
   padding: 10px;
-  width: 60%;
+  width: 70%;
   background-color: white;
   display: flex;
   justify-content: center;
-  border-radius: 2px;
+  border-radius: 4px;
   @media (min-width: ${tabletBreakPoint}px) {
     transition: background-color 0.4s ease;
     :hover {

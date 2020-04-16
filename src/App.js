@@ -5,7 +5,7 @@ import { ContactLinks } from 'components/common/ContactLinks';
 import { NameHeading } from 'components/common/NameHeading';
 import NavBar from 'components/common/NavBar';
 import { Experience } from 'components/experience/Experience';
-import { GAExp } from 'components/experience/experiences/generalAssembly/GAExp';
+import { GAExp } from 'components/experience/experiences/generalAssembly/GA';
 import { LyvlyExp } from 'components/experience/experiences/lyvly/Lyvly';
 import { Home } from 'components/home/Home';
 import { colors } from 'config/colors';
