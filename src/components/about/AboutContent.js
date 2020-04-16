@@ -59,19 +59,31 @@ export const AboutContentContact = () => (
     <HeadingTwo>{AboutTextContact.title}</HeadingTwo>
     <ListItems>
       {AboutTextContact.email.title}
-      <StyledAnchor href="mailto: freddiehoy0@gmail.com">
+      <StyledAnchor
+        href="mailto: freddiehoy0@gmail.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {AboutTextContact.email.address}
       </StyledAnchor>
     </ListItems>
     <ListItems>
       {AboutTextContact.github.title}
-      <StyledAnchor href="https://github.com/FreddieHoy">
+      <StyledAnchor
+        href="https://github.com/FreddieHoy"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {AboutTextContact.github.path}
       </StyledAnchor>
     </ListItems>
     <ListItems>
       {AboutTextContact.linkedIn.title}
-      <StyledAnchor href="https://www.linkedin.com/in/freddie-hoy/">
+      <StyledAnchor
+        href="https://www.linkedin.com/in/freddie-hoy/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {AboutTextContact.linkedIn.path}
       </StyledAnchor>
     </ListItems>
@@ -84,7 +96,11 @@ export const AboutContentInterests = () => (
     <Paragraph>{AboutTextInterests.cycling.leMed}</Paragraph>
     <Paragraph>
       {AboutTextInterests.cycling.just}
-      <StyledAnchor href="https://www.justgiving.com/fundraising/cyclelemedntob">
+      <StyledAnchor
+        href="https://www.justgiving.com/fundraising/cyclelemedntob"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {AboutTextInterests.cycling.path}
       </StyledAnchor>
     </Paragraph>
