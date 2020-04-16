@@ -1,3 +1,4 @@
+import { fadeIn } from 'config/keyframes';
 import {
   indentSizeLaptop,
   indentSizeMobile,
@@ -18,6 +19,7 @@ import { AboutTag } from './AboutTag';
 
 const Container = styled.div`
   padding: 20px ${indentSizeMobile}px 100px ${indentSizeMobile}px;
+  animation: ${fadeIn} 1s ease;
 
   @media (min-width: ${mobileBreakPoint}px) {
     padding: 0 ${laptopSpaceForNavbar}px 30px ${indentSizeLaptop}px;

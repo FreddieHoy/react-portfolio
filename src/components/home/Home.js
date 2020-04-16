@@ -1,3 +1,4 @@
+import { fadeIn } from 'config/keyframes';
 import {
   indentSizeLaptop,
   indentSizeMobile,
@@ -9,6 +10,7 @@ import styled from 'styled-components';
 import { TitleTag } from './TitleTag';
 
 const Container = styled.div`
+  animation: ${fadeIn} 1s ease;
   padding: ${indentSizeMobile}px;
   height: 85vh;
   width: 100%;

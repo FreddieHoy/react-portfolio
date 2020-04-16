@@ -37,7 +37,7 @@ const Skill = styled(Paragraph)`
     font-size: 24px;
     transition: font-size 0.4s ease;
     :hover {
-      font-size: 26px;
+      font-size: 30px;
     }
   }
 `;
@@ -49,19 +49,19 @@ export const SkillSheet = () => (
     </HeadingTwo>
     <Skill>JavaScript ES6</Skill>
     <Skill>React.js</Skill>
-    <Skill>Git and GitHub</Skill>
     <Skill>Jest</Skill>
     <Skill>Enzyme</Skill>
     <Skill>Node.js</Skill>
     <Skill>Express</Skill>
     <Skill>RESTful APIs</Skill>
     <Skill>GraphQL</Skill>
-    <Skill>Agile Methodology</Skill>
-    <Skill>TypeScript</Skill>
-    <Skill>Python</Skill>
-    <Skill>npm and yarn</Skill>
-    <Skill>HTML and CSS</Skill>
     <Skill>SQL</Skill>
     <Skill>MonogDB</Skill>
+    <Skill>Git and GitHub</Skill>
+    <Skill>Agile Methodology</Skill>
+    <Skill>npm and yarn</Skill>
+    <Skill>HTML and CSS</Skill>
+    <Skill>TypeScript</Skill>
+    <Skill>Python</Skill>
   </Container>
 );

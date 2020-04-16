@@ -1,7 +1,7 @@
 import { colors } from 'config/colors';
 import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
+import { fadeIn } from 'config/keyframes';
 import {
-  desktopBreakPoint,
   indentSizeLaptop,
   indentSizeMobile,
   laptopBreakPoint,
@@ -17,6 +17,7 @@ import { GAContentProject } from './GAExpProject';
 import { GAMainText, GAProjectText } from './GAText';
 
 const Container = styled.div`
+  animation: ${fadeIn} 1s ease;
   padding: 20px ${indentSizeMobile}px;
   padding-bottom: 100px;
 

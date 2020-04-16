@@ -33,10 +33,8 @@ export const ExperienceItem = ({
       width: 100%;
     }
     @media (min-width: ${laptopBreakPoint}px) {
-      width: 60%;
-      transition: all 0.4s ease;
+      transition: height 0.4s ease;
       :hover {
-        width: 95%;
         height: 70%;
       }
     }

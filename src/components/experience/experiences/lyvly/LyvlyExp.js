@@ -1,5 +1,6 @@
 import { colors } from 'config/colors';
 import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
+import { fadeIn } from 'config/keyframes';
 import {
   desktopBreakPoint,
   indentSizeLaptop,
@@ -24,6 +25,7 @@ const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  animation: ${fadeIn} 1s ease;
 
   @media (min-width: ${mobileBreakPoint}px) {
     justify-content: flex-start;
