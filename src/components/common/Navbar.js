@@ -9,6 +9,8 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { navBarText } from './CommonText';
+
 const NavContainer = styled.div`
   border-left: none;
   height: none;
@@ -36,17 +38,17 @@ const StyledLink = styled(Link)`
 const NavBar = () => (
   <NavContainer>
     <StyledLink to="/experience">
-      <NavWhite>Exp</NavWhite>
+      <NavWhite>{navBarText.experience}</NavWhite>
     </StyledLink>
     <StyledLink to="/about">
-      <NavWhite>About</NavWhite>
+      <NavWhite>{navBarText.about}</NavWhite>
     </StyledLink>
     <StyledAnchor
       href="https://freddiehoy.github.io/Unbeatable-TicTacToe/"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <NavWhite>Game</NavWhite>
+      <NavWhite>{navBarText.game}</NavWhite>
     </StyledAnchor>
   </NavContainer>
 );

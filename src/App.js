@@ -2,7 +2,7 @@ import './App.css';
 
 import { About } from 'components/about/About';
 import { ContactLinks } from 'components/common/ContactLinks';
-import { Heading } from 'components/common/Heading';
+import { NameHeading } from 'components/common/NameHeading';
 import NavBar from 'components/common/NavBar';
 import { Experience } from 'components/experience/Experience';
 import { GAExp } from 'components/experience/experiences/generalAssembly/GAExp';
@@ -45,7 +45,7 @@ export const App = () => (
   <Container>
     <HashRouter>
       <HeadingContianer>
-        <Heading />
+        <NameHeading />
         <NavBar />
       </HeadingContianer>
       <Switch>

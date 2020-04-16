@@ -67,19 +67,19 @@ export const AboutContentContact = () => (
   <ContactContainer>
     <HeadingTwo>{AboutTextContact.title}</HeadingTwo>
     <ListItems>
-      {AboutTextContact.email.email}
+      {AboutTextContact.email.title}
       <StyledAnchor href="mailto: freddiehoy0@gmail.com">
         {AboutTextContact.email.address}
       </StyledAnchor>
     </ListItems>
     <ListItems>
-      {AboutTextContact.github.github}
+      {AboutTextContact.github.title}
       <StyledAnchor href="https://github.com/FreddieHoy">
         {AboutTextContact.github.path}
       </StyledAnchor>
     </ListItems>
     <ListItems>
-      {AboutTextContact.linkedIn.linkedIn}
+      {AboutTextContact.linkedIn.title}
       <StyledAnchor href="https://www.linkedin.com/in/freddie-hoy/">
         {AboutTextContact.linkedIn.path}
       </StyledAnchor>

@@ -13,15 +13,15 @@ export const AboutTextMain = {
 export const AboutTextContact = {
   title: 'Contact Details',
   email: {
-    email: 'Email: ',
+    title: 'Email: ',
     address: 'freddiehoy0@gmail.com'
   },
   github: {
-    github: 'Github: ',
+    title: 'Github: ',
     path: '/FreddieHoy'
   },
   linkedIn: {
-    linkedIn: 'LinkedIn: ',
+    title: 'LinkedIn: ',
     path: '/freddie-hoy'
   }
 };

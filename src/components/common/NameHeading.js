@@ -8,6 +8,8 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
+import { nameHeadingText } from './CommonText';
+
 const TitleContainer = styled.div`
   padding: ${indentSizeMobile}px;
   width: 50%;
@@ -23,13 +25,13 @@ const StyledLink = styled(Link)`
   text-decoration: none;
 `;
 
-export const Heading = () => (
+export const NameHeading = () => (
   <TitleContainer>
     <StyledLink to="/home">
       <NameTitle>
-        FREDDIE
+        {nameHeadingText.freddie}
         <br />
-        HOY
+        {nameHeadingText.hoy}
       </NameTitle>
     </StyledLink>
   </TitleContainer>
