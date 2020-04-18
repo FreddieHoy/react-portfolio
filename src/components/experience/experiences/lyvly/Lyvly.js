@@ -35,7 +35,11 @@ const LogoBackground = styled.a`
 
 export const LyvlyExp = () => (
   <Container>
-    <LogoBackground href="https://www.lyvly.uk/">
+    <LogoBackground
+      href="https://www.lyvly.uk/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <img src={LyvlyLogo} alt="Lyvly logo" width={60} height={60} />
     </LogoBackground>
     <HeadingConatiner>

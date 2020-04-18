@@ -27,7 +27,11 @@ export const LyvlyRole = () => (
     <Paragraph>
       <RedText>{lyvlyText.role.front.frontEnd}</RedText>
       {lyvlyText.role.front.sig}
-      <StyledAnchor href="www.lyvly.uk">
+      <StyledAnchor
+        href="https://www.lyvly.uk/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {lyvlyText.role.front.website}
       </StyledAnchor>
       {lyvlyText.role.front.coverage}
@@ -35,7 +39,11 @@ export const LyvlyRole = () => (
     <Paragraph>
       <RedText>{lyvlyText.role.back.title}</RedText>
       {lyvlyText.role.back.business}
-      <StyledAnchor href="www.thehomeppl.com">
+      <StyledAnchor
+        href="https://www.thehomeppl.com"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         {lyvlyText.role.back.website}
       </StyledAnchor>
       {lyvlyText.role.back.api}

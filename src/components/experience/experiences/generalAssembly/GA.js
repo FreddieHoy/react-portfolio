@@ -46,7 +46,11 @@ const ProjectsHeading = styled(HeadingTwo)`
 
 export const GAExp = () => (
   <Container>
-    <LogoBackground href="https://generalassemb.ly/">
+    <LogoBackground
+      href="https://generalassemb.ly/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
       <img src={GALogoNoWords} alt="GA logo" width={70} height={70} />
     </LogoBackground>
     <HeadingContainer>
