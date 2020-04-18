@@ -6,7 +6,7 @@ import {
 } from 'config/spacing';
 import React from 'react';
 import EmailIcon from 'static/EmailIcon.svg';
-import GitHubIconlIcon from 'static/GitHubIcon.svg';
+import GitHubIconIcon from 'static/GitHubIcon.svg';
 import LinkedInIcon from 'static/LinkedinIcon.svg';
 import styled from 'styled-components';
 
@@ -48,7 +48,7 @@ export const ContactLinks = () => (
       rel="noopener noreferrer"
     >
       <ContactButton
-        src={GitHubIconlIcon}
+        src={GitHubIconIcon}
         alt="GitHub Icon"
         height={40}
         width={40}

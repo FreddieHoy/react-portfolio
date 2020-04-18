@@ -13,19 +13,19 @@ import { nameHeadingText } from './CommonText';
 
 const TitleContainer = styled.div`
   padding: ${indentSizeMobile}px;
-  width: 50%;
+  width: 30%;
   display: flex;
   justify-content: space-between;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    padding: ${indentSizeLaptop}px;
+    padding: ${indentSizeLaptop}px 0 0 ${indentSizeLaptop}px;
   }
 
   @media (min-width: ${laptopBreakPoint}px) {
     position: fixed;
     top: 0;
     left: 0;
-    padding: ${indentSizeLaptop}px;
+    padding: ${indentSizeLaptop}px 0 0 ${indentSizeLaptop}px;
   }
 `;
 
