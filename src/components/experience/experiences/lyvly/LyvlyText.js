@@ -20,9 +20,10 @@ export const lyvlyText = {
     title: 'My Role',
     front: {
       frontEnd: 'Front-End ',
-      sig: '- I spent a significant time working on',
-      website: ' Lyvly website ',
-      coverage: 'remaking many of the pages and adding complete test coverage.'
+      sig: '- I spent a significant time working on the ',
+      website: 'Lyvly website ',
+      coverage:
+        'remaking many several of the pages, adding search forms, displaying listings, working with the Stripe payment API, adding complete test coverage. etc.'
     },
     back: {
       title: 'Back-End ',
@@ -34,7 +35,7 @@ export const lyvlyText = {
     methodology: {
       title: 'Development Methodology ',
       learn:
-        '- Learning how an effective agile software development team works.'
+        '- I learned a great deal about how an effective agile software development team works. This included using continous delivery, pair programming using pomodoro, having retrospectives and radical candor sessions, etc.'
     }
   }
 };
