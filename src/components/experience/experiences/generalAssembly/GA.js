@@ -13,7 +13,6 @@ import { ProjectCarousel } from './ProjectCarousel';
 
 const HeadingContainer = styled(HeadingOne)`
   with: 100%;
-  text-align: center;
   margin: 0 auto 20px auto;
 `;
 
@@ -40,6 +39,11 @@ const ProjectContainer = styled.div`
   }
 `;
 
+const ProjectsHeading = styled(HeadingTwo)`
+  with: 100%;
+  margin: 0 0 20px 0;
+`;
+
 export const GAExp = () => (
   <Container>
     <LogoBackground href="https://generalassemb.ly/">
@@ -51,11 +55,13 @@ export const GAExp = () => (
       <BlueText>{GAMainText.punctuation.fullStop}</BlueText>
     </HeadingContainer>
     <GAContentMain />
-    <HeadingTwo>My Four Projects</HeadingTwo>
+    <ProjectsHeading>
+      <RedText>{GAMainText.fourProjects}</RedText>
+    </ProjectsHeading>
     <ProjectCarousel />
     <ProjectContainer>
       {GAProjectText.projectInfoArray.map((project) => (
-        <GAProject project={project} />
+        <GAProject project={project} key={project.title} />
       ))}
     </ProjectContainer>
   </Container>
