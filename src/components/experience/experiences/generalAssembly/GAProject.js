@@ -24,10 +24,6 @@ const FlexedHeading = styled(HeadingTwo)`
   display: flex;
 `;
 
-const AboutContianer = styled.div``;
-
-const TechContianer = styled.div``;
-
 const GitHubLink = styled.div`
   height: 30px;
   width: 26px;
@@ -46,17 +42,13 @@ export const GAProject = ({ project }) => (
         <GitHubLink />
       </a>
     </FlexedHeading>
-    <AboutContianer>
-      <Paragraph>
-        <LightBlueText>{GAProjectText.titles.about}</LightBlueText>
-      </Paragraph>
-      <Paragraph>{project.about}</Paragraph>
-    </AboutContianer>
-    <TechContianer>
-      <Paragraph>
-        <LightBlueText>{GAProjectText.titles.tech}</LightBlueText>
-      </Paragraph>
-      <Paragraph>{project.technologies}</Paragraph>
-    </TechContianer>
+    <Paragraph>
+      <LightBlueText>{GAProjectText.titles.about}</LightBlueText>
+    </Paragraph>
+    <Paragraph>{project.about}</Paragraph>
+    <Paragraph>
+      <LightBlueText>{GAProjectText.titles.tech}</LightBlueText>
+    </Paragraph>
+    <Paragraph>{project.technologies}</Paragraph>
   </ContainerProject>
 );

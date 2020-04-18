@@ -29,9 +29,11 @@ const Conatiner = styled(CarouselProvider)`
 const SliderHoverTrigger = styled(Slider)`
   @media (min-width: ${tabletBreakPoint}px) {
     :hover .image {
+      transition: opacity 0.5s ease;
       opacity: 0.3;
     }
     :hover .textBox {
+      transition: opacity 0.5s ease;
       opacity: 1;
     }
   }

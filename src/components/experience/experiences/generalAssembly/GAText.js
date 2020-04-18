@@ -33,7 +33,7 @@ export const GAMainText = {
         ' We used these skills we learned during the course to make 4 projects that show cased our work. All of which can be seen in more detail on my GitHub.'
     }
   },
-  repo: 'See project Repo & website',
+  repo: 'See project repo & website',
   fourProjects: 'My four projects'
 };
 
