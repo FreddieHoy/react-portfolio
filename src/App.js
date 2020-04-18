@@ -51,7 +51,7 @@ export const App = () => (
         <Route path="/experience/generalassembly" component={GAExp} />
         <Route path="/experience" component={Experience} />
         <Route path="/about" component={About} />
-        <Route path="/home" component={Home} />
+        <Route path="/" component={Home} />
       </Switch>
     </HashRouter>
     <ContactLinks />

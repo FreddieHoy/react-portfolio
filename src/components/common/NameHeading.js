@@ -35,7 +35,7 @@ const StyledLink = styled(Link)`
 
 export const NameHeading = () => (
   <TitleContainer>
-    <StyledLink to="/home">
+    <StyledLink to="/">
       <NameTitle>
         {nameHeadingText.freddie}
         <br />
