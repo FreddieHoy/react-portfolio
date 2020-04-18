@@ -1,7 +1,7 @@
 import { Container } from 'components/common/Container';
 import { colors } from 'config/colors';
-import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
-import { tabletBreakPoint } from 'config/spacing';
+import { BlueText, HeadingOne, HeadingTwo, RedText } from 'config/fontStyles';
+import { mobileBreakPoint, tabletBreakPoint } from 'config/spacing';
 import React from 'react';
 import GALogoNoWords from 'static/GALogoNoWords.png';
 import styled from 'styled-components';
@@ -9,6 +9,7 @@ import styled from 'styled-components';
 import { GAContentMain } from './GAContent';
 import { GAProject } from './GAProject';
 import { GAMainText, GAProjectText } from './GAText';
+import { ProjectCarousel } from './ProjectCarousel';
 
 const HeadingContainer = styled(HeadingOne)`
   with: 100%;
@@ -32,6 +33,13 @@ const LogoBackground = styled.a`
   }
 `;
 
+const ProjectContainer = styled.div`
+  @media (min-width: ${mobileBreakPoint}px) {
+    display: flex;
+    flex-wrap: wrap;
+  }
+`;
+
 export const GAExp = () => (
   <Container>
     <LogoBackground href="https://generalassemb.ly/">
@@ -43,8 +51,12 @@ export const GAExp = () => (
       <BlueText>{GAMainText.punctuation.fullStop}</BlueText>
     </HeadingContainer>
     <GAContentMain />
-    {GAProjectText.projectInfoArray.map((project) => (
-      <GAProject project={project} key={project.title} />
-    ))}
+    <HeadingTwo>My Four Projects</HeadingTwo>
+    <ProjectCarousel />
+    <ProjectContainer>
+      {GAProjectText.projectInfoArray.map((project) => (
+        <GAProject project={project} />
+      ))}
+    </ProjectContainer>
   </Container>
 );

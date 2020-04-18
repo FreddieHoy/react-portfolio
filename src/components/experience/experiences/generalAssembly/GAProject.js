@@ -10,16 +10,15 @@ import styled from 'styled-components';
 
 import { GAProjectText } from './GAText';
 
-const ContainerProject = styled.div``;
-
-const FlexedHeading = styled(HeadingTwo)``;
-
-const FlexedImage = styled.img`
-  width: 100%;
+const ContainerProject = styled.div`
+  padding: 20px 0;
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 500px;
+    padding: 10px;
+    width: 50%;
   }
 `;
+
+const FlexedHeading = styled(HeadingTwo)``;
 
 const AboutContianer = styled.div``;
 
@@ -30,7 +29,6 @@ export const GAProject = ({ project }) => (
     <FlexedHeading>
       <RedText>{project.title}</RedText>
     </FlexedHeading>
-    <FlexedImage src={project.image} alt={project.title} width={360} />
     <AboutContianer>
       <Paragraph>
         <LightBlueText>{GAProjectText.titles.about}</LightBlueText>
