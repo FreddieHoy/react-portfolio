@@ -6,6 +6,8 @@ import {
 } from 'config/fontStyles';
 import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
+import GitHubIcon from 'static/GitHubIcon.svg';
+import GitHubIconHighlighted from 'static/GitHubIconHighlighted.svg';
 import styled from 'styled-components';
 
 import { GAProjectText } from './GAText';
@@ -18,16 +20,31 @@ const ContainerProject = styled.div`
   }
 `;
 
-const FlexedHeading = styled(HeadingTwo)``;
+const FlexedHeading = styled(HeadingTwo)`
+  display: flex;
+`;
 
 const AboutContianer = styled.div``;
 
 const TechContianer = styled.div``;
 
+const GitHubLink = styled.div`
+  height: 30px;
+  width: 26px;
+  margin: 0 0 -5px 10px;
+  background-image: url(${GitHubIcon});
+  :hover {
+    background-image: url(${GitHubIconHighlighted});
+  }
+`;
+
 export const GAProject = ({ project }) => (
   <ContainerProject>
     <FlexedHeading>
       <RedText>{project.title}</RedText>
+      <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">
+        <GitHubLink />
+      </a>
     </FlexedHeading>
     <AboutContianer>
       <Paragraph>
