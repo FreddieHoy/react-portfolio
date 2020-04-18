@@ -34,7 +34,9 @@ export const GAMainText = {
     }
   },
   repo: 'See project repo & website',
-  fourProjects: 'My four projects'
+  fourProjects: 'My four projects',
+  rightArrow: '→',
+  leftArrow: '←'
 };
 
 export const GAProjectText = {

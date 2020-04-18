@@ -42,8 +42,7 @@ const SliderHoverTrigger = styled(Slider)`
 const NewButtonNext = styled(ButtonNext)`
   position: absolute;
   right: 0;
-  top: calc(50% - 20px);
-  padding-bottom: 6px;
+  top: calc(50% - 15px);
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 20px 0 0 20px;
@@ -53,8 +52,7 @@ const NewButtonNext = styled(ButtonNext)`
 const NewButtonBack = styled(ButtonBack)`
   position: absolute;
   left: 0;
-  top: calc(50% - 20px);
-  padding-bottom: 6px;
+  top: calc(50% - 15px);
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 0 20px 20px 0;
@@ -102,7 +100,7 @@ export const ProjectCarousel = () => (
         </Slide>
       ))}
     </SliderHoverTrigger>
-    <NewButtonBack>{'<'}</NewButtonBack>
-    <NewButtonNext>{'>'}</NewButtonNext>
+    <NewButtonBack>{GAMainText.leftArrow}</NewButtonBack>
+    <NewButtonNext>{GAMainText.rightArrow}</NewButtonNext>
   </Conatiner>
 );
