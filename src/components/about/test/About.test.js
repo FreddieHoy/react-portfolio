@@ -1,0 +1,16 @@
+import { shallow } from 'enzyme';
+import React from 'react';
+
+import { About } from '../About';
+
+describe('About', () => {
+  it('render the correct fields', () => {
+    const wrapper = shallow(<About />);
+
+    expect(wrapper).toMatchSnapshot();
+  });
+});
+
+// it('adds correctly', () => {
+//   expect(1 + 1).toEqual(2);
+// });

@@ -1,0 +1,14 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`About render the correct fields 1`] = `
+<Container>
+  <AboutTag />
+  <AboutContentMain />
+  <About__Image
+    alt="Head Shot of Freddie Hoy"
+    src=""
+  />
+  <AboutContentInterests />
+  <AboutContentContact />
+</Container>
+`;
