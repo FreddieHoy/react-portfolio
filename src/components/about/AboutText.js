@@ -3,7 +3,7 @@ export const AboutTextMain = {
     hello: 'Hello, my name is',
     fred: ' Fred.',
     am: "I'm a ",
-    engineer: 'Software Engineer ',
+    engineer: 'software engineer ',
     living: 'living in London.'
   },
   studied:
