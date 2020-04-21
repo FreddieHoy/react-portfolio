@@ -16,8 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --coverage --collectCoverageFrom=src/**/*.{js,jsx}",
-    "eject": "react-scripts eject"
+    "test": "jest --coverage --collectCoverageFrom=src/**/*.{js,jsx}"
   },
   "eslintConfig": {
     "extends": "react-app"
