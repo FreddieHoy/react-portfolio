@@ -16,7 +16,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest",
+    "test": "jest --coverage --collectCoverageFrom=src/**/*.{js,jsx}",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -74,6 +74,14 @@
     },
     "snapshotSerializers": [
       "enzyme-to-json/serializer"
+    ],
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ],
+    "coverageReporters": [
+      "json",
+      "html"
     ]
   }
 }

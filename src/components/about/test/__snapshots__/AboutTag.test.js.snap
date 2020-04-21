@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutTag renders correctly 1`] = `
+<AboutTag__Container>
+  <TitleTagWord
+    color="#e7e8ea"
+    endSpace={true}
+    key="This is"
+    text="This is"
+  />
+  <TitleTagWord
+    color="#e7e8ea"
+    endSpace={true}
+    key="more"
+    text="more"
+  />
+  <TitleTagWord
+    color="#ff3e55"
+    endSpace={true}
+    key="about"
+    text="about"
+  />
+  <TitleTagWord
+    color="#e7e8ea"
+    endSpace={false}
+    key="me"
+    text="me"
+  />
+  <TitleTagWord
+    color="#003a84"
+    endSpace={false}
+    key="."
+    text="."
+  />
+</AboutTag__Container>
+`;

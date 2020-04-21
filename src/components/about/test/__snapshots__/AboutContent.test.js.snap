@@ -1,0 +1,93 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AboutContentContact render the correct fields 1`] = `
+<AboutContent__ContactContainer>
+  <fontStyles__HeadingTwo>
+    Contact Details
+  </fontStyles__HeadingTwo>
+  <AboutContent__ListItems>
+    Email: 
+    <fontStyles__StyledAnchor
+      href="mailto: freddiehoy0@gmail.com"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      freddiehoy0@gmail.com
+    </fontStyles__StyledAnchor>
+  </AboutContent__ListItems>
+  <AboutContent__ListItems>
+    Github: 
+    <fontStyles__StyledAnchor
+      href="https://github.com/FreddieHoy"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      /FreddieHoy
+    </fontStyles__StyledAnchor>
+  </AboutContent__ListItems>
+  <AboutContent__ListItems>
+    LinkedIn: 
+    <fontStyles__StyledAnchor
+      href="https://www.linkedin.com/in/freddie-hoy/"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      /freddie-hoy
+    </fontStyles__StyledAnchor>
+  </AboutContent__ListItems>
+</AboutContent__ContactContainer>
+`;
+
+exports[`AboutContentInterests render the correct fields 1`] = `
+<AboutContent__InterestsContainer>
+  <fontStyles__HeadingTwo>
+    Other Interests
+  </fontStyles__HeadingTwo>
+  <fontStyles__Paragraph>
+    In September 2017, I organized a completely self sufficient bike tour for 9 days cycling from Nice, France to Barcelona, Spain. The cycle took 8 days covering 900km. Along with 2 university friends, we raised £3,500.
+  </fontStyles__Paragraph>
+  <fontStyles__Paragraph>
+    Just giving link: 
+    <fontStyles__StyledAnchor
+      href="https://www.justgiving.com/fundraising/cyclelemedntob"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      /cyclelemedntob
+    </fontStyles__StyledAnchor>
+  </fontStyles__Paragraph>
+  <AboutContent__ListItems>
+    I played hockey for the University of Nottingham.
+  </AboutContent__ListItems>
+  <AboutContent__ListItems>
+    I am part of a Sunday league football team that won the 2018-19 South London cup final.
+  </AboutContent__ListItems>
+  <AboutContent__ListItems>
+    In 2013 I became a qualified ski instructor.
+  </AboutContent__ListItems>
+  <AboutContent__ListItems>
+    I've been teaching myself guitar for a year now!
+  </AboutContent__ListItems>
+</AboutContent__InterestsContainer>
+`;
+
+exports[`AboutContentMain render the correct fields 1`] = `
+<AboutContent__MainContainer>
+  <fontStyles__HeadingTwo>
+    Hello, my name is
+    <fontStyles__RedText>
+       Fred.
+    </fontStyles__RedText>
+  </fontStyles__HeadingTwo>
+  <fontStyles__HeadingTwo>
+    I'm a 
+    <fontStyles__RedText>
+      software engineer 
+    </fontStyles__RedText>
+    living in London.
+  </fontStyles__HeadingTwo>
+  <fontStyles__Paragraph>
+    I studied Mechanical Engineering at the University of Nottingham. I then went on to complete the Software Engineer Immersive bootcamp at General Assembly London.
+  </fontStyles__Paragraph>
+</AboutContent__MainContainer>
+`;
