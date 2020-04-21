@@ -24,7 +24,11 @@ const Container = styled.div`
 const TechItem = styled(Paragraph)`
   margin: 0;
   color: ${colors.whiteText};
-  font-size: 15px;
+  font-size: 18px;
+  transition: color 0.4s ease;
+  :hover {
+    color: ${colors.redText};
+  }
 `;
 
 export const LyvlyTechSheet = () => (
