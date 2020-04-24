@@ -16,7 +16,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "jest --coverage --collectCoverageFrom=src/**/*.{js,jsx}"
+    "test": "jest --coverage --collectCoverageFrom=src/**/*.{js,jsx}",
+    "predeploy": "npm run build",
+    "deploy": "aws s3 sync build/ s3://react-portfolio-freddie-hoy --delete",
+    "postdeploy": "aws cloudfront create-invalidation --distribution-id E7IU1IKI3ZTAU --paths '/*' && aws cloudfront create-invalidation --distribution-id E8EX9TWMW5XC6 --paths '/*'"
   },
   "eslintConfig": {
     "extends": "react-app"
