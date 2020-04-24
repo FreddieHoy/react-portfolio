@@ -42,21 +42,21 @@ const SliderHoverTrigger = styled(Slider)`
 const NewButtonNext = styled(ButtonNext)`
   position: absolute;
   right: 0;
-  top: calc(50% - 15px);
+  top: calc(50% - 10px);
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 20px 0 0 20px;
-  font-size: 30px;
+  font-size: 24px;
 `;
 
 const NewButtonBack = styled(ButtonBack)`
   position: absolute;
   left: 0;
-  top: calc(50% - 15px);
+  top: calc(50% - 10px);
   background-color: rgba(255, 255, 255, 0.3);
   border: none;
   border-radius: 0 20px 20px 0;
-  font-size: 30px;
+  font-size: 24px;
 `;
 
 const Image = styled.img`
@@ -100,7 +100,11 @@ export const ProjectCarousel = () => (
         </Slide>
       ))}
     </SliderHoverTrigger>
-    <NewButtonBack>{GAMainText.leftArrow}</NewButtonBack>
-    <NewButtonNext>{GAMainText.rightArrow}</NewButtonNext>
+    <NewButtonBack>
+      <i className="fas fa-arrow-left" />
+    </NewButtonBack>
+    <NewButtonNext>
+      <i className="fas fa-arrow-right" />
+    </NewButtonNext>
   </Conatiner>
 );
