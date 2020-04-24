@@ -5,16 +5,13 @@ import {
   mobileBreakPoint
 } from 'config/spacing';
 import React from 'react';
-import EmailIcon from 'static/EmailIcon.svg';
-import GitHubIconIcon from 'static/GitHubIcon.svg';
-import LinkedInIcon from 'static/LinkedinIcon.svg';
 import styled from 'styled-components';
 
 const Container = styled.div`
   position: fixed;
   left: ${indentSizeMobile}px;
   bottom: ${indentSizeMobile}px;
-  background-color: ${colors.backgroundTwo};
+  background-color: ${colors.backgroundThree};
   padding: 5px 5px 0 5px;
   border: 1px solid black;
   border-radius: 4px;
@@ -24,48 +21,38 @@ const Container = styled.div`
   }
 `;
 
-const ContactButton = styled.img`
-  transition: background-color 0.5s ease;
-  padding: 2px;
+const ContactIconWrapper = styled.a`
+  color: black;
+  font-size: 40px;
+  margin: 4px;
+  padding: 0;
   :hover {
-    background-color: ${colors.lightBlueText};
-    cursor: pointer;
+    color: ${colors.redText};
   }
 `;
 
 export const ContactLinks = () => (
   <Container>
-    <a
+    <ContactIconWrapper
       href="mailto: freddiehoy0@gmail.com"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <ContactButton src={EmailIcon} alt="Email Icon" height={40} width={40} />
-    </a>
-    <a
+      <i className="fas fa-envelope-square" />
+    </ContactIconWrapper>
+    <ContactIconWrapper
       href="https://github.com/FreddieHoy"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <ContactButton
-        src={GitHubIconIcon}
-        alt="GitHub Icon"
-        height={40}
-        width={40}
-      />
-    </a>
-
-    <a
+      <i className="fab fa-github-square" />
+    </ContactIconWrapper>
+    <ContactIconWrapper
       href="https://www.linkedin.com/in/freddie-hoy/"
       target="_blank"
       rel="noopener noreferrer"
     >
-      <ContactButton
-        src={LinkedInIcon}
-        alt="LinkedIn Icon"
-        height={40}
-        width={40}
-      />
-    </a>
+      <i className="fab fa-linkedin" />
+    </ContactIconWrapper>
   </Container>
 );
