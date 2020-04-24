@@ -34,10 +34,10 @@ export const AboutTextInterests = {
     just: 'Just giving link: ',
     path: '/cyclelemedntob'
   },
-  hockey: 'I played hockey for the University of Nottingham.',
+  hockey: '- I played hockey for the University of Nottingham.',
   football:
-    'I am part of a Sunday league football team that won the 2018-19 South London cup final.',
-  ski: 'In 2013 I became a qualified ski instructor.',
-  diving: 'I have completed over 24 scuba dives.',
-  guitar: "I've been teaching myself guitar for a year now!"
+    '- My Sunday league football team won the 2018-19 South London cup. Up the Bees!',
+  ski: '- In 2013 I became a qualified ski instructor.',
+  diving: '- I have completed over 24 scuba dives.',
+  guitar: "- I've been teaching myself guitar for a year now!"
 };

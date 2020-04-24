@@ -36,7 +36,7 @@ const InterestsContainer = styled.div`
 `;
 
 const ListItems = styled(Paragraph)`
-  margin: 0;
+  margin: 5px 0;
 `;
 
 export const AboutContentMain = () => (
