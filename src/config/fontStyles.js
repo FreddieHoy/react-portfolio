@@ -24,7 +24,7 @@ export const NameTitle = styled.h1`
 
 export const NavWhite = styled.h2`
   font-family: 'Sen', sans-serif;
-  color: white;
+  color: ${colors.whiteText};
   font-size: 16px;
   margin: 0;
   text-decoration: none;

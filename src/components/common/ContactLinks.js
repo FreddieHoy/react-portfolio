@@ -13,7 +13,7 @@ const Container = styled.div`
   bottom: ${indentSizeMobile}px;
   background-color: ${colors.backgroundThree};
   padding: 5px 5px 0 5px;
-  border: 1px solid black;
+  border: 1px solid ${colors.black};
   border-radius: 4px;
   @media (min-width: ${mobileBreakPoint}px) {
     left: ${indentSizeLaptop}px;
@@ -22,7 +22,7 @@ const Container = styled.div`
 `;
 
 const ContactIconWrapper = styled.a`
-  color: black;
+  color: ${colors.black};
   font-size: 40px;
   margin: 4px;
   padding: 0;
