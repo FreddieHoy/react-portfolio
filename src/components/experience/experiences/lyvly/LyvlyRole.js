@@ -12,7 +12,7 @@ import { lyvlyText } from './LyvlyText';
 
 const Container = styled.div`
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 60%;
+    width: 100%;
   }
   @media (min-width: ${tabletBreakPoint}px) {
     margin: 20px 0;

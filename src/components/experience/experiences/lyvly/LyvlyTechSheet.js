@@ -12,8 +12,7 @@ const Container = styled.div`
   width: 100%;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 30%;
-    text-align: right;
+    width: 100%;
   }
 
   @media (min-width: ${tabletBreakPoint}px) {
@@ -21,12 +20,21 @@ const Container = styled.div`
   }
 `;
 
+const TechList = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+`;
+
 const TechItem = styled(Paragraph)`
   margin: 0;
   font-size: 18px;
+  width: 48%;
   transition: color 0.4s ease;
   :hover {
     color: ${colors.redText};
+  }
+  @media (min-width: ${mobileBreakPoint}px) {
+    width: 32%;
   }
 `;
 
@@ -35,7 +43,7 @@ export const LyvlyTechSheet = () => (
     <HeadingTwo>
       <RedText>{TechSheetText.title}</RedText>
     </HeadingTwo>
-    <div>
+    <TechList>
       <TechItem>{TechSheetText.javaScript}</TechItem>
       <TechItem>{TechSheetText.typeScript}</TechItem>
       <TechItem>{TechSheetText.react}</TechItem>
@@ -50,6 +58,6 @@ export const LyvlyTechSheet = () => (
       <TechItem>{TechSheetText.sql}</TechItem>
       <TechItem>{TechSheetText.agile}</TechItem>
       <TechItem>{TechSheetText.npm}</TechItem>
-    </div>
+    </TechList>
   </Container>
 );
