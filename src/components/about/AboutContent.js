@@ -18,20 +18,21 @@ const MainContainer = styled.div`
   padding: 10px 0;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 60%;
     padding: 0;
   }
 `;
 
 const ContactContainer = styled.div`
   padding: 10px 0;
+  @media (min-width: ${mobileBreakPoint}px) {
+    margin: auto;
+  }
 `;
 
 const InterestsContainer = styled.div`
   padding: 10px 0;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    padding: 30px 0;
   }
 `;
 

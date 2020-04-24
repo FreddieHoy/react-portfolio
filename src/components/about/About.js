@@ -17,8 +17,7 @@ const Image = styled.img`
   padding: 26px 0;
 
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 160px;
-    padding: 0;
+    width: 40%;
   }
 `;
 
@@ -27,7 +26,7 @@ export const About = () => (
     <AboutTag />
     <AboutContentMain />
     <Image src={HeadShot} alt="Head Shot of Freddie Hoy" />
-    <AboutContentInterests />
     <AboutContentContact />
+    <AboutContentInterests />
   </Container>
 );
