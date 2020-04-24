@@ -1,3 +1,4 @@
+import { colors } from 'config/colors';
 import {
   HeadingTwo,
   LightBlueText,
@@ -6,8 +7,6 @@ import {
 } from 'config/fontStyles';
 import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
-import GitHubIcon from 'static/GitHubIcon.svg';
-import GitHubIconHighlighted from 'static/GitHubIconHighlighted.svg';
 import styled from 'styled-components';
 
 import { GAProjectText } from './GAText';
@@ -28,9 +27,12 @@ const GitHubLink = styled.div`
   height: 30px;
   width: 26px;
   margin: 0 0 -5px 10px;
-  background-image: url(${GitHubIcon});
-  :hover {
-    background-image: url(${GitHubIconHighlighted});
+  i {
+    color: ${colors.backgroundThree};
+    transition: color 0.4s ease;
+    :hover {
+      color: ${colors.lightBlueText};
+    }
   }
 `;
 
@@ -39,7 +41,9 @@ export const GAProject = ({ project }) => (
     <FlexedHeading>
       <RedText>{project.title}</RedText>
       <a href={project.gitHubLink} target="_blank" rel="noopener noreferrer">
-        <GitHubLink />
+        <GitHubLink>
+          <i className="fab fa-github-square" />
+        </GitHubLink>
       </a>
     </FlexedHeading>
     <Paragraph>
