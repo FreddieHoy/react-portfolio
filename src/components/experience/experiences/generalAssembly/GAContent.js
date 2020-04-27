@@ -5,7 +5,6 @@ import styled from 'styled-components';
 import { GAMainText } from './GAText';
 
 const ContainerMain = styled.div`
-  padding: 20px 0;
   margin-bottom: 20px;
 `;
 

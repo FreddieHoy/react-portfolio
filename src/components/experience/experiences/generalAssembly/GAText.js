@@ -85,3 +85,19 @@ export const GAProjectText = {
     }
   ]
 };
+
+export const TechSheetText = {
+  title: 'Tech Sheet',
+  javaScript: 'JavaScript',
+  python: 'Python',
+  react: 'React',
+  git: 'Git / GitHub',
+  node: 'Node.js',
+  express: 'Express',
+  restful: 'RESTful routes',
+  mongoDB: 'MongoDB',
+  sql: 'SQL DB',
+  npm: 'npm & yarn',
+  chrome: 'Browsers',
+  atom: 'Atom'
+};
