@@ -7,7 +7,7 @@ import { lyvlyText } from './LyvlyText';
 
 const Container = styled.div`
   @media (min-width: ${tabletBreakPoint}px) {
-    margin: 20px 0;
+    margin: 10px 0;
   }
 `;
 

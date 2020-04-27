@@ -7,7 +7,6 @@ import styled from 'styled-components';
 import { TechSheetText } from './LyvlyText';
 
 const Container = styled.div`
-  order: 4;
   text-align: left;
   width: 100%;
 
@@ -56,6 +55,7 @@ export const LyvlyTechSheet = () => (
       <TechItem>{TechSheetText.graphQL}</TechItem>
       <TechItem>{TechSheetText.mongoDB}</TechItem>
       <TechItem>{TechSheetText.sql}</TechItem>
+      <TechItem>{TechSheetText.aws}</TechItem>
       <TechItem>{TechSheetText.agile}</TechItem>
       <TechItem>{TechSheetText.npm}</TechItem>
     </TechList>

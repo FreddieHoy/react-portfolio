@@ -7,7 +7,7 @@ export const lyvlyText = {
     lyvly: 'Lyvly'
   },
   info: {
-    role: 'Role: ',
+    role: 'Job Title: ',
     title: 'Full Stack Software Engineer.',
     dates: 'Dates: ',
     december: 'December 2019 - March 2020. 4 months.'
@@ -54,6 +54,7 @@ export const TechSheetText = {
   graphQL: 'GraphQL',
   mongoDB: 'MongoDB',
   sql: 'SQL databases',
+  aws: 'AWS products',
   agile: 'Agile methodology',
   npm: 'npm / yarn'
 };
