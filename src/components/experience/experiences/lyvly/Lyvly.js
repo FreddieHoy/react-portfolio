@@ -1,6 +1,5 @@
 import { Container } from 'components/common/Container';
 import { colors } from 'config/colors';
-import { BlueText, HeadingOne, HeadingTwo, RedText } from 'config/fontStyles';
 import { tabletBreakPoint } from 'config/spacing';
 import React from 'react';
 import LyvlyLogo from 'static/LyvlyLogo.svg';
