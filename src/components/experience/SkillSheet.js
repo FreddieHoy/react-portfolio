@@ -19,14 +19,14 @@ const Container = styled.div`
 
 const Skill = styled(Paragraph)`
   margin: 0;
-  font-size: 20px;
+  font-size: 24px;
 
   @media (min-width: ${mobileBreakPoint}px) {
     width: 50%;
+    font-size: 24px;
   }
   @media (min-width: ${laptopBreakPoint}px) {
     width: 33%;
-    font-size: 24px;
     transition: color 0.4s ease;
     :hover {
       color: ${colors.redText};
@@ -36,6 +36,7 @@ const Skill = styled(Paragraph)`
 
 const SkillsHeading = styled(HeadingTwo)`
   width: 100%;
+  font-size: 28px;
 `;
 
 export const SkillSheet = () => (
