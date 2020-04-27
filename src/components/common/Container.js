@@ -13,7 +13,7 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 30px ${indentSizeMobile}px 100px ${indentSizeMobile}px;
+  padding: 0 ${indentSizeMobile}px 100px ${indentSizeMobile}px;
 
   @media (min-width: ${mobileBreakPoint}px) {
     padding: 0 0 140px 0;
@@ -28,6 +28,6 @@ export const Container = styled.div`
   }
 
   @media (min-height: ${ipadProHeightBreakPoint}px) {
-    padding: 250px 0 100px 0;
+    padding: 150px 0 100px 0;
   }
 `;
