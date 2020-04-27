@@ -7,7 +7,7 @@ import {
   tabletBreakPoint
 } from 'config/spacing';
 import React from 'react';
-import { Link, withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { navBarText } from './CommonText';
@@ -60,4 +60,4 @@ const NavBar = () => (
   </NavContainer>
 );
 
-export default withRouter(NavBar);
+export default NavBar;
