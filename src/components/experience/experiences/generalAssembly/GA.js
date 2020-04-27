@@ -12,8 +12,9 @@ import { GAMainText, GAProjectText } from './GAText';
 import { ProjectCarousel } from './ProjectCarousel';
 
 const HeadingContainer = styled(HeadingOne)`
-  with: 100%;
-  margin: 0 auto 20px auto;
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
 `;
 
 const LogoBackground = styled.a`

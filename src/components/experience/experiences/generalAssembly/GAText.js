@@ -9,7 +9,7 @@ export const GAMainText = {
   },
   title: {
     study: 'Studying at ',
-    london: 'GA London'
+    london: 'General Assembly'
   },
   main: {
     role: {
