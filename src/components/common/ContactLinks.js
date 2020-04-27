@@ -26,6 +26,7 @@ const ContactIconWrapper = styled.a`
   font-size: 40px;
   margin: 4px;
   padding: 0;
+  transition: color 0.4s ease;
   :hover {
     color: ${colors.redText};
   }
