@@ -13,7 +13,7 @@ import { AboutTag } from './AboutTag';
 
 const Image = styled.img`
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 26px 0;
 
   @media (min-width: ${mobileBreakPoint}px) {
