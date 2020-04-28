@@ -10,6 +10,8 @@ import { indentSizeMobile, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
+import { DisplayText } from './HomeText';
+
 const Container = styled.div`
   position: absolute;
   padding-right: ${indentSizeMobile}px;
@@ -59,20 +61,16 @@ const DisplayFour = styled.div`
 export const Display = () => (
   <Container>
     <DisplayOne>
-      <MessageBlue>Hi there, my name is:</MessageBlue>
+      <MessageBlue>{DisplayText.hi}</MessageBlue>
     </DisplayOne>
     <DisplayTwo>
-      <HeadingOne>Freddie Hoy</HeadingOne>
+      <HeadingOne>{DisplayText.fred}</HeadingOne>
     </DisplayTwo>
     <DisplayThree>
-      <HeadingTwo>I enjoy building sophisticated web apps.</HeadingTwo>
+      <HeadingTwo>{DisplayText.enjoy}</HeadingTwo>
     </DisplayThree>
     <DisplayFour>
-      <Paragraph>
-        I am a Software Engineer living London. I have had some really exciting
-        experiences building some awesome web products. Check out what I have
-        been up to.
-      </Paragraph>
+      <Paragraph>{DisplayText.about}</Paragraph>
     </DisplayFour>
   </Container>
 );

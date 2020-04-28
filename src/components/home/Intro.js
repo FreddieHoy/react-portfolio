@@ -4,6 +4,8 @@ import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
+import { introText } from './HomeText';
+
 const Container = styled.div`
   position: absolute;
   font-size: 36px;
@@ -35,13 +37,13 @@ const IntroThree = styled.div`
 export const Intro = () => (
   <Container>
     <IntroOne>
-      <Paragraph>Hello</Paragraph>
+      <Paragraph>{introText.hello}</Paragraph>
     </IntroOne>
     <IntroTwo>
-      <Paragraph>And</Paragraph>
+      <Paragraph>{introText.and}</Paragraph>
     </IntroTwo>
     <IntroThree>
-      <Paragraph>Welcome</Paragraph>
+      <Paragraph>{introText.welcome}</Paragraph>
     </IntroThree>
   </Container>
 );
