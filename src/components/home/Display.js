@@ -18,8 +18,8 @@ const Container = styled.div`
 `;
 
 const DisplayOne = styled.div`
-  animation: ${fadeInTop} 0.1s ease-in;
-  animation-delay: 5s;
+  animation: ${fadeInTop} 0.2s ease-in;
+  animation-delay: 3.5s;
   animation-fill-mode: both;
   font-size: 18px;
   @media (min-width: ${mobileBreakPoint}px) {
@@ -27,8 +27,8 @@ const DisplayOne = styled.div`
 `;
 
 const DisplayTwo = styled.div`
-  animation: ${fadeInTop} 0.1s ease-in;
-  animation-delay: 5.15s;
+  animation: ${fadeInTop} 0.2s ease-in;
+  animation-delay: 3.7s;
   animation-fill-mode: both;
   h1 {
     color: ${colors.whiteText};
@@ -36,8 +36,8 @@ const DisplayTwo = styled.div`
 `;
 
 const DisplayThree = styled.div`
-  animation: ${fadeInTop} 0.1s ease-in;
-  animation-delay: 5.3s;
+  animation: ${fadeInTop} 0.2s ease-in;
+  animation-delay: 3.9s;
   animation-fill-mode: both;
   h2 {
     font-size: 36px;
@@ -49,8 +49,8 @@ const DisplayThree = styled.div`
 `;
 
 const DisplayFour = styled.div`
-  animation: ${fadeInTop} 0.1s ease-in;
-  animation-delay: 5.45s;
+  animation: ${fadeInTop} 0.2s ease-in;
+  animation-delay: 4.1s;
   animation-fill-mode: both;
   p {
     color: ${colors.whiteText};

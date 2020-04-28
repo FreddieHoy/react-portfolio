@@ -21,14 +21,14 @@ const IntroOne = styled.div`
 `;
 const IntroTwo = styled.div`
   animation: ${fadeInAndOut} 1s ease-in;
-  animation-delay: 1.5s;
+  animation-delay: 1s;
   animation-fill-mode: both;
   width: 100%;
   text-align: center;
 `;
 const IntroThree = styled.div`
   animation: ${fadeInAndOut} 1s ease-in;
-  animation-delay: 2.5s;
+  animation-delay: 1.5s;
   animation-fill-mode: both;
   width: 100%;
   text-align: right;

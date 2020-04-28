@@ -14,8 +14,8 @@ import styled from 'styled-components';
 import { navBarText } from './CommonText';
 
 const NavContainer = styled.div`
-  animation: ${fadeInLeft} 0.5s ease-in;
-  animation-delay: 4s;
+  animation: ${fadeInLeft} 0.2s ease-in;
+  animation-delay: 2.7s;
   animation-fill-mode: both;
   border-left: none;
   height: 100%;
