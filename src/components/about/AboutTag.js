@@ -1,22 +1,16 @@
-import { colors } from 'config/colors';
-import { TitleTagWord } from 'config/fontStyles';
+import { BlueText, HeadingOne, RedText } from 'config/fontStyles';
 import { laptopBreakPoint, mobileBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
-const constWords = [
-  { text: 'This is', color: colors.whiteText, endSpace: true },
-  { text: 'more', color: colors.whiteText, endSpace: true },
-  { text: 'about', color: colors.redText, endSpace: true },
-  { text: 'me', color: colors.whiteText, endSpace: false },
-  { text: '.', color: colors.blueText, endSpace: false }
-];
+import { AboutTextTitle } from './AboutText';
 
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   margin-bottom: 20px;
+  text-align: center;
 
   @media (min-width: ${mobileBreakPoint}px) {
     width: 70%;
@@ -29,13 +23,11 @@ const Container = styled.div`
 
 export const AboutTag = () => (
   <Container>
-    {constWords.map((word) => (
-      <TitleTagWord
-        color={word.color}
-        endSpace={word.endSpace}
-        text={word.text}
-        key={word.text}
-      />
-    ))}
+    <HeadingOne>
+      {AboutTextTitle.title.this}
+      <RedText>{AboutTextTitle.title.about}</RedText>
+      {AboutTextTitle.title.me}
+      <BlueText>{AboutTextTitle.punctuation.fullstop}</BlueText>
+    </HeadingOne>
   </Container>
 );

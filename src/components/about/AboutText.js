@@ -1,3 +1,14 @@
+export const AboutTextTitle = {
+  title: {
+    this: 'This is more ',
+    about: 'about ',
+    me: 'me'
+  },
+  punctuation: {
+    fullstop: '.'
+  }
+};
+
 export const AboutTextMain = {
   bigText: {
     hello: 'Hello, my name is',
