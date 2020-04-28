@@ -36,13 +36,13 @@ const Skill = styled(Paragraph)`
 
 const SkillsHeading = styled(HeadingTwo)`
   width: 100%;
-  font-size: 28px;
+  font-size: 20px;
 `;
 
 export const SkillSheet = () => (
   <Container>
     <SkillsHeading>
-      <LightBlueText>Skills Sheet</LightBlueText>
+      <LightBlueText>{SkillsSheet.title}</LightBlueText>
     </SkillsHeading>
     <Skill>{SkillsSheet.javaScript}</Skill>
     <Skill>{SkillsSheet.react}</Skill>
