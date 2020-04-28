@@ -1,31 +1,29 @@
-import { fadeIn } from 'config/keyframes';
-import {
-  indentSizeLaptop,
-  indentSizeMobile,
-  tabletBreakPoint
-} from 'config/spacing';
+import { indentSizeMobile, tabletBreakPoint } from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
-import { TitleTag } from './TitleTag';
+import { Display } from './Display';
+import { Intro } from './Intro';
 
 const Container = styled.div`
-  animation: ${fadeIn} 1s ease;
-  padding: ${indentSizeMobile}px;
+  position: relative;
+  padding: 0 ${indentSizeMobile}px 15vh ${indentSizeMobile}px;
   height: 85vh;
-  width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
 
   @media (min-width: ${tabletBreakPoint}px) {
     height: 100vh;
-    padding: ${indentSizeLaptop}px;
+    margin: 0 auto;
+    width: 660px;
+    padding-bottom: 0;
   }
 `;
 
 export const Home = () => (
   <Container>
-    <TitleTag />
+    <Intro />
+    <Display />
   </Container>
 );
