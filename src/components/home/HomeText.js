@@ -5,9 +5,9 @@ export const introText = {
 };
 
 export const DisplayText = {
-  hi: 'Hi there, my name is:',
+  hi: 'Hi there, my name is',
   fred: 'Freddie Hoy',
   enjoy: 'I enjoy building sophisticated web apps.',
   about:
-    "I'm a Software Engineer living London. I have had some really exciting experiences building some awesome web products. Check out what I've been up to."
+    "I'm a Software Engineer living in London. I've had some really exciting experiences building some awesome web products. Check out what I've been up to."
 };
