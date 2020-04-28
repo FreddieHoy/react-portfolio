@@ -57,16 +57,16 @@ exports[`AboutContentInterests render the correct fields 1`] = `
     </fontStyles__StyledAnchor>
   </fontStyles__Paragraph>
   <AboutContent__ListItems>
-    I played hockey for the University of Nottingham.
+    - I played hockey for the University of Nottingham.
   </AboutContent__ListItems>
   <AboutContent__ListItems>
-    I am part of a Sunday league football team that won the 2018-19 South London cup final.
+    - My Sunday league football team won the 2018-19 South London cup. Up the Bees!
   </AboutContent__ListItems>
   <AboutContent__ListItems>
-    In 2013 I became a qualified ski instructor.
+    - In 2013 I became a qualified ski instructor.
   </AboutContent__ListItems>
   <AboutContent__ListItems>
-    I've been teaching myself guitar for a year now!
+    - I've been teaching myself guitar for a year now!
   </AboutContent__ListItems>
 </AboutContent__InterestsContainer>
 `;
