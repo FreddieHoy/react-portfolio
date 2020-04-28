@@ -1,3 +1,13 @@
+export const ExperienceText = {
+  title: {
+    these: 'These are my ',
+    exp: 'experiences'
+  },
+  punctuation: {
+    fullstop: '.'
+  }
+};
+
 export const SkillsSheet = {
   title: 'Skills Sheet',
   javaScript: 'JavaScript ES6',
