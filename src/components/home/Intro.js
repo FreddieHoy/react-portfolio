@@ -1,6 +1,11 @@
 import { Paragraph } from 'config/fontStyles';
 import { fadeInAndOut } from 'config/keyframes';
-import { mobileBreakPoint } from 'config/spacing';
+import {
+  indentSizeLaptop,
+  indentSizeMobile,
+  mobileBreakPoint,
+  tabletBreakPoint
+} from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -9,8 +14,16 @@ import { introText } from './HomeText';
 const Container = styled.div`
   position: absolute;
   font-size: 36px;
+  padding: 0 ${indentSizeMobile}px 100px ${indentSizeMobile}px;
+  width: 90%;
+
   @media (min-width: ${mobileBreakPoint}px) {
-    width: 100%;
+    margin: 0 ${indentSizeLaptop}px;
+    padding: 0;
+  }
+  @media (min-width: ${tabletBreakPoint}px) {
+    margin: 0;
+    width: 660px;
   }
 `;
 

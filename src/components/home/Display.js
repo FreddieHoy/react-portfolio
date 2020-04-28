@@ -6,7 +6,12 @@ import {
   Paragraph
 } from 'config/fontStyles';
 import { fadeInTop } from 'config/keyframes';
-import { indentSizeMobile, mobileBreakPoint } from 'config/spacing';
+import {
+  indentSizeLaptop,
+  indentSizeMobile,
+  mobileBreakPoint,
+  tabletBreakPoint
+} from 'config/spacing';
 import React from 'react';
 import styled from 'styled-components';
 
@@ -15,6 +20,14 @@ import { DisplayText } from './HomeText';
 const Container = styled.div`
   position: absolute;
   padding-right: ${indentSizeMobile}px;
+  @media (min-width: ${mobileBreakPoint}px) {
+    margin: 0 ${indentSizeLaptop}px;
+    padding: 0;
+  }
+  @media (min-width: ${tabletBreakPoint}px) {
+    margin: 0;
+    width: 660px;
+  }
 `;
 
 const DisplayOne = styled.div`
