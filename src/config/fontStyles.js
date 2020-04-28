@@ -41,6 +41,11 @@ export const NavWhite = styled.h2`
   }
 `;
 
+export const MessageBlue = styled.p`
+  font-family: 'Sen', sans-serif;
+  color: ${colors.lightBlueText};
+`;
+
 export const TitleTagWord = ({ color, text, endSpace }) => {
   const TagWord = styled.div`
     color: ${color};
@@ -64,14 +69,14 @@ export const StyledAnchor = styled.a`
   }
 `;
 
-export const HeadingOne = styled.h3`
+export const HeadingOne = styled.h1`
   color: ${colors.whiteText};
   font-family: 'Sen', sans-serif;
   font-size: 34px;
   margin: 10px 0;
 `;
 
-export const HeadingTwo = styled.h3`
+export const HeadingTwo = styled.h2`
   color: ${colors.whiteText};
   font-family: 'Sen', sans-serif;
   font-size: 22px;
