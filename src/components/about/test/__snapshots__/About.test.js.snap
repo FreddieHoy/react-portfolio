@@ -2,13 +2,13 @@
 
 exports[`About render the correct fields 1`] = `
 <Container>
-  <AboutTag />
+  <AboutTitle />
   <AboutContentMain />
   <About__Image
     alt="Head Shot of Freddie Hoy"
     src=""
   />
-  <AboutContentInterests />
   <AboutContentContact />
+  <AboutContentInterests />
 </Container>
 `;

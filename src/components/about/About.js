@@ -9,7 +9,7 @@ import {
   AboutContentInterests,
   AboutContentMain
 } from './AboutContent';
-import { AboutTag } from './AboutTag';
+import { AboutTitle } from './AboutTitle';
 
 const Image = styled.img`
   width: 100%;
@@ -23,7 +23,7 @@ const Image = styled.img`
 
 export const About = () => (
   <Container>
-    <AboutTag />
+    <AboutTitle />
     <AboutContentMain />
     <Image src={HeadShot} alt="Head Shot of Freddie Hoy" />
     <AboutContentContact />
