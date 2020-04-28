@@ -30,10 +30,6 @@ const DisplayTwo = styled.div`
   animation-fill-mode: both;
   h1 {
     color: ${colors.whiteText};
-    font-size: 50px;
-    @media (min-width: ${mobileBreakPoint}px) {
-      font-size: 60px;
-    }
   }
 `;
 

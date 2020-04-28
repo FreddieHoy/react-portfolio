@@ -1,5 +1,4 @@
 import { mobileBreakPoint } from 'config/spacing';
-import React from 'react';
 import styled from 'styled-components';
 
 import { colors } from './colors';
@@ -46,20 +45,6 @@ export const MessageBlue = styled.p`
   color: ${colors.lightBlueText};
 `;
 
-export const TitleTagWord = ({ color, text, endSpace }) => {
-  const TagWord = styled.div`
-    color: ${color};
-    font-family: 'Sen', sans-serif;
-    font-size: 36px;
-    font-weight: 700;
-    padding-right: ${endSpace ? '12px' : '0'};
-    @media (min-width: ${mobileBreakPoint}px) {
-      font-size: 46px;
-    }
-  `;
-  return <TagWord>{text}</TagWord>;
-};
-
 export const StyledAnchor = styled.a`
   text-decoration: none;
   color: ${colors.lightBlueText};
@@ -72,7 +57,7 @@ export const StyledAnchor = styled.a`
 export const HeadingOne = styled.h1`
   color: ${colors.whiteText};
   font-family: 'Sen', sans-serif;
-  font-size: 34px;
+  font-size: 50px;
   margin: 10px 0;
 `;
 
