@@ -1,5 +1,6 @@
 import { colors } from 'config/colors';
 import { NavWhite, StyledAnchor } from 'config/fontStyles';
+import { fadeInLeft } from 'config/keyframes';
 import {
   indentSizeLaptop,
   indentSizeMobile,
@@ -13,6 +14,9 @@ import styled from 'styled-components';
 import { navBarText } from './CommonText';
 
 const NavContainer = styled.div`
+  animation: ${fadeInLeft} 0.5s ease-in;
+  animation-delay: 4s;
+  animation-fill-mode: both;
   border-left: none;
   height: 100%;
   display: flex;

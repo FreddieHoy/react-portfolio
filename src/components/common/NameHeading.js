@@ -1,4 +1,5 @@
-import { NameTitle } from 'config/fontStyles';
+import { NameTitle, StyledAnchor } from 'config/fontStyles';
+import { fadeInRight } from 'config/keyframes';
 import {
   indentSizeLaptop,
   indentSizeMobile,
@@ -6,12 +7,14 @@ import {
   mobileBreakPoint
 } from 'config/spacing';
 import React from 'react';
-import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 import { nameHeadingText } from './CommonText';
 
 const TitleContainer = styled.div`
+  animation: ${fadeInRight} 0.5s ease-in;
+  animation-delay: 3.5s;
+  animation-fill-mode: both;
   padding: ${indentSizeMobile}px;
   width: 30%;
   display: flex;
@@ -29,18 +32,14 @@ const TitleContainer = styled.div`
   }
 `;
 
-const StyledLink = styled(Link)`
-  text-decoration: none;
-`;
-
 export const NameHeading = () => (
   <TitleContainer>
-    <StyledLink to="/">
+    <StyledAnchor href="https://freddiehoy.com">
       <NameTitle>
         {nameHeadingText.freddie}
         <br />
         {nameHeadingText.hoy}
       </NameTitle>
-    </StyledLink>
+    </StyledAnchor>
   </TitleContainer>
 );

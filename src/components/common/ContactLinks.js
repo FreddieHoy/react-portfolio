@@ -1,4 +1,5 @@
 import { colors } from 'config/colors';
+import { fadeInRight } from 'config/keyframes';
 import {
   indentSizeLaptop,
   indentSizeMobile,
@@ -8,6 +9,9 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Container = styled.div`
+  animation: ${fadeInRight} 0.5s ease-in;
+  animation-delay: 4.5s;
+  animation-fill-mode: both;
   position: fixed;
   left: ${indentSizeMobile}px;
   bottom: ${indentSizeMobile}px;
