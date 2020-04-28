@@ -12,7 +12,7 @@ import styled from 'styled-components';
 import { nameHeadingText } from './CommonText';
 
 const TitleContainer = styled.div`
-  animation: ${fadeInRight} 0.2s ease-in;
+  animation: ${fadeInRight} 0.5s ease-in;
   animation-delay: 2.5s;
   animation-fill-mode: both;
   padding: ${indentSizeMobile}px;
