@@ -1,9 +1,3 @@
-export const introText = {
-  hello: 'Hello',
-  and: 'And',
-  welcome: 'Welcome'
-};
-
 export const DisplayText = {
   hi: 'Hi there, my name is',
   fred: 'Freddie Hoy',

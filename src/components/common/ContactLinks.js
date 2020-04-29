@@ -10,7 +10,7 @@ import styled from 'styled-components';
 
 const Container = styled.div`
   animation: ${fadeInRight} 0.5s ease-in;
-  animation-delay: 3.5s;
+  animation-delay: 1.5s;
   animation-fill-mode: both;
   position: fixed;
   left: ${indentSizeMobile}px;

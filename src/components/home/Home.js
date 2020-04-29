@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { Display } from './Display';
-import { Intro } from './Intro';
 
 const Container = styled.div`
   position: relative;
@@ -23,7 +22,6 @@ const Container = styled.div`
 
 export const Home = () => (
   <Container>
-    <Intro />
     <Display />
   </Container>
 );

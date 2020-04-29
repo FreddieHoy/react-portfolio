@@ -32,7 +32,7 @@ const Container = styled.div`
 
 const DisplayOne = styled.div`
   animation: ${fadeInTop} 0.2s ease-in;
-  animation-delay: 4s;
+  animation-delay: 2s;
   animation-fill-mode: both;
   font-size: 18px;
   @media (min-width: ${mobileBreakPoint}px) {
@@ -41,7 +41,7 @@ const DisplayOne = styled.div`
 
 const DisplayTwo = styled.div`
   animation: ${fadeInTop} 0.2s ease-in;
-  animation-delay: 4.2s;
+  animation-delay: 2.2s;
   animation-fill-mode: both;
   h1 {
     color: ${colors.whiteText};
@@ -50,7 +50,7 @@ const DisplayTwo = styled.div`
 
 const DisplayThree = styled.div`
   animation: ${fadeInTop} 0.2s ease-in;
-  animation-delay: 4.4s;
+  animation-delay: 2.4s;
   animation-fill-mode: both;
   h2 {
     font-size: 36px;
@@ -63,7 +63,7 @@ const DisplayThree = styled.div`
 
 const DisplayFour = styled.div`
   animation: ${fadeInTop} 0.2s ease-in;
-  animation-delay: 4.6s;
+  animation-delay: 2.6s;
   animation-fill-mode: both;
   p {
     color: ${colors.whiteText};
