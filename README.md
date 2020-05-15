@@ -110,7 +110,7 @@ The project is deployed and updated in 3 stages:
 
 Using the package.json these 3 commands are packaged into a single command:
 
-> npm run build
+> npm run deploy
 
 One issue with the way that I have deployed this is that there is no dev environment to deploy to first. So it is possible for me to deploy bugs. However given the nature of the project and the low traffic deploying bugs can be fixed quickly and with no impact on the few users.
 
