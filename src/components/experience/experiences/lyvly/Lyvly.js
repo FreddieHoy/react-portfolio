@@ -1,8 +1,6 @@
 import { Container } from 'components/common/Container';
-import { colors } from 'config/colors';
-import { tabletBreakPoint } from 'config/spacing';
 import React from 'react';
-import LyvlyLogo from 'static/LyvlyLogo.svg';
+import LyvlyHomePage from 'static/LyvlyHomePage.png';
 import LyvlyTeam from 'static/LyvlyTeam.jpg';
 import styled from 'styled-components';
 
@@ -10,23 +8,6 @@ import { LyvlyHeader } from './LyvlyHeader';
 import { LyvlyMainInfo } from './LyvlyMainInfo';
 import { LyvlyRole } from './LyvlyRole';
 import { LyvlyTechSheet } from './LyvlyTechSheet';
-
-const LogoBackground = styled.a`
-  margin: 20px 0;
-  padding: 20px;
-  width: 100%;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  border-radius: 4px;
-  @media (min-width: ${tabletBreakPoint}px) {
-    padding: 30px;
-    transition: background-color 0.4s ease;
-    :hover {
-      background-color: ${colors.lightBlueText};
-    }
-  }
-`;
 
 const StyledImage = styled.img`
   width: 100%;
@@ -40,13 +21,7 @@ export const LyvlyExp = () => (
     <LyvlyMainInfo />
     <StyledImage src={LyvlyTeam} alt="Lyvly logo" />
     <LyvlyRole />
-    <LogoBackground
-      href="https://www.lyvly.uk/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src={LyvlyLogo} alt="Lyvly logo" width={60} height={60} />
-    </LogoBackground>
+    <StyledImage src={LyvlyHomePage} alt="Lyvly website home page" />
     <LyvlyTechSheet />
   </Container>
 );

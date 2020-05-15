@@ -1,10 +1,8 @@
 import { BackArrow } from 'components/common/BackArrow';
 import { Container } from 'components/common/Container';
-import { colors } from 'config/colors';
 import { BlueText, HeadingOne, HeadingTwo, RedText } from 'config/fontStyles';
-import { mobileBreakPoint, tabletBreakPoint } from 'config/spacing';
+import { mobileBreakPoint } from 'config/spacing';
 import React from 'react';
-import GALogoNoWords from 'static/GALogoNoWords.png';
 import GATeam from 'static/GATeam.jpeg';
 import styled from 'styled-components';
 
@@ -13,22 +11,6 @@ import { GAProject } from './GAProject';
 import { GATechSheet } from './GATechSheet';
 import { GAMainText, GAProjectText } from './GAText';
 import { ProjectCarousel } from './ProjectCarousel';
-
-const LogoBackground = styled.a`
-  margin: 40px 0;
-  padding: 30px;
-  width: 100%;
-  background-color: black;
-  display: flex;
-  justify-content: center;
-  border-radius: 4px;
-  @media (min-width: ${tabletBreakPoint}px) {
-    transition: background-color 0.4s ease;
-    :hover {
-      background-color: ${colors.lightBlueText};
-    }
-  }
-`;
 
 const HeadingContainer = styled(HeadingOne)`
   width: 100%;
@@ -74,12 +56,5 @@ export const GAExp = () => (
     </ProjectContainer>
     <StyledImage src={GATeam} alt="Lyvly logo" />
     <GATechSheet />
-    <LogoBackground
-      href="https://generalassemb.ly/"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      <img src={GALogoNoWords} alt="GA logo" width={70} height={70} />
-    </LogoBackground>
   </Container>
 );
