@@ -23,7 +23,7 @@ export const lyvlyText = {
       sig: '- I spent a significant time working on the ',
       website: 'Lyvly website ',
       coverage:
-        'remaking many several of the pages, adding search forms, displaying listings, working with the Stripe payment API, adding complete test coverage. etc.'
+        'remaking many of the sites pages, adding search forms, displaying listings, working with the Stripe payment API, adding complete test coverage. etc.'
     },
     back: {
       title: 'Back-End ',
