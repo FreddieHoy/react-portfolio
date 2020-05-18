@@ -14,6 +14,7 @@ import { AboutTitle } from './AboutTitle';
 const Image = styled.img`
   width: 100%;
   height: 100%;
+  min-height: 320px;
   padding: 26px 0;
 
   @media (min-width: ${mobileBreakPoint}px) {
